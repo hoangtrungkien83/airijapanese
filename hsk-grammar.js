@@ -1,0 +1,6340 @@
+const Grammar = [
+ {
+  "source": "Tổng hợp ngữ pháp HSK 1–6 (file markdown người dùng cung cấp)",
+  "levels": [
+   {
+    "level": 1,
+    "name": "HSK 1",
+    "grammar_count": 43,
+    "grammar": [
+     {
+      "id": "HSK1-001",
+      "stt": 1,
+      "title": "Đại từ nghi vấn “什么/shénme/”",
+      "explanation": "Dùng để hỏi người hoặc sự vật (cái gì, gì).",
+      "examples": [
+       {
+        "zh": "你叫什么名字",
+        "pinyin": "Nǐ jiào shénme míngzi",
+        "vi": "Tên bạn là gì?"
+       },
+       {
+        "zh": "你买什么？",
+        "pinyin": "Nǐ mǎi shénme",
+        "vi": "Bạn mua gì?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-002",
+      "stt": 2,
+      "title": "Câu có từ “是/shì/”",
+      "explanation": "Dùng để biểu đạt thuộc tính, danh tính của đối tượng, sự vật, sự việc. Dạng phủ định thêm不 /bú/ ở phía trước",
+      "examples": [
+       {
+        "zh": "我是老师。",
+        "pinyin": "Wǒ shì lǎoshī",
+        "vi": "Tôi là giáo viên."
+       },
+       {
+        "zh": "李月不是老师。",
+        "pinyin": "Lǐ Yuè bú shì lǎoshī",
+        "vi": "Lý Nguyệt không phải là giáo viên"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-003",
+      "stt": 3,
+      "title": "Trợ từ nghi vấn “吗/ma/”",
+      "explanation": "Đặt ở cuối câu trần thuật để tạo thành câu hỏi nghi vấn (phải không, không?).",
+      "examples": [
+       {
+        "zh": "你是美国人吗？",
+        "pinyin": "Nǐ shì Měiguó rén ma",
+        "vi": "Bạn là người Mỹ phải không?"
+       },
+       {
+        "label": "",
+        "zh": "你是学生吗？",
+        "pinyin": "Nǐ shì xuésheng ma",
+        "vi": "Bạn là học sinh phải không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-004",
+      "stt": 4,
+      "title": "Đại từ nghi vấn “哪/nǎ/”",
+      "explanation": "Dùng để hỏi về người hoặc sự vật, thường đi kèm lượng từ.",
+      "examples": [
+       {
+        "zh": "你是哪国人？",
+        "pinyin": "Nǐ shì nǎ guó rén",
+        "vi": "Bạn là người nước nào?"
+       },
+       {
+        "zh": "哪本书？",
+        "pinyin": "Nǎ běn shū",
+        "vi": "Quyển sách nào?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-005",
+      "stt": 5,
+      "title": "Trợ từ kết cấu “的/de/”",
+      "explanation": "Biểu thị quan hệ sở hữu (của). Có thể lược bỏ khi danh từ theo sau là quan hệ thân thuộc.",
+      "examples": [
+       {
+        "zh": "她是我的汉语老师。",
+        "pinyin": "Tā shì wǒ de Hànyǔ lǎoshī",
+        "vi": "Cô ấy là giáo viên tiếng Hán của tôi."
+       },
+       {
+        "zh": "这是我的书。",
+        "pinyin": "Zhè shì wǒ de shū",
+        "vi": "Đây là sách của tôi."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-006",
+      "stt": 6,
+      "title": "Trợ từ nghi vấn “呢/ne/”",
+      "explanation": "Dùng ở cuối câu để hỏi lại, truy vấn tình huống đã đề cập.",
+      "examples": [
+       {
+        "zh": "我喜欢喝咖啡。你呢？",
+        "pinyin": "Wǒ xǐhuan hē kāfēi. Nǐ ne",
+        "vi": "Tôi thích uống cà phê. Còn bạn?"
+       },
+       {
+        "zh": "他已经吃过饭了。你呢？",
+        "pinyin": "Tā yǐjīng chīguo fàn le. Nǐ ne",
+        "vi": "Anh ấy ăn rồi. Còn bạn?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-007",
+      "stt": 7,
+      "title": "Đại từ nghi vấn “几/jǐ/”",
+      "explanation": "Dùng để hỏi về số lượng nhỏ (thường dưới 10).",
+      "examples": [
+       {
+        "zh": "你有几个汉语老师？",
+        "pinyin": "Nǐ yǒu jǐ ge Hànyǔ lǎoshī",
+        "vi": "Bạn có mấy giáo viên tiếng Hán?"
+       },
+       {
+        "zh": "你女儿几岁了？",
+        "pinyin": "Nǐ nǚ'ér jǐ suì le",
+        "vi": "Con gái bạn mấy tuổi rồi?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-008",
+      "stt": 8,
+      "title": "Cách diễn đạt các số dưới 100",
+      "explanation": "Các số từ 11 đến 99 trong tiếng Trung được tạo thành theo cấu trúc:(Số hàng chục) +十+ (Số hàng đơn vị)",
+      "examples": [
+       {
+        "zh": "李老师今年50岁了。",
+        "pinyin": "Lǐ lǎoshī jīnnián wǔshí suì le",
+        "vi": "Thầy Lí năm nay 50 tuổi rồi."
+       },
+       {
+        "zh": "二十三",
+        "pinyin": "èr shí sān",
+        "vi": "Hai mươi ba."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-009",
+      "stt": 9,
+      "title": "Trợ từ “了/le/ -",
+      "explanation": "Dùng ở cuối câu chỉ sự thay đổi, sự xuất hiện của 1 tình huống mới.",
+      "examples": [
+       {
+        "zh": "我朋友的女儿今年四岁了。",
+        "pinyin": "Wǒ péngyou de nǚ'ér jīnnián sì suì le",
+        "vi": "Con gái bạn tôi năm nay đã bốn tuổi rồi."
+       },
+       {
+        "zh": "李老师今年50岁了。",
+        "pinyin": "Lǐ lǎoshī jīnnián wǔshí suì le",
+        "vi": "Thầy Lí năm nay đã 50 tuổi rồi.),"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-010",
+      "stt": 10,
+      "title": "Động từ năng nguyện “会 /huì/”",
+      "explanation": "Diễn tả khả năng có được thông qua học hỏi. Dạng phủ định dùng不会/bú huì/.",
+      "examples": [
+       {
+        "zh": "我会写汉字。",
+        "pinyin": "Wǒ huì xiě Hànzì",
+        "vi": "Tôi biết viết chữ Hán."
+       },
+       {
+        "zh": "你妈妈会做中国菜吗？",
+        "pinyin": "Nǐ māma huì zuò Zhōngguócài ma",
+        "vi": "Mẹ bạn có biết nấu món Trung Quốc không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-011",
+      "stt": 11,
+      "title": "Câu có vị ngữ là tính từ",
+      "explanation": "Vị ngữ là tính từ, thường dùng很/hěn/ làm phó từ chỉ mức độ. Phủ định dùng 不/bù/.",
+      "examples": [
+       {
+        "zh": "你的汉语很好。",
+        "pinyin": "Nǐ de Hànyǔ hěn hǎo",
+        "vi": "Tiếng Hán của bạn rất tốt."
+       },
+       {
+        "zh": "我妈妈的汉语不好。",
+        "pinyin": "Wǒ māma de Hànyǔ bù hǎo",
+        "vi": "Tiếng Hán của mẹ tôi không tốt."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-012",
+      "stt": 12,
+      "title": "Đại từ nghi vấn “怎么/zěnme/”",
+      "explanation": "Dùng để hỏi phương thức thực hiện hành động, đặt trước động từ.",
+      "examples": [
+       {
+        "zh": "这个汉字怎么读？",
+        "pinyin": "Zhège Hànzì zěnme dú",
+        "vi": "Chữ Hán này đọc như thế nào?"
+       },
+       {
+        "zh": "你怎么去饭店？",
+        "pinyin": "Nǐ zěnme qù fàn diàn",
+        "vi": "Bạn đi đến nhà hàng bằng cách nào?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-013",
+      "stt": 13,
+      "title": "Diễn tả ngày tháng",
+      "explanation": "Diễn tả tháng, ngày/thứ, thứ tự từ lớn đến nhỏ (năm -> tháng > ngày/thứ).",
+      "examples": [
+       {
+        "zh": "9月1号,星期三。",
+        "pinyin": "Jiǔ yuè yī hào, xīngqī sān",
+        "vi": "Ngày 1 tháng 9, thứ Tư 8月31号,星期二。/Bā yuè sān shí yī hào, xīngqī èr/ → Ngày 31 tháng 8, thứ Ba"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-014",
+      "stt": 14,
+      "title": "Câu có vị ngữ là danh từ",
+      "explanation": "Vị ngữ là danh từ hoặc cụm danh từ (thường diễn tả tuổi tác, thời gian).",
+      "examples": [
+       {
+        "zh": "今天9月1号。",
+        "pinyin": "Jīntiān jiǔ yuè yī hào",
+        "vi": "Hôm nay là ngày 1 tháng 9."
+       },
+       {
+        "zh": "我的汉语老师33岁。",
+        "pinyin": "Wǒ de Hànyǔ lǎoshī sān shí sān suì",
+        "vi": "Giáo viên tiếng Hán của tôi 33 tuổi."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-015",
+      "stt": 15,
+      "title": "Cấu trúc liên động từ",
+      "explanation": "Hành động thứ nhất biểu thị phương thức hoặc mục đích của hành động thứ hai. Cả hai hành động đều do cùng một chủ thể thực hiện.",
+      "examples": [
+       {
+        "zh": "我去图书馆看书。",
+        "pinyin": "Wǒ qù túshūguǎn kàn shū",
+        "vi": "Tôi đi thư viện đọc sách."
+       },
+       {
+        "zh": "妈妈上街买菜。",
+        "pinyin": "Māma shàng jiē mǎi cài",
+        "vi": "Mẹ ra chợ mua thức ăn."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-016",
+      "stt": 16,
+      "title": "Động từ năng nguyện “想 /xiǎng/”",
+      "explanation": "Biểu thị mong muốn hoặc dự định (muốn).",
+      "examples": [
+       {
+        "zh": "我想喝茶。",
+        "pinyin": "Wǒ xiǎng hē chá",
+        "vi": "Tôi muốn uống trà."
+       },
+       {
+        "label": "",
+        "zh": "明天我想去学校看书。",
+        "pinyin": "Míngtiān wǒ xiǎng qù xuéxiào kàn shū",
+        "vi": "Ngày mai tôi muốn đến trường đọc sách."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-017",
+      "stt": 17,
+      "title": "Đại từ nghi vấn “多少/duōshao/",
+      "explanation": "Dùng để hỏi số lượng từ 10 trở lên, hoặc hỏi giá cả.",
+      "examples": [
+       {
+        "zh": "你们学校有多少个学生？",
+        "pinyin": "Nǐmen xuéxiào yǒu duōshao ge xuésheng",
+        "vi": "Trường các bạn có bao nhiêu học sinh?"
+       },
+       {
+        "zh": "这个杯子多少钱？",
+        "pinyin": "Zhège bēizi duōshao qián",
+        "vi": "Cái cốc này bao nhiêu tiền?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-018",
+      "stt": 18,
+      "title": "Lượng từ “个/gè” “口/ kǒu/”",
+      "explanation": "个/gè/ Lượng từ phổ biến nhất, dùng cho hầu hết danh từ chỉ người, sự vật, đồ vật. Dùng khi không biết rõ lượng từ chuyên biệt. 口/kǒu/ Lượng từ dùng cho số thành viên trong gia đình.",
+      "examples": [
+       {
+        "zh": "一个老师",
+        "pinyin": "yí gè lǎoshī",
+        "vi": "một giáo viên"
+       },
+       {
+        "zh": "三个苹果",
+        "pinyin": "sān gè píngguǒ",
+        "vi": "ba quả táo"
+       },
+       {
+        "zh": "我家有四口人",
+        "pinyin": "Wǒ jiā yǒu sì kǒu rén",
+        "vi": "Nhà tôi có bốn người"
+       },
+       {
+        "zh": "我们家三口人",
+        "pinyin": "Wǒmen jiā sān kǒu rén",
+        "vi": "Gia đình tôi có ba người"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-019",
+      "stt": 19,
+      "title": "Động từ “在/zài/”",
+      "explanation": "Dùng để nói ai đó/cái gì đang ở đâu.",
+      "examples": [
+       {
+        "zh": "我朋友在学校。",
+        "pinyin": "Wǒ péngyou zài xuéxiào",
+        "vi": "Bạn tôi ở trường."
+       },
+       {
+        "zh": "小狗在椅子下面。",
+        "pinyin": "Xiǎogǒu zài yǐzi xiàmiàn",
+        "vi": "Con chó nhỏ ở dưới ghế."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-020",
+      "stt": 20,
+      "title": "Đại từ nghi vấn “哪儿/nǎr/",
+      "explanation": "Dùng để hỏi về vị trí của người hoặc vật (ở đâu).",
+      "examples": [
+       {
+        "zh": "你的杯子在哪儿？",
+        "pinyin": "Nǐ de bēizi zài nǎr",
+        "vi": "Cái cốc của bạn ở đâu?"
+       },
+       {
+        "zh": "你的中国朋友在哪儿？",
+        "pinyin": "Nǐ de péngyou zài nǎr",
+        "vi": "Bạn của bạn ở đâu?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-021",
+      "stt": 21,
+      "title": "Giới từ “在/zài/",
+      "explanation": "Dẫn xuất từ động từ \"在\", dùng để chỉ địa điểm nơi xảy ra hành động.",
+      "examples": [
+       {
+        "zh": "他们在学校工作。",
+        "pinyin": "Tāmen zài xuéxiào gōngzuò",
+        "vi": "Họ làm việc ở trường."
+       },
+       {
+        "zh": "我在朋友家喝茶。",
+        "pinyin": "Wǒ zài péngyou jiā hē chá",
+        "vi": "Tôi uống trà ở nhà bạn."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-022",
+      "stt": 22,
+      "title": "Trợ từ nghi vấn “呢/ne/”",
+      "explanation": "Dùng ở cuối câu, hỏi lại về vị trí hoặc truy vấn về người/vật.",
+      "examples": [
+       {
+        "zh": "我的小猫呢？",
+        "pinyin": "Wǒ de xiǎomāo ne",
+        "vi": "Con mèo nhỏ của tôi đâu?"
+       },
+       {
+        "zh": "他在哪儿呢？",
+        "pinyin": "Tā zài nǎr ne",
+        "vi": "Anh ấy ở đâu vậy?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-023",
+      "stt": 23,
+      "title": "Câu có từ “有/yǒu/”",
+      "explanation": "Biểu thị sự tồn tại hoặc sự sở hữu (có). Phủ định dùng没(有).",
+      "examples": [
+       {
+        "zh": "我的家乡有一条小河。",
+        "pinyin": "Wǒ de jiāxiāng yǒu yì tiáo xiǎo hé",
+        "vi": "Quê tôi có một con sông nhỏ."
+       },
+       {
+        "zh": "房间里没有人。",
+        "pinyin": "Fángjiān lǐ méi yǒu rén",
+        "vi": "Trong phòng không có ai."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-024",
+      "stt": 24,
+      "title": "Liên từ “和/hé/",
+      "explanation": "Dùng để nối hai hoặc nhiều thành phần giống nhau (danh từ, đại từ, cụm danh từ) trong câu.",
+      "examples": [
+       {
+        "zh": "哥哥和姐姐都在家。",
+        "pinyin": "Gēge hé jiějie dōu zài jiā",
+        "vi": "Anh trai và chị gái đều ở nhà."
+       },
+       {
+        "zh": "我们学习了生词、语法和课文。",
+        "pinyin": "Wǒmen xuéxí le shēngcí hé yǔfǎ",
+        "vi": "Chúng tôi đã học từ mới và ngữ pháp."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-025",
+      "stt": 25,
+      "title": "Động từ năng nguyện “能/néng/”",
+      "explanation": "Dùng để biểu thị khả năng, năng lực hoặc sự cho phép (có thể).",
+      "examples": [
+       {
+        "zh": "我能说汉语。",
+        "pinyin": "Wǒ néng shuō Hànyǔ.",
+        "vi": "Tôi có thể nói tiếng Trung."
+       },
+       {
+        "zh": "这里能停车吗？",
+        "pinyin": "Zhèlǐ néng tíngchē ma?",
+        "vi": "Ở đây có được đỗ xe không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-026",
+      "stt": 26,
+      "title": "“请/qǐng/",
+      "explanation": "Dùng để diễn tả lời đề nghị, yêu cầu lịch sự, mềm mỏng (mời).",
+      "examples": [
+       {
+        "zh": "请坐。",
+        "pinyin": "Qǐng zuò",
+        "vi": "Mời ngồi."
+       },
+       {
+        "label": "",
+        "zh": "请喝茶。",
+        "pinyin": "Qǐng hē chá",
+        "vi": "Mời uống trà."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-027",
+      "stt": 27,
+      "title": "Cách diễn tả thời gian",
+      "explanation": "Diễn tả theo thứ tự từ lớn đến nhỏ: Số giờ +点 /diǎn/ + Số phút +分/fēn/",
+      "examples": [
+       {
+        "zh": "现在八点十八分。",
+        "pinyin": "Xiànzài bā diǎn shíbā fēn",
+        "vi": "Bây giờ là 8 giờ 18 phút."
+       },
+       {
+        "zh": "三点十五分",
+        "pinyin": "sān diǎn shíwǔ fēn",
+        "vi": "3 giờ 15 phút"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-028",
+      "stt": 28,
+      "title": "Từ chỉ thời gian làm trạng ngữ",
+      "explanation": "Từ/cụm từ chỉ thời điểm, khoảng thời gian (như:今天，每天，八点，去年，...), đứng trong câu để bổ nghĩa cho toàn bộ hành động, trả lời câu hỏi \"Khi nào?\".",
+      "examples": [
+       {
+        "zh": "明天我们去公园。",
+        "pinyin": "Míngtiān wǒmen qù gōngyuán.",
+        "vi": "Ngày mai chúng tôi đi công viên."
+       },
+       {
+        "zh": "晚上八点她看电视。",
+        "pinyin": "Wǎnshang bā diǎn tā kàn diànshì.",
+        "vi": "Lúc 8 giờ tối cô ấy xem TV."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-029",
+      "stt": 29,
+      "title": "Danh từ “前 /qián/”",
+      "explanation": "Biểu thị một khoảng thời gian trước thời điểm hiện tại/được đề cập.",
+      "examples": [
+       {
+        "zh": "三天前",
+        "pinyin": "sān tiān qián",
+        "vi": "Ba ngày trước."
+       },
+       {
+        "zh": "我以前住在北京。",
+        "pinyin": "Wǒ yǐqián zhù zài Běijīng",
+        "vi": "Trước đây tôi sống ở Bắc Kinh."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-030",
+      "stt": 30,
+      "title": "Đại từ nghi vấn “怎么样 /zěnmeyàng/",
+      "explanation": "Dùng để hỏi về tính chất, trạng thái, ý kiến hoặc đề xuất.",
+      "examples": [
+       {
+        "zh": "这部电影怎么样？",
+        "pinyin": "Zhè bù diànyǐng zěnmeyàng?",
+        "vi": "Bộ phim này như thế nào? (Hay/dở ra sao?)"
+       },
+       {
+        "zh": "我们晚上吃火锅，怎么样？",
+        "pinyin": "Wǒmen wǎnshang chī huǒguō, zěnmeyàng?",
+        "vi": "Tối nay chúng ta ăn lẩu, thấy sao?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-031",
+      "stt": 31,
+      "title": "Câu có vị ngữ là kết cấu chủ-vị",
+      "explanation": "Vị ngữ là một cụm từ có cấu trúc chủ-vị: [Chủ ngữ 1] + [Vị ngữ (Chủ ngữ 2 + Động từ 2)]",
+      "examples": [
+       {
+        "zh": "这本书内容很有趣。",
+        "pinyin": "Zhè běn shū nèiróng hěn yǒuqù",
+        "vi": "Cuốn sách này nội dung rất thú vị."
+       },
+       {
+        "zh": "这家餐厅价格很贵。",
+        "pinyin": "Zhè jiā cāntīng jiàgé hěn guì",
+        "vi": "Nhà hàng này giá cả rất đắt."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-032",
+      "stt": 32,
+      "title": "Phó từ chỉ mức độ “太/tài/",
+      "explanation": "Diễn tả mức độ quá cao, thường đi kèm了(le). Phủ định dùng不太.",
+      "examples": [
+       {
+        "zh": "太热了。",
+        "pinyin": "Tài rè le",
+        "vi": "Nóng quá rồi."
+       },
+       {
+        "zh": "天气太冷了。",
+        "pinyin": "Tiānqì tài lěng le",
+        "vi": "Thời tiết lạnh quá rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-033",
+      "stt": 33,
+      "title": "Động từ năng nguyện “会/huì/",
+      "explanation": "Dùng để diễn tả khả năng xảy ra của một tình huống (dự đoán).",
+      "examples": [
+       {
+        "zh": "明天会下雨。",
+        "pinyin": "Míngtiān huì xiàyǔ.",
+        "vi": "Ngày mai sẽ mưa."
+       },
+       {
+        "zh": "他应该会同意。",
+        "pinyin": "Tā yīnggāi huì tóngyì.",
+        "vi": "Anh ấy chắc sẽ đồng ý."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-034",
+      "stt": 34,
+      "title": "Thán từ “喂 /wèi/",
+      "explanation": "Dùng để gọi, thu hút sự chú ý hoặc bắt đầu cuộc trò chuyện, đặc biệt là qua điện thoại.",
+      "examples": [
+       {
+        "zh": "喂，李老师在家吗？",
+        "pinyin": "Wèi, Lǐ lǎoshī zài jiā ma?",
+        "vi": "A lô, thầy Lý có ở nhà không?"
+       },
+       {
+        "zh": "喂，你是张小姐吗？",
+        "pinyin": "Wèi, nǐ shì Zhāng xiǎojiě ma",
+        "vi": "A lô, cô là cô Trương phải không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-035",
+      "stt": 35,
+      "title": "Cấu trúc “在……呢” (zài...ne)",
+      "explanation": "Biểu thị hành động đang diễn ra (đang).",
+      "examples": [
+       {
+        "zh": "你在做什么呢？",
+        "pinyin": "Nǐ zài zuò shénme ne",
+        "vi": "Bạn đang làm gì vậy?"
+       },
+       {
+        "zh": "我在看书呢。",
+        "pinyin": "Wǒ zài kàn shū ne",
+        "vi": "Tôi đang đọc sách."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-036",
+      "stt": 36,
+      "title": "Cách đọc số điện thoại",
+      "explanation": "Đọc từng chữ số một, tuần tự từ trái sang phải. Số \"1\" đọc là /yāo/.",
+      "examples": [
+       {
+        "raw": "82304156 /bā èr sān líng sì yāo wǔ liù/ 13851897623 /yāo sān bā wǔ yāo bā jiǔ qī liù èr sān/"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-037",
+      "stt": 37,
+      "title": "Trợ từ ngữ khí “吧/ba/",
+      "explanation": "Đề nghị, khuyên bảo, mệnh lệnh.",
+      "examples": [
+       {
+        "zh": "我们走吧。",
+        "pinyin": "Wǒmen zǒu ba.",
+        "vi": "Mình đi thôi."
+       },
+       {
+        "zh": "她在工作呢，你下午打吧。",
+        "pinyin": "Tā zài gōngzuò ne, nǐ xiàwǔ dǎ ba",
+        "vi": "Cô ấy đang làm việc, chiều bạn gọi điện đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-038",
+      "stt": 38,
+      "title": "Trợ từ了/le/",
+      "explanation": "Dùng sau động từ/tính từ để biểu thị sự việc đã xảy ra hay hoàn thành.",
+      "examples": [
+       {
+        "zh": "她去商店了。",
+        "pinyin": "Tā qù shāngdiàn le",
+        "vi": "Cô ấy đã đi cửa hàng rồi."
+       },
+       {
+        "zh": "我买了一点儿苹果。",
+        "pinyin": "Wǒ mǎi le yì diǎnr píngguǒ",
+        "vi": "Tôi đã mua một ít táo."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-039",
+      "stt": 39,
+      "title": "Danh từ 后/hòu/",
+      "explanation": "Biểu thị một khoảng thời gian sau thời điểm được đề cập (sau).",
+      "examples": [
+       {
+        "zh": "五点四十分钟后。",
+        "pinyin": "Wǔ diǎn sì shí fēnzhōng hòu",
+        "vi": "Sau 5 giờ 40 phút五"
+       },
+       {
+        "zh": "点后。",
+        "pinyin": "Wǔ diǎn hòu",
+        "vi": "Sau 5 giờ."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-040",
+      "stt": 40,
+      "title": "Trợ từ ngữ khí 啊/a/",
+      "explanation": "Trợ từ ngữ khí啊/a/ (có thể biến âm thành /ya/, /wa/, /na/... tùy âm tiết trước nó) khi đặt cuối câu trần thuật có tác dụng làm mềm mại, thân mật, nhấn mạnh hoặc bày tỏ cảm xúc",
+      "examples": [
+       {
+        "zh": "小心啊！",
+        "pinyin": "Xiǎoxīn a",
+        "vi": "Cẩn thận đấy!"
+       },
+       {
+        "zh": "快点儿啊，要迟到了！",
+        "pinyin": "Kuài diǎnr a, yào chídào le!",
+        "vi": "Nhanh lên nào, sắp muộn rồi!"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-041",
+      "stt": 41,
+      "title": "Phó từ 都/dōu/",
+      "explanation": "Biểu thị sự bao gồm hoặc tổng hợp (đều, tất cả).",
+      "examples": [
+       {
+        "zh": "他们都喜欢看电视。",
+        "pinyin": "Tāmen dōu xǐhuan kàn diànshì",
+        "vi": "Họ đều thích xem TV."
+       },
+       {
+        "zh": "我们都是坐出租车来的。",
+        "pinyin": "Wǒmen dōu shì zuò chūzūchē lái de",
+        "vi": "Chúng tôi đều là đi taxi đến."
+       }
+      ]
+     },
+     {
+      "id": "HSK1-042",
+      "stt": 42,
+      "title": "Cấu trúc “是……的”",
+      "explanation": "Nhấn mạnh thời gian, địa điểm, hoặc cách thức xảy ra sự việc đã biết.",
+      "examples": [
+       {
+        "zh": "我们是坐出租车来的。",
+        "pinyin": "Wǒmen shì zuò chūzūchē lái de",
+        "vi": "Chúng tôi đến bằng taxi."
+       },
+       {
+        "zh": "你是什么时候开始学汉语的？",
+        "pinyin": "Nǐ shì shénme shíhou kāishǐ xué Hànyǔ de",
+        "vi": "Bạn là bắt đầu học tiếng Hán từ khi nào?"
+       }
+      ]
+     },
+     {
+      "id": "HSK1-043",
+      "stt": 43,
+      "title": "Cách diễn tả ngày tháng",
+      "explanation": "Diễn tả đầy đủ năm, tháng, ngày, thứ, theo thứ tự từ lớn đến nhỏ.",
+      "examples": [
+       {
+        "zh": "今天是2025年1月5号。",
+        "pinyin": "Jīntiān shì èr líng èr wǔ nián yī yuè wǔ hào.",
+        "vi": "Hôm nay là ngày 5 tháng 1 năm 2025."
+       },
+       {
+        "zh": "明天是2024年12月18号，星期三。",
+        "pinyin": "Míngtiān shì èr líng èr sì nián shí'èr yuè shíbā hào, xīngqīsān.",
+        "vi": "Ngày mai là thứ Tư, ngày 18 tháng 12 năm 2024."
+       }
+      ]
+     }
+    ],
+    "exam_focus": [
+     {
+      "category": "Số lượng và định lượng",
+      "points": [
+       "Các số dưới 100",
+       "Đại từ nghi vấn “几/_jǐ_/",
+       "Đại từ nghi vấn “多少/_duōshao_/",
+       "Cách đọc số điện thoại"
+      ],
+      "reason": "Đề thi thường kiểm tra trực tiếp khả năng nghe và phân biệt số lượng, tuổi tác, giá cả, và các con số phức tạp hơn (như số điện thoại) qua các tùy chọn trắc nghiệm."
+     },
+     {
+      "category": "Hỏi đáp cơ bản (Nghi vấn)",
+      "points": [
+       "Đại từ nghi vấn “什么/_shénme_/”",
+       "Trợ từ nghi vấn “吗/_ma_/”",
+       "Đại từ nghi vấn “哪/_nǎ_/”",
+       "Đại từ nghi vấn “哪儿/_nǎr_/”",
+       "Đại từ nghi vấn “怎么样/_zěnmeyàng_/”"
+      ],
+      "reason": "Các câu hỏi nghi vấn là cấu trúc cơ bản nhất của mọi bài kiểm tra ngôn ngữ. Đặc biệt là hỏi về danh tính, địa điểm, và tình trạng/trạng thái (thời tiết, sức khỏe)."
+     },
+     {
+      "category": "Hành động và trạng thái",
+      "points": [
+       "Động từ/Giới từ “在/_zài_/”",
+       "Cấu trúc “在……呢/_zài...ne_/”",
+       "Trợ từ “了/_le_/”"
+      ],
+      "reason": "Kiểm tra khả năng phân biệt giữa hành động đang diễn ra (在……呢) và hành động đã hoàn thành (了). Đây là hai khái niệm thì/trạng thái hành động quan trọng nhất ở cấp độ HSK 1."
+     },
+     {
+      "category": "Động từ năng nguyện",
+      "points": [
+       "Động từ năng nguyện “想/_xiǎng_/",
+       "Động từ năng nguyện “会/_huì_/”"
+      ],
+      "reason": "“想(muốn) và会(biết/sẽ) là hai động từ năng nguyện thiết yếu giúp người học diễn đạt ý định, khả năng và dự đoán. Chúng thường xuyên xuất hiện trong các tình huống hội thoại cơ bản, đóng vai trò quan trọng trong việc hình thành câu và thiết lập bối cảnh giao tiếp."
+     }
+    ]
+   },
+   {
+    "level": 2,
+    "name": "HSK 2",
+    "grammar_count": 44,
+    "grammar": [
+     {
+      "id": "HSK2-001",
+      "stt": 1,
+      "title": "Trợ động từ \"要/yào/”",
+      "explanation": "Khi là trợ động từ,要đứng trước động từ chính và diễn đạt ý chí, nguyện vọng hoặc sự cần thiết.",
+      "examples": [
+       {
+        "zh": "王方要学习英语。",
+        "pinyin": "Wáng Fāng yào xuéxí Yīngyǔ",
+        "vi": "Vương Phương muốn học tiếng Anh."
+       },
+       {
+        "zh": "我要吃米饭。",
+        "pinyin": "Wǒ yào chī mǐfàn",
+        "vi": "Tôi muốn ăn cơm."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-002",
+      "stt": 2,
+      "title": "Phó từ chỉ mức độ \"最/zuì/",
+      "explanation": "最có nghĩa là \"nhất\", dùng để biểu thị mức độ cao nhất trong phạm vi so sánh. Nó tương đương với hậu tố \"-est\" trong tiếng Anh (tallest, biggest) hoặc từ \"most\".",
+      "examples": [
+       {
+        "zh": "大卫的汉语最好。",
+        "pinyin": "Dàwèi de Hànyǔ zuì hǎo",
+        "vi": "Tiếng Hán của Đại Vệ là tốt nhất."
+       },
+       {
+        "zh": "我最喜欢吃米饭。",
+        "pinyin": "Wǒ zuì xǐhuān chī mǐfàn",
+        "vi": "Tôi thích ăn cơm nhất."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-003",
+      "stt": 3,
+      "title": "Cách diễn tả số lượng \"几/jǐ/",
+      "explanation": "几dùng để hỏi về số lượng ít, ước chừng dưới 10. Cấu trúc cơ bản:几+ Lượng từ + Danh từ?",
+      "examples": [
+       {
+        "zh": "这里住着几个人？",
+        "pinyin": "Zhèlǐ zhù zhe jǐ gè rén",
+        "vi": "Ở đây có mấy người ở?"
+       },
+       {
+        "zh": "你学中文学了几年了？",
+        "pinyin": "Nǐ xué Zhōngwén xué le jǐ nián le",
+        "vi": "Bạn học tiếng Trung được mấy năm rồi?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-004",
+      "stt": 4,
+      "title": "Câu hỏi với \"是不是...\" /shì.bú shì../",
+      "explanation": "Nếu đưa ra phỏng đoán về một sự việc hoặc tình huống và muốn xác minh thêm, có thể dùng cấu trúc câu hỏi này. \"是不是...\" thường dùng ở phía trước vị ngữ, nhưng cũng có thể dùng ở đầu hoặc cuối câu.",
+      "examples": [
+       {
+        "zh": "你很少生病，是不是喜欢运动？",
+        "pinyin": "Nǐ hěn shǎo shēngbìng, shì bù shì xǐhuan yùndòng",
+        "vi": "Cậu rất ít khi ốm, có phải là thích vận động không?"
+       },
+       {
+        "zh": "是不是明天爸爸休息?",
+        "pinyin": "Shì bù shì míngtiān bàba xiūxi",
+        "vi": "Có phải ngày mai bố nghỉ không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-005",
+      "stt": 5,
+      "title": "Đại từ \"每/měi/”",
+      "explanation": "每thường không đứng một mình. Nó luôn đi kèm với một danh từ, lượng từ hoặc từ chỉ thời gian để tạo thành một cụm để chỉ tất cả các thành viên trong tập thể hoặc nhóm. Ví dụ: hằng ngày, mỗi năm, mỗi tháng, mỗi tuần.",
+      "examples": [
+       {
+        "zh": "山姆每年都去中国旅游。",
+        "pinyin": "Shānmǔ měi nián dōu qù Zhōngguó lǚyóu",
+        "vi": "Sam mỗi năm đều đi du lịch Trung Quốc."
+       },
+       {
+        "label": "",
+        "zh": "我每天六点起床工作吗？",
+        "pinyin": "Wǒ měi tiān liù diǎn qǐchuáng gōngzuò ma",
+        "vi": "Tôi có phải mỗi ngày 6 giờ thức dậy làm việc không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-006",
+      "stt": 6,
+      "title": "Đại từ nghi vấn \" 多/duō/”",
+      "explanation": "多được dùng để hỏi về độ cao, chiều dài, tuổi tác, khoảng cách, thời gian, giá cả... - tức là những thứ có thể đo lường được bằng con số.",
+      "examples": [
+       {
+        "zh": "你多大？",
+        "pinyin": "Nǐ duō dà",
+        "vi": "Bạn bao nhiêu tuổi?"
+       },
+       {
+        "zh": "他儿子多高？",
+        "pinyin": "Tā érzi duō gāo",
+        "vi": "Con trai anh ấy cao bao nhiêu?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-007",
+      "stt": 7,
+      "title": "Cụm từ có \"的 /de/”",
+      "explanation": "Đại từ, tính từ, động từ kết hợp với \"的\" để tạo thành cụm từ trung tâm ngữ, tương đương với cụm danh từ để thay thế\ncho một danh từ đã được xác định hoặc ngầm hiểu trong ngữ cảnh.",
+      "examples": [
+       {
+        "zh": "这本书不是我的。",
+        "pinyin": "Zhè běn shū bú shì wǒ de",
+        "vi": "Cuốn sách này không phải của tôi."
+       },
+       {
+        "zh": "这块表是你的吗？",
+        "pinyin": "Zhè kuài shǒubiǎo shì nǐ de ma",
+        "vi": "Chiếc đồng hồ này là của bạn phải không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-008",
+      "stt": 8,
+      "title": "\"一下/yí xià/",
+      "explanation": "Dùng sau động từ, biểu thị một hành động ngắn ngủi.",
+      "examples": [
+       {
+        "zh": "我看一下。",
+        "pinyin": "Wǒ kàn yíxià",
+        "vi": "Tôi xem một chút."
+       },
+       {
+        "zh": "你休息一下吧。",
+        "pinyin": "Nǐ xiūxī yíxià ba",
+        "vi": "Bạn nghỉ ngơi một chút đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-009",
+      "stt": 9,
+      "title": "Phó từ ngữ khí \"真/zhēn/”",
+      "explanation": "Dùng để nhấn mạnh mức độ cao của một tính chất hoặc trạng thái, đồng thời bộc lộ cảm xúc chân thật của người nói.",
+      "examples": [
+       {
+        "zh": "你真好！",
+        "pinyin": "Nǐ zhēn hǎo",
+        "vi": "Bạn thật tốt!"
+       },
+       {
+        "zh": "你女儿的房间真漂亮！",
+        "pinyin": "Nǐ nǚ'ér de fángjiān zhēn piàoliang",
+        "vi": "Phòng của con gái bạn thật đẹp!"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-010",
+      "stt": 10,
+      "title": "Cấu trúc \"是...的 /shì... de/",
+      "explanation": "Dùng để nhấn mạnh chi tiết (thời gian, địa điểm, cách thức, đối tượng, mục đích...) của một sự việc đã xảy ra trong quá khứ.",
+      "examples": [
+       {
+        "zh": "这本书是我买的。",
+        "pinyin": "Zhè běn shū shì wǒ mǎi de",
+        "vi": "Cuốn sách này là do tôi mua."
+       },
+       {
+        "zh": "手机不是我弄坏的。",
+        "pinyin": "Shǒujī bú shì wǒ nòng huài de",
+        "vi": "Điện thoại không phải là tôi làm hỏng đâu."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-011",
+      "stt": 11,
+      "title": "Cấu trúc diễn tả thời gian \"......的时候\" /de shí hou/",
+      "explanation": "Dùng để chỉ một thời điểm hoặc khoảng thời gian cụ thể khi một sự việc xảy ra.",
+      "examples": [
+       {
+        "zh": "睡觉的时候，请保持安静。",
+        "pinyin": "Shuìjiào de shíhou, qǐng bǎochí ānjìng",
+        "vi": "Khi ngủ, hãy giữ yên lặng."
+       },
+       {
+        "zh": "你忙的时候，不用回我的消息。",
+        "pinyin": "Nǐ máng de shíhou, búyòng huí wǒ de xiāoxi",
+        "vi": "Khi bạn bận, không cần phải trả lời tin nhắn của tôi."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-012",
+      "stt": 12,
+      "title": "Phó từ \"就/jiù/",
+      "explanation": "Biểu thị thừa nhận, chấp nhận, đưa ra kết luận hợp logic hoặc giải pháp. Cấu trúc: \"就+ động từ/cụm động từ\".",
+      "examples": [
+       {
+        "zh": "你既然不喜欢这份工作，那就辞职吧。",
+        "pinyin": "Nǐ jìrán bù xǐhuan zhè fèn gōngzuò, nà jiù cízhí ba",
+        "vi": "Cậu đã không thích công việc này, vậy thì nghỉ việc đi."
+       },
+       {
+        "zh": "天气这么冷，你穿这么少，就会感冒的。",
+        "pinyin": "Tiānqì zhème lěng, nǐ chuān zhème shǎo, jiù huì gǎnmào de",
+        "vi": "Thời tiết lạnh thế, cậu mặc ít vậy, ắt là sẽ bị cảm."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-013",
+      "stt": 13,
+      "title": "Phó từ ngữ khí \" 还\" /hái/",
+      "explanation": "Cấu trúc \"还+ hình dung từ\" hoặc \"还+ tính từ\" thường dùng để diễn tả sự tán thành, chấp nhận được.",
+      "examples": [
+       {
+        "zh": "你还知道回来啊？",
+        "pinyin": "Nǐ hái zhīdào huílái a",
+        "vi": "Còn biết về đấy à?"
+       },
+       {
+        "zh": "今天还挺冷的。",
+        "pinyin": "Jīntiān hái tǐng lěng de",
+        "vi": "Hôm nay còn khá lạnh đấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-014",
+      "stt": 14,
+      "title": "Phó từ chỉ mức độ \"有点儿\" /yǒu diǎnr/",
+      "explanation": "Dùng để diễn tả cảm xúc tiêu cực hay thái độ không hài lòng của người nói.",
+      "examples": [
+       {
+        "zh": "今天天气有点儿冷。",
+        "pinyin": "Jīntiān tiānqì yǒudiǎnr lěng",
+        "vi": "Hôm nay thời tiết hơi lạnh."
+       },
+       {
+        "zh": "我昨晚睡有点儿晚。",
+        "pinyin": "Wǒ zuówǎn shuì yǒudiǎnr wǎn",
+        "vi": "Tối qua tôi ngủ hơi muộn."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-015",
+      "stt": 15,
+      "title": "Đại từ nghi vấn \"怎么/zěnme/”",
+      "explanation": "Dùng cấu trúc \"怎么+ động từ/tính từ\" để hỏi về nguyên nhân của sự việc nào đó và thường diễn tả thái độ ngạc nhiên, kỳ lạ.",
+      "examples": [
+       {
+        "zh": "你怎么不高兴？",
+        "pinyin": "Nǐ zěnme bù gāoxìng",
+        "vi": "Sao bạn không vui?"
+       },
+       {
+        "zh": "今天怎么这么热？",
+        "pinyin": "Jīntiān zěnme zhème rè",
+        "vi": "Sao hôm nay nóng thế?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-016",
+      "stt": 16,
+      "title": "Sự lặp lại lượng từ",
+      "explanation": "Lượng từ (量词) khi được lặp lại sẽ có dạng \"AA\" hoặc \"一AA\", biểu thị ý nghĩa \"mỗi/từng...\", \"từng cái một\", \"rất nhiều\", hoặc tạo nhịp điệu, tính hình tượng cho câu văn.",
+      "examples": [
+       {
+        "zh": "这些苹果个个都很甜。",
+        "pinyin": "Zhèxiē píngguǒ gègè dōu hěn tián",
+        "vi": "Những quả táo này quả nào cũng rất ngọt."
+       },
+       {
+        "zh": "这个商店的衣服件件都很漂亮。",
+        "pinyin": "Zhège shāngdiàn de yīfu jiàn jiàn dōu hěn piàoliang",
+        "vi": "Quần áo ở cửa hàng này cái nào cũng rất đẹp."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-017",
+      "stt": 17,
+      "title": "Cấu trúc \"因为...,所以... /yīnwèi..., suǒyǐ.../",
+      "explanation": "Kết nối hai phần câu, trong đó một phân câu biểu thị nguyên nhân, một phân câu biểu thị kết quả.",
+      "examples": [
+       {
+        "zh": "因为天气不好，所以我没去商店。",
+        "pinyin": "Yīnwèi tiānqì bù hǎo, suǒyǐ wǒ méi qù shāngdiàn",
+        "vi": "Bởi vì thời tiết không tốt, nên tôi không đi cửa hàng."
+       },
+       {
+        "zh": "因为汉字太难了，所以我不喜欢写汉字。",
+        "pinyin": "Yīnwèi Hànyǔ tài nán le, suǒyǐ wǒ bù xǐhuān xiě Hànzì",
+        "vi": "Bởi vì chữ Hán khó quá, nên tôi không thích viết chữ Hán."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-018",
+      "stt": 18,
+      "title": "Phó từ ngữ khí \"还/hái/”",
+      "explanation": "Biểu thị hành động hoặc trạng thái vẫn đang tiếp diễn.",
+      "examples": [
+       {
+        "zh": "八点了，他还在睡觉。",
+        "pinyin": "Bā diǎn le, tā hái zài shuìjiào",
+        "vi": "- Tám giờ rồi, anh ấy vẫn còn ngủ."
+       },
+       {
+        "zh": "你怎么还没吃饭？",
+        "pinyin": "Nǐ zěnme hái méi chī fàn",
+        "vi": "Sao bạn vẫn chưa ăn cơm?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-019",
+      "stt": 19,
+      "title": "Phó từ chỉ thời gian \"就\" /jiù/",
+      "explanation": "Nhấn mạnh sự việc xảy ra sớm, thuận lợi hoặc đạt được quan điểm của người nói.",
+      "examples": [
+       {
+        "zh": "电影七点开始， 他六点就来了。",
+        "pinyin": "Diànyǐng qī diǎn kāishǐ, tā liù diǎn jiù lái le",
+        "vi": "Phim 7 giờ bắt đầu, anh ấy 6 giờ đã đến rồi."
+       },
+       {
+        "zh": "我昨天就知道这个消息了。",
+        "pinyin": "Wǒ zuótiān jiù zhīdào zhège xiāoxi le",
+        "vi": "Tôi hôm qua đã biết tin này rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-020",
+      "stt": 20,
+      "title": "Giới từ \"离\" /lí/",
+      "explanation": "Giới từ \"离\" dùng để biểu thị khoảng cách trong không gian hoặc thời gian giữa hai điểm. Nó tương đương với \"cách\", \"xa\", \"từ... đến...\" trong tiếng Việt.",
+      "examples": [
+       {
+        "zh": "我家离学校很远",
+        "pinyin": "Wǒ jiā lí xuéxiào hěn yuǎn",
+        "vi": "Nhà tôi cách trường rất xa."
+       },
+       {
+        "zh": "学校离机场有20公里。",
+        "pinyin": "Xuéxiào lí jīchǎng yǒu èr shí gōnglǐ",
+        "vi": "Trường học cách sân bay 20 km."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-021",
+      "stt": 21,
+      "title": "Trợ từ ngữ khí \" 呢\" /ne/",
+      "explanation": "Dùng ở cuối câu trần thuật sau động từ/tính từ, biểu thị sự khẳng định, tin tưởng.",
+      "examples": [
+       {
+        "zh": "八点上课，时间还早呢。",
+        "pinyin": "Bā diǎn shàngkè, shíjiān hái zǎo ne",
+        "vi": "Tám giờ vào lớp, thời gian vẫn còn sớm."
+       },
+       {
+        "zh": "医院离我们这儿还远呢。",
+        "pinyin": "Yīyuàn lí wǒmen zhèr hái yuǎn ne",
+        "vi": "Bệnh viện cách chỗ chúng ta còn xa đấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-022",
+      "stt": 22,
+      "title": "Câu hỏi có cấu trúc \"......,好吗? /hǎo ma/",
+      "explanation": "Thường dùng để hỏi ý kiến, quan điểm của người khác.",
+      "examples": [
+       {
+        "zh": "我们一起去吃饭，好吗？",
+        "pinyin": "Wǒmen yìqǐ qù chī fàn, hǎo ma",
+        "vi": "Chúng ta cùng đi ăn cơm nhé?"
+       },
+       {
+        "zh": "你明天下午给我打电话，好吗？",
+        "pinyin": "Nǐ míngtiān xiàwǔ gěi wǒ dǎ diànhuà, hǎo ma",
+        "vi": "Chiều mai bạn gọi điện thoại cho tôi nhé?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-023",
+      "stt": 23,
+      "title": "Phó từ \"再/zài/",
+      "explanation": "Biểu thị một hành động hoặc trạng thái lặp lại hoặc tiếp tục diễn ra.",
+      "examples": [
+       {
+        "zh": "你再看看这本书。",
+        "pinyin": "Nǐ zài kàn kàn zhè běn shū",
+        "vi": "Bạn xem lại cuốn sách này đi."
+       },
+       {
+        "zh": "你明天再给我打电话吧。",
+        "pinyin": "Nǐ míngtiān zài gěi wǒ dǎ diànhuà ba",
+        "vi": "Ngày mai bạn gọi điện thoại cho tôi nhé."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-024",
+      "stt": 24,
+      "title": "Câu kiêm ngữ (兼语)",
+      "explanation": "Câu kiêm ngữ do hai cụm động từ tạo thành, trong đó động từ thứ nhất thường là \"请/qǐng/,让/ràng/,叫/jiào/\". Cấu trúc: Chủ ngữ 1 + Động từ 1 + Kiêm ngữ + Động từ 2 + (Tân ngữ)",
+      "examples": [
+       {
+        "zh": "我请你吃饭。",
+        "pinyin": "Wǒ qǐng nǐ chī fàn",
+        "vi": "Tôi mời bạn ăn cơm.老师 让 我 写 汉字。/Lǎoshī ràng wǒ xiě Hànzì/ Giáo viên bảo tôi viết chữ Hán."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-025",
+      "stt": 25,
+      "title": "Sự lặp lại động từ",
+      "explanation": "Dùng để biểu thị thời gian ngắn, số lượng ít, nhẹ nhàng, thử.",
+      "examples": [
+       {
+        "zh": "我看看你的新手机。",
+        "pinyin": "Wǒ kànkan nǐ de xīn shǒujī",
+        "vi": "Tôi xem thử điện thoại mới của bạn."
+       },
+       {
+        "zh": "让我想想再回答。",
+        "pinyin": "Ràng wǒ xiǎngxiǎng zài huídá",
+        "vi": "Để tôi nghĩ một chút rồi trả lời."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-026",
+      "stt": 26,
+      "title": "Bổ ngữ chỉ kết quả",
+      "explanation": "Một số động từ hoặc hình dung từ có thể dùng sau động từ để bổ sung, giải thích kết quả của hành động.",
+      "examples": [
+       {
+        "zh": "我看见你的朋友了。",
+        "pinyin": "Wǒ kàn jiàn nǐ de péngyǒu le",
+        "vi": "Tôi nhìn thấy bạn của bạn rồi."
+       },
+       {
+        "zh": "大卫找到工作了。",
+        "pinyin": "Dàwèi zhǎo dào gōngzuò le",
+        "vi": "Đại Vệ đã tìm được việc làm rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-027",
+      "stt": 27,
+      "title": "Giới từ \"从\" /cóng/",
+      "explanation": "\"从\" dùng để biểu thị điểm mốc khoảng thời gian, quãng đường, hoặc trình tự.",
+      "examples": [
+       {
+        "zh": "商店从上午九点开到下午六点。",
+        "pinyin": "Shāngdiàn cóng shàngwǔ jiǔ diǎn kāi dào xiàwǔ liù diǎn",
+        "vi": "Cửa hàng mở cửa từ 9 giờ sáng đến 6 giờ chiều."
+       },
+       {
+        "zh": "从这儿到地铁站怎么走？",
+        "pinyin": "Cóng zhèr dào dìtiě zhàn zěnme zǒu",
+        "vi": "Từ đây đến ga tàu điện đi thế nào?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-028",
+      "stt": 28,
+      "title": "Cách diễn tả thứ tự \"第...\" /dì.../",
+      "explanation": "\"第\" thường được dùng trước cụm từ chỉ số lượng để nói về thứ tự.",
+      "examples": [
+       {
+        "zh": "第一本书",
+        "pinyin": "Dì yī běn shū",
+        "vi": "Cuốn sách thứ nhất."
+       },
+       {
+        "zh": "第二次跳舞",
+        "pinyin": "Dì èr cì tiàowǔ",
+        "vi": "Lần múa thứ hai."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-029",
+      "stt": 29,
+      "title": "Câu cầu khiến \" 不要...了\"; \"别... 了\"; \"不...了\"",
+      "explanation": "Biểu thị sự ngăn cản, cấm đoán làm việc gì đó.",
+      "examples": [
+       {
+        "zh": "不要玩手机了。",
+        "pinyin": "Bú yào wán shǒujī le",
+        "vi": "Đừng chơi điện thoại nữa."
+       },
+       {
+        "zh": "别睡觉了。",
+        "pinyin": "Bié shuìjiào le",
+        "vi": "Đừng ngủ nữa."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-030",
+      "stt": 30,
+      "title": "Giới từ \"对\" /duì/",
+      "explanation": "\"对\" có thể biểu thị mối quan hệ đối đãi giữa người và người, vật và vật, sự vật và sự vật.",
+      "examples": [
+       {
+        "zh": "跑步对身体很好。",
+        "pinyin": "Pǎobù duì shēntǐ hěn hǎo",
+        "vi": "Chạy bộ rất tốt cho sức khỏe."
+       },
+       {
+        "zh": "看电视对学习汉语有帮助。",
+        "pinyin": "Kàn diànshì duì xuéxí Hànyǔ yǒu bāngzhù",
+        "vi": "Xem TV có ích cho việc học tiếng Hán."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-031",
+      "stt": 31,
+      "title": "Cấu trúc có động từ/cụm động từ làm định ngữ",
+      "explanation": "Khi động từ hoặc cụm động từ được dùng làm định ngữ, phải thêm \"的\" vào giữa định ngữ và trung tâm ngữ.",
+      "examples": [
+       {
+        "zh": "新买的自行车",
+        "pinyin": "xīn mǎi de zìxíngchē",
+        "vi": "Chiếc xe đạp mới mua."
+       },
+       {
+        "zh": "和你一起唱歌的人",
+        "pinyin": "hé nǐ yìqǐ chànggē de rén",
+        "vi": "Người hát cùng với bạn."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-032",
+      "stt": 32,
+      "title": "Câu có từ \"比\" /bǐ/",
+      "explanation": "Dùng \"比\" biểu thị sự so sánh. Vị ngữ của câu có thể là tính từ.",
+      "examples": [
+       {
+        "zh": "哥哥比姐姐高。",
+        "pinyin": "Gēge bǐ jiějie gāo",
+        "vi": "Anh trai cao hơn chị gái."
+       },
+       {
+        "zh": "今天比昨天热。",
+        "pinyin": "Jīntiān bǐ zuótiān rè",
+        "vi": "Hôm nay nóng hơn hôm qua."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-033",
+      "stt": 33,
+      "title": "Câu có từ \"比\" diễn tả sự khác biệt",
+      "explanation": "Dùng số lượng biểu thị sự khác biệt.",
+      "examples": [
+       {
+        "zh": "西瓜比苹果贵两块钱。",
+        "pinyin": "Xīguā bǐ píngguǒ guì liǎng kuài qián",
+        "vi": "Dưa hấu đắt hơn táo hai tệ."
+       },
+       {
+        "zh": "她比我们老师小两岁。",
+        "pinyin": "Tā bǐ wǒmen lǎoshī xiǎo liǎng suì",
+        "vi": "Cô ấy nhỏ hơn giáo viên của chúng tôi hai tuổi."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-034",
+      "stt": 34,
+      "title": "Trợ động từ \"可能\" /kěnéng/",
+      "explanation": "Biểu thị sự phỏng đoán, có lẽ, có thể. Thường dùng trước động từ hoặc sau chủ ngữ.",
+      "examples": [
+       {
+        "zh": "他可能就知道这件事情了。",
+        "pinyin": "Tā kěnéng jiù zhīdào zhè jiàn shìqing le",
+        "vi": "Có lẽ anh ấy biết chuyện này rồi."
+       },
+       {
+        "zh": "你可能不认识他。",
+        "pinyin": "Nǐ kěnéng bù rènshi tā",
+        "vi": "Bạn có thể không quen biết anh ấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-035",
+      "stt": 35,
+      "title": "Bổ ngữ chỉ trạng thái (状态补语)",
+      "explanation": "Bổ ngữ trạng thái dùng để mô tả kết quả, mức độ hoặc trạng thái của hành động, thường dùng trợ động từ \"得\" (de).",
+      "examples": [
+       {
+        "zh": "他跑得很快。",
+        "pinyin": "Tā pǎo de hěn kuài",
+        "vi": "Anh ấy chạy rất nhanh.房间打扫得特别干净。 /Fángjiān dǎsǎo de tèbié gānjìng/ Phòng được dọn đặc biệt sạch sẽ."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-036",
+      "stt": 36,
+      "title": "Câu có từ \"比\" /bǐ/ với bổ ngữ trạng thái",
+      "explanation": "Nếu động từ có bổ ngữ trạng thái, \"比\" có thể đặt trước động từ hoặc trước bổ ngữ.",
+      "examples": [
+       {
+        "zh": "他比我学得好。",
+        "pinyin": "Tā bǐ wǒ xué de hǎo",
+        "vi": "Anh ấy học tốt hơn tôi."
+       },
+       {
+        "zh": "他比我跑得快得多。",
+        "pinyin": "Tā bǐ wǒ pǎo de kuài de duō",
+        "vi": "Anh ấy chạy nhanh hơn tôi nhiều."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-037",
+      "stt": 37,
+      "title": "Trợ động thái \" 着\" /zhe/",
+      "explanation": "Đặt sau động từ, có thể biểu thị sự duy trì của một trạng thái nào đó.",
+      "examples": [
+       {
+        "zh": "门开着。",
+        "pinyin": "Mén kāi zhe",
+        "vi": "Cửa đang mở."
+       },
+       {
+        "label": "",
+        "zh": "他们穿着红色的衣服。",
+        "pinyin": "Tāmen chuān zhe hóngsè de yīfu",
+        "vi": "Họ đang mặc quần áo màu đỏ."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-038",
+      "stt": 38,
+      "title": "Câu hỏi phản vấn \"不是......吗?\"",
+      "explanation": "Thường dùng để nhắc nhở hoặc biểu thị sự không hiểu, không hài lòng.",
+      "examples": [
+       {
+        "zh": "不是今天没有雨吗？",
+        "pinyin": "Bú shì jīntiān méiyǒu yǔ ma",
+        "vi": "Không phải hôm nay không có mưa sao?"
+       },
+       {
+        "zh": "不是你是北京人吗？",
+        "pinyin": "Bú shì nǐ shì Běijīng rén ma",
+        "vi": "Không phải bạn là người Bắc Kinh sao?"
+       }
+      ]
+     },
+     {
+      "id": "HSK2-039",
+      "stt": 39,
+      "title": "Giới từ \"往\" /wǎng/",
+      "explanation": "\"往\" thường dùng để chỉ phương hướng.",
+      "examples": [
+       {
+        "zh": "从这儿往前走，就是我们学校。",
+        "pinyin": "Cóng zhèr wǎng qián zǒu, jiù shì wǒmen xuéxiào",
+        "vi": "Từ đây đi về phía trước là trường của chúng tôi."
+       },
+       {
+        "zh": "你看，往左是医院，往右是银行。",
+        "pinyin": "Nǐ kàn, wǎng zuǒ shì yīyuàn, wǎng yòu shì yínháng",
+        "vi": "Bạn xem, rẽ trái là bệnh viện, rẽ phải là ngân hàng."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-040",
+      "stt": 40,
+      "title": "Trợ động thái \" 过\" /guò/",
+      "explanation": "Đặt sau động từ, dùng để biểu thị kinh nghiệm đã trải qua trong quá khứ.",
+      "examples": [
+       {
+        "zh": "他们来过我家。",
+        "pinyin": "Tāmen lái guo wǒ jiā",
+        "vi": "Họ đã từng đến nhà tôi."
+       },
+       {
+        "zh": "我看过那个电影。",
+        "pinyin": "Wǒ kàn guo nàge diànyǐng",
+        "vi": "Tôi đã từng xem bộ phim đó."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-041",
+      "stt": 41,
+      "title": "Cấu trúc \"虽然..., 但是...\" (suīrán..., dànshì...)",
+      "explanation": "Kết nối hai phân câu, cấu thành quan hệ chuyển ngoặt.",
+      "examples": [
+       {
+        "zh": "虽然外面很冷，但是房间里很热。",
+        "pinyin": "Suīrán wàimiàn hěn lěng, dànshì fángjiān lǐ hěn rè",
+        "vi": "Mặc dù bên ngoài rất lạnh, nhưng trong phòng rất ấm."
+       },
+       {
+        "zh": "虽然汉语很难，但是我很喜欢写汉字。",
+        "pinyin": "Suīrán Hànyǔ hěn nán, dànshì wǒ hěn xǐhuān xiě Hànzì",
+        "vi": "Mặc dù tiếng Hán khó, nhưng tôi rất thích viết chữ Hán."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-042",
+      "stt": 42,
+      "title": "Bổ ngữ chỉ tần suất \"次\" /cì/",
+      "explanation": "Thường đặt sau động từ, dùng để biểu thị số lần động tác xảy ra.",
+      "examples": [
+       {
+        "zh": "我们看过三次电影。",
+        "pinyin": "Wǒmen kàn guò sān cì diànyǐng",
+        "vi": "- Chúng tôi đã xem phim ba lần."
+       },
+       {
+        "zh": "他们坐过飞机一次。",
+        "pinyin": "Tāmen zuò guò fēijī yī cì",
+        "vi": "Họ đã từng đi máy bay một lần."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-043",
+      "stt": 43,
+      "title": "Cấu trúc diễn tả trạng thái của hành động \"要... 了\" /yào... le/",
+      "explanation": "Diễn tả một hành động/sự việc sắp diễn ra ngay lập tức, thường trong vài phút, vài giờ, hoặc tương lai rất gần. Cấu trúc: Chủ ngữ +要+ [Động từ/Cụm động từ] +了",
+      "examples": [
+       {
+        "zh": "火车要来了。",
+        "pinyin": "Huǒchē yào lái le",
+        "vi": "Tàu hỏa sắp đến rồi."
+       },
+       {
+        "zh": "新的一年快要到了。",
+        "pinyin": "Xīn de yī nián kuàiyào dào le",
+        "vi": "Năm mới sắp đến rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK2-044",
+      "stt": 44,
+      "title": "Cấu trúc \"都...了 \" /dōu... le/",
+      "explanation": "Biểu thị ý nghĩa \"đã\", thường chứa sự nhấn mạnh hoặc ngữ khí không hài lòng.",
+      "examples": [
+       {
+        "zh": "都8点了，快点儿起床吧。",
+        "pinyin": "Dōu bā diǎn le, kuài diǎnr qǐchuáng ba",
+        "vi": "Đã 8 giờ rồi, mau dậy đi."
+       },
+       {
+        "zh": "你都十岁了，可以自己洗衣服了。",
+        "pinyin": "Nǐ dōu shí suì le, kěyǐ zìjǐ xǐ yīfu le",
+        "vi": "Bạn đã 10 tuổi rồi, có thể tự giặt quần áo rồi."
+       }
+      ]
+     }
+    ],
+    "exam_focus": [
+     {
+      "stt": 1,
+      "title": "Trợ động từ \"要\" /yào/ và Cấu trúc \"要...了\" (sắp/muốn)",
+      "reason": "\"要\" và cấu trúc diễn tả hành động sắp xảy ra (\"要...了\" hoặc \"快要...了\") là các cấu trúc cơ bản và quan trọng, xuất hiện trong mọi đề thi để hỏi về dự định hoặc phán đoán thời gian."
+     },
+     {
+      "stt": 2,
+      "title": "Cấu trúc \"是...的\" /shì... de/(Nhấn mạnh)",
+      "reason": "Cấu trúc dùng để nhấn mạnh chủ thể, thời gian, hoặc cách thức thực hiện hành động được kiểm tra thường xuyên trong các bài tập đối thoại và câu kể, đặc biệt là trong phần Đọc hiểu (Ghép nối)."
+     },
+     {
+      "stt": 3,
+      "title": "Bổ ngữ chỉ kết quả",
+      "reason": "Các bổ ngữ chỉ kết quả như \"完\" /wán/, \"见\" /jiàn/, \"错\" /cuò/, \"懂\" /dǒng/, \"到\" /dào/ xuất hiện rộng rãi để kiểm tra việc hoàn thành hay kết quả của hành động, đặc biệt trong phần đọc hiểu và hội thoại."
+     },
+     {
+      "stt": 4,
+      "title": "Giới từ \"离\" /lí/ (Chỉ khoảng cách)",
+      "reason": "\"离\" là giới từ cốt lõi ở HSK 2, dùng để diễn tả khoảng cách địa lý hoặc thời gian. Nó luôn được kiểm tra trong các bài về địa điểm (sân bay, trường học, nhà ga)."
+     },
+     {
+      "stt": 5,
+      "title": "Cấu trúc so sánh \"比\" /bǐ/ Câu so sánh sự khác biệt",
+      "reason": "Câu chữ \"比\" là cấu trúc so sánh cơ bản nhất, dùng để diễn tả sự hơn kém giữa hai đối tượng. Cấu trúc này liên tục xuất hiện, đôi khi kèm theo số lượng để diễn tả sự khác biệt."
+     },
+     {
+      "stt": 6,
+      "title": "Phó từ \"再\" /zài/ Lặp lại/Tiếp tục",
+      "reason": "\"再\" biểu thị hành động lặp lại hoặc tiếp diễn, là một phó từ quan trọng trong các đoạn hội thoại về kế hoạch hoặc thay đổi."
+     },
+     {
+      "stt": 7,
+      "title": "Bổ ngữ chỉ trạng thái \"得\" /de/",
+      "reason": "Bổ ngữ trạng thái \"得\" được sử dụng để mô tả hoặc đánh giá mức độ, kết quả của hành động."
+     },
+     {
+      "stt": 8,
+      "title": "Đại từ nghi vấn \"怎么\" /zěnme/ (Hỏi nguyên nhân)",
+      "reason": "\"怎么\" dùng để hỏi nguyên nhân hoặc cách thức, thường mang ngữ khí ngạc nhiên, đây là từ khóa quan trọng trong các câu hỏi lắng nghe về lý do hoặc cách làm việc gì đó."
+     }
+    ]
+   },
+   {
+    "level": 3,
+    "name": "HSK 3",
+    "grammar_count": 47,
+    "grammar": [
+     {
+      "id": "HSK3-001",
+      "title": "Kết quả ngữ \"好\" /hǎo/",
+      "explanation": "Đặt sau động từ, biểu thị hành động đã được hoàn thành và đạt được kết quả thỏa đáng.",
+      "examples": [
+       {
+        "zh": "我吃好了。",
+        "pinyin": "Wǒ chī hǎo le",
+        "vi": "Tôi đã ăn ăn no rồi"
+       },
+       {
+        "zh": "你准备好了吗？",
+        "pinyin": "Nǐ zhǔnbèi hǎo le ma",
+        "vi": "Bạn chuẩn bị xong chưa?"
+       }
+      ]
+     },
+     {
+      "id": "HSK3-002",
+      "title": "Cấu trúc phủ định tuyệt đối (一...也/都+不/ 没)",
+      "explanation": "Dùng để diễn tả sự phủ định hoàn toàn. Khi vị ngữ là tính từ, thường dùng \"一点儿也/都+不+ tính từ\".",
+      "examples": [
+       {
+        "zh": "我一点儿东西也不想吃。",
+        "pinyin": "Wǒ yìdiǎnr dōngxi yě bù xiǎng chī",
+        "vi": "Một chút đồ ăn tôi cũng không muốn ăn."
+       },
+       {
+        "zh": "他一点儿也不累。",
+        "pinyin": "Tā yìdiǎnr yě bù lèi",
+        "vi": "Anh ấy một chút cũng không mệt."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-003",
+      "title": "Liên từ \"那\" /nà/",
+      "explanation": "Đặt ở đầu câu, dùng để chỉ kết quả hay nhận xét dựa vào nội dung đã được đề cập trước đó.",
+      "examples": [
+       {
+        "zh": "1.A:我不想去看电影。",
+        "pinyin": "Wǒ bù xiǎng qù kàn diànyǐng",
+        "vi": "Tôi không muốn đi xem phim."
+       },
+       {
+        "label": "B:",
+        "zh": "那我也不去了。",
+        "pinyin": "Nà wǒ yě bù qù le",
+        "vi": "Thế thì tôi cũng không đi nữa."
+       },
+       {
+        "zh": "2. A:我早复习好了。",
+        "pinyin": "Wǒ zǎo fùxí hǎo le",
+        "vi": "Tôi đã ôn tập xong sớm rồi."
+       },
+       {
+        "label": "B:",
+        "zh": "那也不能一直玩儿啊。",
+        "pinyin": "Nà yě bù néng yìzhí wánr a",
+        "vi": "Thế thì cũng không thể cứ chơi mãi được."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-004",
+      "title": "Bổ ngữ chỉ phương hướng đơn giản",
+      "explanation": "Đặt sau động từ, biểu thị phương hướng của hành động. Thường dùng với các động từ có cùng phương hướng như上, 下,进,出,回,过,起.",
+      "examples": [
+       {
+        "zh": "我们在楼上等你呢，你上来吧。",
+        "pinyin": "Wǒmen zài lóu shàng děng nǐ ne, nǐ shàng lái ba",
+        "vi": "Chúng tôi ở trên lầu đợi bạn đấy, bạn lên đây đi."
+       },
+       {
+        "zh": "你把这张椅子搬过去吧。",
+        "pinyin": "Nǐ bǎ zhè zhāng yǐzi bān guòqù ba",
+        "vi": "Bạn chuyển cái ghế này qua đó đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-005",
+      "title": "Hai động từ/hành động liên tiếp (Động tác liền kề)",
+      "explanation": "Cấu trúc \"Động từ 1 +了+就+ Động từ 2\" dùng để diễn tả hai hành động xảy ra liên tiếp, hành động thứ hai nối tiếp ngay sau hành động thứ nhất.",
+      "examples": [
+       {
+        "zh": "我下了课就吃饭。",
+        "pinyin": "Wǒ xià le kè jiù chī fàn",
+        "vi": "Tôi tan học là ăn cơm ngay."
+       },
+       {
+        "zh": "妈妈起了就做早饭。",
+        "pinyin": "Māma qǐ le jiù zuò zǎofàn",
+        "vi": "Mẹ thức dậy là làm bữa sáng ngay."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-006",
+      "title": "Phản vấn: Câu hỏi có cấu trúc \" 能......吗\"",
+      "explanation": "Dùng để biểu thị sự phản đối. Nếu giữa \"能......吗\" là hình thức khẳng định biểu đạt ý phủ định.",
+      "examples": [
+       {
+        "zh": "你不做作业，也不练习，能学好吗？",
+        "pinyin": "Nǐ bù zuò zuòyè, yě bù liànxí, néng xué hǎo ma",
+        "vi": "Bạn không làm bài tập, cũng không luyện tập, làm sao mà học tốt được"
+       },
+       {
+        "zh": "你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？",
+        "pinyin": "Nǐ měitiān wǎnshàng chī le fàn jiù shuìjiào, yě bù chūqù zǒuzou, néng bù pàng ma",
+        "vi": "Bạn mỗi tối ăn cơm xong là đi ngủ, cũng không ra ngoài đi dạo, làm sao mà không béo được?"
+       }
+      ]
+     },
+     {
+      "id": "HSK3-007",
+      "title": "\"还是\" /háishì/ và \"或者\" /huòzhě/",
+      "explanation": "Cả hai đều biểu thị sự lựa chọn. \"还是\" dùng trong câu hỏi nghi vấn, \"或者\" dùng trong câu trần thuật.",
+      "examples": [
+       {
+        "zh": "还是:你喜欢喝咖啡还是喝茶？",
+        "pinyin": "Nǐ xǐhuan hē kāfēi háishì hē chá",
+        "vi": "Bạn thích uống cà phê hay trà?"
+       },
+       {
+        "zh": "或者:明天是晴天或者阴天都可以。",
+        "pinyin": "Míngtiān shì qíngtiān huòzhě yīntiān dōu kěyǐ",
+        "vi": "Ngày mai trời nắng hoặc trời râm đều được."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-008",
+      "title": "Cấu trúc diễn tả sự tồn tại",
+      "explanation": "Dùng để biểu thị vị trí tồn tại của sự vật. Cấu trúc cơ bản là \"Từ/cụm từ chỉ vị trí + Động từ +着+ Cụm danh từ\".",
+      "examples": [
+       {
+        "zh": "桌子上放着一杯咖啡。",
+        "pinyin": "Zhuōzi shàng fàng zhe yī bēi kāfēi",
+        "vi": "Trên bàn đặt một tách cà phê"
+       },
+       {
+        "zh": "冰箱里放着很多水果。",
+        "pinyin": "Bīngxiāng lǐ fàng zhe hěn duō shuǐguǒ",
+        "vi": "Trong tủ lạnh để rất nhiều hoa quả."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-009",
+      "title": "Trợ động từ \"会\" /huì/",
+      "explanation": "Dùng trong câu biểu thị khả năng. Thường dùng để diễn tả những sự việc chưa xảy ra.",
+      "examples": [
+       {
+        "zh": "你穿得那么少，会感冒的。",
+        "pinyin": "Nǐ chuān de nàme shǎo, huì gǎnmào de",
+        "vi": "Bạn mặc ít đồ như vậy, sẽ bị cảm lạnh đấy."
+       },
+       {
+        "zh": "喝杯热茶会很舒服。",
+        "pinyin": "Hē bēi rè chá huì hěn shūfu",
+        "vi": "Uống một tách trà nóng sẽ rất dễ chịu."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-010",
+      "title": "Cấu trúc \"又... 又...\" /yòu... yòu.../",
+      "explanation": "Cấu trúc \"又+ tính từ 1 +又+ tính từ 2\" dùng để đề cập đến hai đặc điểm cùng tồn tại ở một người hay sự vật.",
+      "examples": [
+       {
+        "zh": "这个西瓜又大又甜。",
+        "pinyin": "Zhège xīguā yòu dà yòu tián",
+        "vi": "Quả dưa hấu này vừa to vừa ngọt."
+       },
+       {
+        "zh": "她工作又认真又热情。",
+        "pinyin": "Tā gōngzuò yòu rènzhēn yòu rèqíng",
+        "vi": "Cô ấy làm việc vừa nghiêm túc vừa nhiệt tình."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-011",
+      "title": "Động tác kèm trạng thái",
+      "explanation": "Cấu trúc \"Động từ 1 +着+ (trạng thái), Động từ 2 + (tân ngữ 2)\" biểu thị hai hành động xảy ra đồng thời, diễn tả trạng thái hoặc cách thức tiến hành hành động thứ hai.",
+      "examples": [
+       {
+        "zh": "小丽站着跟同事聊天儿。",
+        "pinyin": "Xiǎo Lì zhàn zhe gēn tóngshì liáotiānr",
+        "vi": "Tiểu Lệ đứng trò chuyện với đồng nghiệp."
+       },
+       {
+        "zh": "她总是笑着跟客人说话。",
+        "pinyin": "Tā zǒng shì xiào zhe gēn kèrén shuōhuà",
+        "vi": "Cô ấy luôn cười nói chuyện với khách hàng."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-012",
+      "title": "Trợ từ chỉ sự thay đổi \"了\" /le/",
+      "explanation": "Biểu thị tình huống đã thay đổi, hoặc xuất hiện tình huống mới.",
+      "examples": [
+       {
+        "zh": "我以前有钱，现在没钱了。",
+        "pinyin": "Wǒ yǐqián yǒu qián, xiànzài méi qián le",
+        "vi": "Trước đây tôi có tiền, giờ không có tiền nữa."
+       },
+       {
+        "zh": "这条裙子是去年的，今年就不能穿了。",
+        "pinyin": "Zhè tiáo qúnzi shì qùnián de, jīnnián jiù bùnéng chuān le",
+        "vi": "Chiếc váy này là của năm ngoái, năm nay không mặc được nữa rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-013",
+      "title": "Cấu trúc \"越来越 + tính từ/động từ trạng thái\"",
+      "explanation": "Biểu thị sự thay đổi theo thời gian, hoặc sự thay đổi mức độ. Không dùng phó từ chỉ mức độ更.",
+      "examples": [
+       {
+        "zh": "这个问题越来越复杂。",
+        "pinyin": "Zhège wèntí yuè lái yuè fùzá",
+        "vi": "Vấn đề này càng lúc càng phức tạp."
+       },
+       {
+        "zh": "他的汉语说得越来越流利。",
+        "pinyin": "Tā de Hànyǔ shuō de yuè lái yuè liúlì",
+        "vi": "Tiếng Trung của anh ấy nói ngày một lưu loát."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-014",
+      "title": "Bổ ngữ chỉ khả năng",
+      "explanation": "Dùng để diễn tả khả năng có thể thực hiện được một kết quả nào đó. Công Thức Cơ Bản: Khẳng định: Động từ +得+ Bổ ngữ (kết quả/phương hướng) Phủ định: Động từ +不+ Bổ ngữ (kết quả/phương hướng) Dạng câu hỏi chính phản: Động từ +得 + Bổ ngữ + Động từ +不+ Bổ ngữ？",
+      "examples": [
+       {
+        "label": "Phủ định:",
+        "zh": "这个汉字太难，我写不对。",
+        "pinyin": "Zhège Hànzì tài nán, wǒ xiě bù duì",
+        "vi": "Chữ Hán này khó quá, tôi viết không đúng."
+       },
+       {
+        "label": "Khẳng định:",
+        "zh": "你说慢一点儿，我听得懂",
+        "pinyin": "Nǐ shuō màn yīdiǎnr, wǒ tīng de dǒng",
+        "vi": "Bạn nói chậm một chút, tôi có thể nghe hiểu."
+       },
+       {
+        "label": "Câu hỏi:",
+        "zh": "这么多作业，你今天做得完做不完？",
+        "pinyin": "Zhème duō zuòyè, nǐ jīntiān zuò de wán zuò bù wán",
+        "vi": "Nhiều bài tập thế này, hôm nay bạn làm xong được không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK3-015",
+      "title": "Đại từ nghi vấn dùng để hỏi vị trí \"哪\" /nǎ/",
+      "explanation": "\"哪\" (thường dùng cùng với \"儿\" trong khẩu ngữ thành \"哪儿\") là đại từ nghi vấn dùng để hỏi về địa điểm, nơi chốn. Nó có nghĩa là \"đâu, nơi nào\".",
+      "examples": [
+       {
+        "zh": "卫生间在哪儿？",
+        "pinyin": "Wèishēngjiān zài nǎr",
+        "vi": "Nhà vệ sinh ở đâu?"
+       },
+       {
+        "zh": "你去哪儿？",
+        "pinyin": "Nǐ qù nǎr",
+        "vi": "Bạn đi đâu?"
+       }
+      ]
+     },
+     {
+      "id": "HSK3-016",
+      "title": "Phân biệt \"刚\" /gāng/ và \"刚才\" /gāngcái/",
+      "explanation": "\"刚才\" là danh từ chỉ thời gian, chỉ hành động xảy ra trong thời gian ngắn. \"刚\" là phó từ, biểu thị hành động xảy ra cách thời điểm nói không lâu, thời gian ngắn hơn.",
+      "examples": [
+       {
+        "zh": "刚才:刚才我喝了一杯咖啡。",
+        "pinyin": "Gāngcái wǒ hē le yī bēi kāfēi",
+        "vi": "Lúc nãy tôi đã uống một tách cà phê."
+       },
+       {
+        "zh": "刚:我刚喝完一杯咖啡。",
+        "pinyin": "Wǒ gāng hē wán yī bēi kāfēi",
+        "vi": "Tôi vừa mới uống xong một tách cà phê."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-017",
+      "title": "Cách diễn tả khoảng thời gian",
+      "explanation": "Dùng cấu trúc \"Chủ ngữ + động từ +了 + khoảng thời gian + tân ngữ +了\" diễn tả hành động đang tiếp diễn.",
+      "examples": [
+       {
+        "zh": "我学习了两年汉语了。",
+        "pinyin": "Wǒ xuéxí le liǎng nián Hànyǔ le",
+        "vi": "Tôi đã học tiếng Hán được hai năm rồi."
+       },
+       {
+        "zh": "我们在这儿坐了半个小时了。",
+        "pinyin": "Wǒmen zài zhèr zuò le bàn gè xiǎoshí le",
+        "vi": "Chúng tôi đã ngồi ở đây được nửa tiếng rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-018",
+      "title": "Cấu trúc \"对...... 感兴趣\" và \" 对......有兴趣\"",
+      "explanation": "Dùng để diễn tả sự hứng thú đối với điều gì đó.",
+      "examples": [
+       {
+        "zh": "他们对电影不感兴趣。",
+        "pinyin": "Tāmen duì diànyǐng bù gǎn xìngqù",
+        "vi": "Họ không hứng thú với phim ảnh."
+       },
+       {
+        "zh": "同学们对打篮球很感兴趣。",
+        "pinyin": "Tóngxuémen duì dǎ lánqiú hěn gǎn xìngqù",
+        "vi": "Các bạn học rất hứng thú với bóng rổ."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-019",
+      "title": "Dùng \"刻\", \"半\", \"差\" diễn tả thời gian",
+      "explanation": "Dùng để biểu thị thời gian. \"刻\" /kè/: Mười lăm phút \"半\" /bàn/: \"Rưỡi\" hoặc \"ba mươi phút \"差\" /chà/: Thiếu, kém, chưa tới.",
+      "examples": [
+       {
+        "zh": "三点一刻",
+        "pinyin": "Sān diǎn yí kè",
+        "vi": "Ba giờ mười lăm"
+       },
+       {
+        "zh": "差五分八点",
+        "pinyin": "Chà wǔ fēn bā diǎn",
+        "vi": "Kém năm phút tám giờ. (Tức là 7:55)"
+       },
+       {
+        "zh": "六点半",
+        "pinyin": "Liù diǎn bàn",
+        "vi": "Sáu giờ rưỡi / Sáu giờ ba mươi."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-020",
+      "title": "\"又\" /yòu/ và \"再 \" /zài/",
+      "explanation": "\"又\" biểu thị hành động hoặc tình huống lặp lại đã xảy ra. \"再\" biểu thị hành động hoặc tình huống lặp lại chưa xảy ra.",
+      "examples": [
+       {
+        "zh": "又:你上午已经喝了一杯咖啡，下午怎么又喝了一杯？",
+        "pinyin": "Nǐ shàngwǔ yǐjīng hē le yī bēi kāfēi, xiàwǔ zěnme yòu hē le yī bēi",
+        "vi": "Buổi sáng bạn đã uống một ly cà phê rồi, buổi chiều sao lại uống thêm một ly nữa?"
+       },
+       {
+        "zh": "再:你只吃了一点儿饭，再吃一点儿吧。",
+        "pinyin": "Nǐ zhǐ chī le yīdiǎn fàn, zài chī yīdiǎn ba",
+        "vi": "Bạn chỉ ăn một chút cơm, ăn thêm chút nữa đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-021",
+      "title": "Đại từ nghi vấn dùng linh hoạt",
+      "explanation": "Dùng hai đại từ nghi vấn giống nhau, biểu thị sự tương đồng về đối tượng, hành động hoặc phương thức.",
+      "examples": [
+       {
+        "zh": "什么东西便宜我就买什么。",
+        "pinyin": "Shénme dōngxi piányi wǒ jiù mǎi shénme",
+        "vi": "Cái gì rẻ thì tôi mua cái đó."
+       },
+       {
+        "zh": "你坐哪儿我就坐哪儿。",
+        "pinyin": "Nǐ zuò nǎr wǒ jiù zuò nǎr",
+        "vi": "Bạn ngồi đâu thì tôi ngồi đó."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-022",
+      "title": "Cấu trúc \"越A越 B\" /yuè A yuè B/",
+      "explanation": "Biểu thị sự thay đổi đi kèm với sự thay đổi của A (càng... càng).",
+      "examples": [
+       {
+        "zh": "雨越下越大了。",
+        "pinyin": "Yǔ yuè xià yuè dà le",
+        "vi": "Mưa càng lúc càng to."
+       },
+       {
+        "zh": "你说的中文越说越好了。",
+        "pinyin": "Nǐ shuō de Zhōngwén yuè shuō yuè hǎo le",
+        "vi": "Tiếng Trung của bạn càng nói càng hay."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-023",
+      "title": "Cấu trúc so sánh 1: \"A跟B一样+ (tính từ)\"",
+      "explanation": "Dùng để so sánh A và B, kết quả tương đồng. Phủ định thì thêm \"不\" trước \"一样\".",
+      "examples": [
+       {
+        "zh": "这本书跟那本书一样。",
+        "pinyin": "Zhè běn shū gēn nà běn shū yīyàng",
+        "vi": "Quyển sách này giống quyển sách kia."
+       },
+       {
+        "zh": "她的汉语说得跟中国人一样好。",
+        "pinyin": "Tā de Hànyǔ shuō de gēn Zhōngguó rén yīyàng hǎo",
+        "vi": "Tiếng Hán của cô ấy nói hay như người Trung Quốc."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-024",
+      "title": "Cấu trúc so sánh 2: \"A比B + tính từ + bổ sung mức độ\"",
+      "explanation": "Dùng để so sánh sự khác biệt về mức độ (như一点儿/一些/得多/多了).",
+      "examples": [
+       {
+        "zh": "大山比大卫高一点儿。",
+        "pinyin": "Dàshān bǐ Dàwèi gāo yīdiǎn",
+        "vi": "Đại Sơn cao hơn Đại Vệ một chút"
+       },
+       {
+        "zh": "数学比历史难多了。",
+        "pinyin": "Shùxué bǐ lìshǐ nán duō le",
+        "vi": "Môn Toán khó hơn môn Lịch sử nhiều."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-025",
+      "title": "Cách diễn tả số ước lượng (1)",
+      "explanation": "Dùng hai số đếm liên tiếp (như二三,三四) để diễn tả số lượng ước chừng.",
+      "examples": [
+       {
+        "zh": "你每天都喝三四杯咖啡了，别再喝了。",
+        "pinyin": "Nǐ měitiān dōu hē sān sì bēi kāfēi le, bié zài hē le",
+        "vi": "Ngày nào bạn cũng uống ba bốn ly cà phê rồi, đừng uống nữa."
+       },
+       {
+        "zh": "我们已经学了两三个小时。",
+        "pinyin": "Wǒmen yǐjīng xué le liǎng sān gè xiǎoshí",
+        "vi": "Chúng tôi đã học được khoảng hai ba tiếng."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-026",
+      "title": "Cấu trúc với \"把\" (1)",
+      "explanation": "Dùng để chỉ hành động được thực hiện, có tác động đến đối tượng B và làm cho đối tượng thay đổi hoặc hoàn thành một việc gì đó.",
+      "examples": [
+       {
+        "zh": "请同学们把书拿出来。",
+        "pinyin": "Qǐng tóngxuémen bǎ shū ná chūlái",
+        "vi": "Mời các bạn học sinh lấy sách ra."
+       },
+       {
+        "zh": "你把灯关了吧。",
+        "pinyin": "Nǐ bǎ dēng guān le ba",
+        "vi": "Bạn tắt đèn đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-027",
+      "title": "Cách diễn tả số ước lượng (2)",
+      "explanation": "Dùng \"左右\" /zuǒyòu/ sau số để diễn tả số ước lượng (khoảng).",
+      "examples": [
+       {
+        "zh": "周末我一般十点左右起床。",
+        "pinyin": "Zhōumò wǒ yībān shí diǎn zuǒyòu qǐchuáng",
+        "vi": "Cuối tuần tôi thường dậy vào khoảng mười giờ."
+       },
+       {
+        "zh": "我们公司有五百人左右。",
+        "pinyin": "Wǒmen gōngsī yǒu wǔbǎi rén zuǒyòu",
+        "vi": "Công ty chúng tôi có khoảng năm trăm người."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-028",
+      "title": "Phân biệt \"才\" /cái/ và \"就\" /jiù/",
+      "explanation": "\"就\" biểu thị hành động xảy ra sớm, nhanh, thuận lợi. \"才\" biểu thị hành động xảy ra muộn, chậm, không thuận lợi.",
+      "examples": [
+       {
+        "zh": "(就):我早上五点就起床了。",
+        "pinyin": "Wǒ zǎoshang wǔ diǎn jiù qǐchuáng le",
+        "vi": "Tôi sáng năm giờ đã dậy rồi. (才):八点上课，他九点才起来。/Bā diǎn shàngkè, tā jiǔ diǎn cái qǐlái/ Tám giờ vào học, anh ấy chín giờ mới dậy."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-029",
+      "title": "Cấu trúc với \"把\" (2)",
+      "explanation": "Diễn tả một hành động làm cho vị trí của đối tượng B bị thay đổi (A把B + Động từ +在/到/给/...).",
+      "examples": [
+       {
+        "zh": "我把照片放在你包里了。",
+        "pinyin": "Wǒ bǎ zhàopiàn fàng zài nǐ bāo li le",
+        "vi": "Tôi đã đặt ảnh vào trong túi của bạn rồi."
+       },
+       {
+        "zh": "你帮我把这本书带给小丽。",
+        "pinyin": "Nǐ bāng wǒ bǎ zhè běn shū dài gěi Xiǎo Lì",
+        "vi": "Bạn giúp tôi mang quyển sách này cho Tiểu Lệ."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-030",
+      "title": "Bổ ngữ chỉ phương hướng kép",
+      "explanation": "Bổ ngữ chỉ phương hướng kép là sự kết hợp giữa một động từ chỉ phương hướng đơn giản thứ nhất (上,下,进,出, 回,过,起) và một động từ chỉ phương hướng đơn giản thứ hai (来,去).",
+      "examples": [
+       {
+        "zh": "老师拿出了一本书来。",
+        "pinyin": "Lǎoshī ná chū le yī běn shū lái.",
+        "vi": "Thầy giáo lấy ra một quyển sách."
+       },
+       {
+        "zh": "小狗从房间跑出来了。",
+        "pinyin": "Xiǎo gǒu cóng fángjiān pǎo chūlái le",
+        "vi": "Chú chó nhỏ chạy ra khỏi phòng."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-031",
+      "title": "Cấu trúc \"一边......一边......\"",
+      "explanation": "Dùng để diễn tả hai hành động diễn ra đồng thời.",
+      "examples": [
+       {
+        "zh": "妈妈一边唱歌一边做饭。",
+        "pinyin": "Māmā yībiān chànggē yībiān zuòfàn",
+        "vi": "Mẹ vừa hát vừa nấu cơm."
+       },
+       {
+        "zh": "我丈夫喜欢一边吃早饭一边看报纸。",
+        "pinyin": "Wǒ zhàngfu xǐhuan yībiān chī zǎofàn yībiān kàn bàozhǐ",
+        "vi": "Chồng tôi thích vừa ăn sáng vừa đọc báo."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-032",
+      "title": "Cấu trúc với \"把\" (3)",
+      "explanation": "Hành động làm cho đối tượng B đạt được kết quả nào đó hoặc thay đổi vị trí (A把B + Động từ + Bổ ngữ kết quả/phương hướng).",
+      "examples": [
+       {
+        "zh": "我把衣服洗干净了。",
+        "pinyin": "Wǒ bǎ yīfu xǐ gānjìng le",
+        "vi": "Tôi giặt quần áo sạch sẽ rồi."
+       },
+       {
+        "zh": "你把水果拿过来。",
+        "pinyin": "Nǐ bǎ shuǐguǒ ná guòlái",
+        "vi": "Bạn mang hoa quả lại đây."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-033",
+      "title": "Cấu trúc \"先......, 再......,然后......\"",
+      "explanation": "Biểu thị trình tự của các hành động.",
+      "examples": [
+       {
+        "zh": "我先洗完澡，然后再给你回电话。",
+        "pinyin": "Wǒ xiān xǐ wán zǎo, ránhòu zài gěi nǐ huí diànhuà",
+        "vi": "Tôi đi tắm xong trước, sau đó gọi lại cho bạn."
+       },
+       {
+        "zh": "你先把饭菜做好，然后再把一块新鲜的水果放进去。",
+        "pinyin": "Nǐ xiān bǎ fàncài zuò hǎo, ránhòu zài bǎ yī kuài xīnxiān de shuǐguǒ fàng jìnqù",
+        "vi": "Bạn làm xong cơm trước, sau đó đặt thêm một miếng hoa quả tươi vào."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-034",
+      "title": "Cấu trúc \"除了......以外,都/还/ 也......\"",
+      "explanation": "Trừ một phần ra, những phần khác đều tương đồng (都) hoặc bổ sung thêm (还/ 也).",
+      "examples": [
+       {
+        "zh": "都:除了你以外，大家都听懂了。",
+        "pinyin": "Chúle nǐ yǐwài, dàjiā dōu tīng dǒng le",
+        "vi": "Trừ bạn ra, mọi người đều đã hiểu."
+       },
+       {
+        "zh": "还:除了唱歌以外，他还喜欢跳舞。",
+        "pinyin": "Chúle chànggē yǐwài, tā hái xǐhuan tiàowǔ",
+        "vi": "Ngoài ca hát ra, anh ấy còn thích khiêu vũ."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-035",
+      "title": "Đại từ nghi vấn dùng linh hoạt (2)",
+      "explanation": "Dùng \"什么\" thay thế cho người/sự vật không xác định, biểu đạt ý nhún nhường, lịch sự.",
+      "examples": [
+       {
+        "zh": "这个饭馆没有什么特别好吃的菜。",
+        "pinyin": "Zhège fànguǎn méiyǒu shénme tèbié hǎo chī de cài",
+        "vi": "Quán ăn này không có món nào đặc biệt ngon cả."
+       },
+       {
+        "zh": "你写得很好，没什么问题。",
+        "pinyin": "Nǐ xiě de hěn hǎo, méi shénme wèntí",
+        "vi": "Bạn viết rất tốt, không có vấn đề gì."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-036",
+      "title": "Cách biểu đạt mức độ: \"极了\" /jí le/",
+      "explanation": "极了\" là một từ bổ nghĩa mức độ, đặt sau tính từ hoặc động từ chỉ trạng thái tâm lý, dùng để nhấn mạnh mức độ rất cao.",
+      "examples": [
+       {
+        "zh": "我的小狗可爱极了。",
+        "pinyin": "Wǒ de xiǎo gǒu kě'ài jíle",
+        "vi": "Chú chó nhỏ của tôi đáng yêu vô cùng."
+       },
+       {
+        "zh": "他满意极了。",
+        "pinyin": "Tā mǎnyì jíle",
+        "vi": "Anh ấy cực kỳ hài lòng."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-037",
+      "title": "Cấu trúc điều kiện: \"如果......(的话), (chủ ngữ) 就......\"",
+      "explanation": "\"如果\" làgiả thiết, \"就\" là kết quả sẽ xảy ra trong điều kiện đó.",
+      "examples": [
+       {
+        "zh": "如果你太累了，就休息一会儿。",
+        "pinyin": "Rúguǒ nǐ tài lèi le, jiù xiūxí yīhuìr",
+        "vi": "Nếu bạn quá mệt rồi, thì nghỉ ngơi một lát đi."
+       },
+       {
+        "zh": "如果你喜欢，我就给你买。",
+        "pinyin": "Rúguǒ nǐ xǐhuan, wǒ jiù gěi nǐ mǎi",
+        "vi": "Nếu bạn thích, tôi sẽ mua cho bạn."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-038",
+      "title": "Bổ ngữ trạng thái phức hợp",
+      "explanation": "Dùng \"得\" /de/ nối động từ/tính từ với cụm bổ ngữ trạng thái, miêu tả trạng thái/mức độ.",
+      "examples": [
+       {
+        "zh": "孩子们玩儿得不想回家。",
+        "pinyin": "Háizimen wánr de bù xiǎng huí jiā",
+        "vi": "Các con chơi đến mức không muốn về nhà."
+       },
+       {
+        "zh": "他们忙得没有时间跟别人见面。",
+        "pinyin": "Tāmen máng de méiyǒu shíjiān gēn biérén jiànmiàn",
+        "vi": "Họ bận đến mức không có thời gian gặp ai."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-039",
+      "title": "Điệp âm tính từ đơn âm tiết (Hình thức \"AA的\")",
+      "explanation": "Dùng để miêu tả đặc điểm của người hoặc sự vật.",
+      "examples": [
+       {
+        "zh": "你送的红红的花，我很喜欢。",
+        "pinyin": "Nǐ sòng de hónghóng de huā, wǒ hěn xǐhuan",
+        "vi": "Bó hoa đỏ tươi bạn tặng, tôi rất thích."
+       },
+       {
+        "zh": "你女儿长得白白的，胖胖的，真可爱。",
+        "pinyin": "Nǐ nǚ'ér zhǎng de báibái de, pàngpàng de, zhēn kě'ài",
+        "vi": "Con gái bạn trắng trẻo, mũm mĩm, thật đáng yêu"
+       }
+      ]
+     },
+     {
+      "id": "HSK3-040",
+      "title": "Điệp âm động từ hai âm tiết (Hình thức \"ABAB\")",
+      "explanation": "Biểu đạt hành động xảy ra trong thời gian ngắn, hoặc mang ý thử.",
+      "examples": [
+       {
+        "zh": "他是新的，有时间你帮助帮助他吧。",
+        "pinyin": "Tā shì xīn de, yǒu shíjiān nǐ bāngzhù bāngzhù tā ba",
+        "vi": "Anh ấy là người mới, có thời gian bạn giúp đỡ anh ấy một chút đi."
+       },
+       {
+        "zh": "我真应该多锻炼锻炼了。",
+        "pinyin": "Wǒ zhēn yīnggāi duō duànliàn duànliàn le",
+        "vi": "Tôi thật sự nên tập thể dục nhiều hơn một chút."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-041",
+      "title": "Đại từ nghi vấn dùng linh hoạt (3)",
+      "explanation": "Thay thế cho một phạm vi rộng, biểu thị mọi đối tượng đều có tình huống tương đồng.",
+      "examples": [
+       {
+        "zh": "谁都喜欢小丽。",
+        "pinyin": "Shéi dōu xǐhuan Xiǎo Lì.",
+        "vi": "Ai cũng thích Tiểu Lệ."
+       },
+       {
+        "zh": "我们怎么去公园都可以。",
+        "pinyin": "Wǒmen zěnme qù gōngyuán dōu kěyǐ",
+        "vi": "Chúng ta đi công viên bằng cách nào cũng được."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-042",
+      "title": "Cấu trúc điều kiện: \"只要......, 就......\"",
+      "explanation": "\"只要\" là điều kiện cần. \"就\" là kết quả sẽ xảy ra trong điều kiện đó.",
+      "examples": [
+       {
+        "zh": "只要我有时间，就一定跟你去旅游。",
+        "pinyin": "Zhǐyào wǒ yǒu shíjiān, jiù yīdìng gēn nǐ qù lǚyóu",
+        "vi": "Chỉ cần tôi có thời gian, nhất định sẽ đi du lịch với bạn."
+       },
+       {
+        "zh": "只要你给我钱，我就能照顾好它。",
+        "pinyin": "Zhǐyào nǐ gěi wǒ qián, wǒ jiù néng zhàogù hǎo tā",
+        "vi": "Chỉ cần bạn đưa tiền cho tôi, tôi sẽ chăm sóc nó tốt."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-043",
+      "title": "Giới từ \"关于\" /guānyú/",
+      "explanation": "Giới thiệu đối tượng mà người nói muốn đề cập.",
+      "examples": [
+       {
+        "zh": "我最近看了一些关于中国文化的电影。",
+        "pinyin": "Wǒ zuìjìn kàn le yīxiē guānyú Zhōngguó wénhuà de diànyǐng",
+        "vi": "Gần đây tôi xem một vài bộ phim về văn hóa Trung Quốc."
+       },
+       {
+        "zh": "关于这个工作，还有什么问题吗？",
+        "pinyin": "Guānyú zhège gōngzuò, hái yǒu shénme wèntí ma",
+        "vi": "Về công việc này, còn có vấn đề gì không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK3-044",
+      "title": "Mở rộng ý nghĩa của bổ ngữ chỉ phương hướng",
+      "explanation": "\"出来\" có thể biểu thị từ không có gì đến có gì, phát sinh sự vật, sự việc mới, hoặc sự phân biệt, nhận ra. \"起来\" biểu thị sự bắt đầu (hành động/trạng thái), hoặc hồi tưởng/nhớ lại.",
+      "examples": [
+       {
+        "zh": "(出来):照片我选了几张洗出来了。",
+        "pinyin": "Zhàopiàn wǒ xuǎn le jǐ zhāng xǐ chūlái le",
+        "vi": "Ảnh tôi chọn đã rửa ra mấy tấm rồi. (起来):你能想起来那是什么时候的事吗？/Nǐ néng xiǎng qǐlái nà shì shénme shíhòu de shì ma/ Bạn có thể nhớ lại chuyện đó là lúc nào không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK3-045",
+      "title": "Dùng \"使\" /shǐ/, \" 叫\" /jiào/, \"让\" /ràng/",
+      "explanation": "Đều dùng để biểu thị ý khiến/mệnh lệnh. \"使\" (văn viết), \"叫/让\" (khẩu ngữ).",
+      "examples": [
+       {
+        "zh": "(使):读书使我快乐。",
+        "pinyin": "Dúshū shǐ wǒ kuàilè",
+        "vi": "Đọc sách khiến tôi vui vẻ. (让):考试让我很紧张。/Kǎoshì ràng wǒ hěn jǐnzhāng/ Kỳ thi khiến tôi rất hồi hộp."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-046",
+      "title": "Câu bị động với \" 被\" /bèi/",
+      "explanation": "Dùng để diễn tả ý bị động. Chủ ngữ là đối tượng chịu tác động.",
+      "examples": [
+       {
+        "zh": "我的自行车被偷了。",
+        "pinyin": "Wǒ de zìxíngchē bèi tōu le",
+        "vi": "Xe đạp của tôi bị trộm rồi."
+       },
+       {
+        "zh": "我被朋友影响了。",
+        "pinyin": "Wǒ bèi péngyou yǐngxiǎng le",
+        "vi": "Tôi bị bạn bè ảnh hưởng."
+       }
+      ]
+     },
+     {
+      "id": "HSK3-047",
+      "title": "Cấu trúc \"只......, 才......\"",
+      "explanation": "\"只\" là điều kiện. \"才\" là kết quả xuất hiện trong điều kiện này.",
+      "examples": [
+       {
+        "zh": "只有写完作业，才能看电视。",
+        "pinyin": "Zhǐyǒu xiě wán zuòyè, cái néng kàn diànshì",
+        "vi": "Chỉ khi làm xong bài tập, mới có thể xem TV."
+       },
+       {
+        "zh": "看起来只有爱，才能让人有变化。",
+        "pinyin": "Kàn qǐlái zhǐyǒu ài, cái néng ràng rén yǒu biànhuà",
+        "vi": "Có vẻ chỉ có tình yêu, mới có thể khiến người ta thay đổi."
+       }
+      ]
+     }
+    ],
+    "exam_focus": [
+     {
+      "category": "Thời - trạng thái hành động",
+      "points": [
+       "Trợ từ了(hoàn thành & thay đổi)",
+       "Cấu trúc在……呢",
+       "Cấu trúc正在……"
+      ],
+      "reason": "HSK 3 kiểm tra khả năng phân biệt hành động đang diễn ra – đã hoàn thành - sự thay đổi trạng thái, đặc biệt trong phần Nghe và Đọc hiểu."
+     },
+     {
+      "category": "Trình tự & logic hành động",
+      "points": [
+       "先……再……然后……",
+       "……了就……"
+      ],
+      "reason": "Các cấu trúc này giúp đánh giá khả năng tổ chức trình tự sự việc, thường xuất hiện trong câu dài và hội thoại tình huống."
+     },
+     {
+      "category": "Động từ năng nguyện (mở rộng)",
+      "points": [
+       "会(khả năng/dự đoán)",
+       "能(điều kiện cho phép)",
+       "应该(khuyên nhủ, nghĩa vụ)"
+      ],
+      "reason": "Đề thi HSK 3 chú trọng khả năng diễn đạt ý định, phán đoán và lời khuyên, phản ánh mức độ giao tiếp thực tế cao hơn HSK 1-2."
+     },
+     {
+      "category": "Cấu trúc so sánh",
+      "points": [
+       "A跟B一样+ tính từ",
+       "A比B + tính từ (+一点儿/多了)"
+      ],
+      "reason": "So sánh là dạng ngữ pháp xuất hiện rất thường xuyên trong phần Đọc hiểu và Hoàn thành câu."
+     },
+     {
+      "category": "Diễn tả mức độ và xu hướng",
+      "points": [
+       "越来越+ tính từ/động từ",
+       "又……又……",
+       "极了"
+      ],
+      "reason": "Giúp người học thể hiện mức độ, sự thay đổi và cảm xúc, là tiêu chí quan trọng của HSK 3."
+     },
+     {
+      "category": "Bổ ngữ",
+      "points": [
+       "Bổ ngữ kết quả (好、完、对、错…)",
+       "Bổ ngữ khả năng (得/不)"
+      ],
+      "reason": "HSK 3 bắt đầu kiểm tra sâu khả năng kết hợp động từ + bổ ngữ, nền tảng cho HSK 4 trở lên."
+     },
+     {
+      "category": "Cấu trúc với “把” (cơ bản)",
+      "points": [
+       "把+ tân ngữ + động từ + kết",
+       "quả/phương hướng"
+      ],
+      "reason": "Cấu trúc “把” xuất hiện ở mức nhập môn trong HSK 3, thường dùng để kiểm tra nhận diện cấu trúc câu."
+     },
+     {
+      "category": "Câu điều kiện",
+      "points": [
+       "如果……就……",
+       "只要……就……"
+      ],
+      "reason": "Thường xuất hiện trong phần Đọc hiểu, đánh giá khả năng hiểu mối quan hệ điều kiện – kết quả."
+     },
+     {
+      "category": "Đại từ nghi vấn dùng linh hoạt",
+      "points": [
+       "什么/哪儿/怎么+都/就"
+      ],
+      "reason": "HSK 3 yêu cầu người học hiểu đại từ nghi vấn không chỉ dùng để hỏi, mà còn để biểu đạt ý khái quát."
+     },
+     {
+      "category": "Diễn tả thời gian và số lượng ước lượng",
+      "points": [
+       "……了+ khoảng thời gian +了",
+       "左右/二三/三四"
+      ],
+      "reason": "Đề thi thường lồng vào bối cảnh sinh hoạt thực tế như học tập, làm việc, sinh hoạt hằng ngày."
+     }
+    ]
+   },
+   {
+    "level": 4,
+    "name": "HSK 4",
+    "grammar_count": 87,
+    "grammar": [
+     {
+      "id": "HSK4-001",
+      "title": "不仅…而且/还… /bùjǐn… érqiě/hái…/",
+      "explanation": "Liên từ, liên kết hai vế câu có mối quan hệ tăng tiến, biểu thị \"không những... mà còn...\".",
+      "examples": [
+       {
+        "zh": "不仅是足球踢得好，而且他也非常热情.",
+        "pinyin": "Bùjǐn shì zúqiú tī de hǎo, érqiě tā yě fēicháng rèqíng",
+        "vi": "Không chỉ đá bóng giỏi, mà anh ấy còn rất nhiệt tình."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-002",
+      "title": "从来/cónglái/",
+      "explanation": "Phó từ, biểu thị từ trước đến nay đều là như vậy, thường dùng trong câu phủ định.",
+      "examples": [
+       {
+        "zh": "我从来没去过日本。",
+        "pinyin": "Wǒ cónglái méi qù guo Rìběn",
+        "vi": "Tôi chưa từng đi Nhật Bản bao giờ."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-003",
+      "title": "刚/刚才 /gāng/gāngcái/",
+      "explanation": "Phó từ刚chỉ hành động xảy ra cách đây không lâu;刚才là danh từ chỉ thời gian ngắn trong quá khứ, có thể đứng trước chủ ngữ hoặc sau chủ ngữ và trước động từ,.",
+      "examples": [
+       {
+        "zh": "刚才:我刚才去洗手间了，你给我打电话了",
+        "pinyin": "Wǒ gāngcái qù xǐshǒujiān le, nǐ gěi wǒ dǎ diànhuà le",
+        "vi": "Tôi vừa mới đi vệ sinh, bạn đã gọi điện cho tôi sao"
+       },
+       {
+        "zh": "刚:他刚来一会儿.",
+        "pinyin": "Tā gāng lái yīhuìr",
+        "vi": "Anh ấy vừa mới đến một lát."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-004",
+      "title": "即使…也… /jíshǐ… yě…/",
+      "explanation": "Liên từ, biểu thị một sự giả định hoặc tình huống đã xảy ra (dù cho, cho dù), kết quả vẫn không thay đổi.",
+      "examples": [
+       {
+        "zh": "即使明天下雨，我们也要去爬山。",
+        "pinyin": "Jíshǐ míngtiān xià yǔ, wǒmen yě yào qù páshān",
+        "vi": "Cho dù ngày mai trời mưa, chúng tôi vẫn sẽ đi leo núi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-005",
+      "title": "(在)…上/zài)… shàng/",
+      "explanation": "Danh từ chỉ phương vị, dùng sau danh từ, biểu thị trên bề mặt vật thể hoặc chỉ phạm vi nào đó.",
+      "examples": [
+       {
+        "zh": "今天的工作上有很多问题.",
+        "pinyin": "Jīntiān de gōngzuò shàng yǒu hěnduō wèntí",
+        "vi": "Hôm nay có nhiều vấn đề về công việc."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-006",
+      "title": "正好/zhènghǎo/",
+      "explanation": "Hình dung từ (biểu thị vừa vặn, vừa khéo) Phó từ (biểu thị sự việc xảy ra đúng lúc, đúng thời điểm).",
+      "examples": [
+       {
+        "zh": "我妹妹出生那天，正好下雪，所以爸妈叫她“小雪”.",
+        "pinyin": "Wǒ mèimei chūshēng nà tiān, zhènghǎo xià xuě, suǒyǐ bà mā jiào tā \"Xiǎoxuě\"",
+        "vi": "Em gái tôi sinh ra ngày hôm đó, vừa đúng lúc tuyết rơi, nên bố mẹ đặt tên nó là \"Tiểu Tuyết\"."
+       },
+       {
+        "zh": "我的冰箱太旧了，正好商场在打折，我们便买一台吧.",
+        "pinyin": "Wǒ de bīngxiāng tài jiù le, zhènghǎo shāngchǎng zài dǎzhé, wǒmen biàn mǎi yī tái ba",
+        "vi": "Tủ lạnh nhà tôi cũ quá rồi, vừa hay trung tâm thương mại đang giảm giá, chúng ta mua một cái đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-007",
+      "title": "差不多/几乎 /chàbùduō/jīhū/",
+      "explanation": "Phó từ/Hình dung từ: biểu thị, mức độ không khác biệt nhiều gần như, xấp xỉ",
+      "examples": [
+       {
+        "zh": "他俩差不多高.",
+        "pinyin": "Tā liǎng chàbùduō gāo",
+        "vi": "Hai người họ gần như cao bằng nhau."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-008",
+      "title": "尽管/jǐnguǎn/",
+      "explanation": "Liên từ, biểu thị dù cho, mặc dù (sự việc đã xảy ra, nhưng kết quả/tình huống vế sau lại bất ngờ hoặc chuyển ý).",
+      "examples": [
+       {
+        "zh": "尽管这是一场误会，他仍然不开心",
+        "pinyin": "Jǐnguǎn zhè shì yī chǎng wùhuì, tā réngráng bù kāixīn",
+        "vi": "Mặc dù đây là một sự hiểu lầm, anh ấy vẫn không vui."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-009",
+      "title": "却/què/",
+      "explanation": "Phó từ, dùng sau chủ ngữ hoặc trước động từ, biểu thị chuyển ý (nhưng mà, trái lại), ngữ khí nhẹ nhàng hơn \"但是 \",.",
+      "examples": [
+       {
+        "zh": "很多人虽然住在一个楼里，但却从来没说过话",
+        "pinyin": "Hěn duō rén suīrán zhù zài yī gè lóu lǐ, dàn què cónglái méi shuō guò huà",
+        "vi": "Rất nhiều người dù sống cùng một tòa nhà, nhưng lại chưa từng nói chuyện với nhau."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-010",
+      "title": "而/ér/",
+      "explanation": "Liên từ, dùng để nối hai vế câu, biểu thị tăng tiến hoặc chuyển ý/tương phản,.",
+      "examples": [
+       {
+        "zh": "即使没有人支持我，我也会继续做下去。",
+        "pinyin": "Jíshǐ méiyǒu rén zhīchí wǒ, wǒ yě huì jìxù zuò xiàqù",
+        "vi": "Ngay cả khi không có ai ủng hộ tôi, tôi cũng sẽ tiếp tục làm."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-011",
+      "title": "挺…的/tǐng… de/",
+      "explanation": "Dùng để biểu thị mức độ khá / tương đối /rất, mang sắc thái nhẹ nhàng, tự nhiên trong giao tiếp. Thường dùng trong cấu trúc “挺+ tính từ +的” để nhận xét hoặc đánh giá một sự việc, người hay trạng thái.",
+      "examples": [
+       {
+        "zh": "昨天晚上去的那家饭馆味道挺好的",
+        "pinyin": "Zuótiān wǎnshàng qù de nà jiā fànguǎn wèidào tǐng hǎo de",
+        "vi": "Quán ăn tối qua tôi đến khá ngon."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-012",
+      "title": "本来/běnlái/",
+      "explanation": "Phó từ dùng để nói về trạng thái, sự việc ban đầu hoặc theo lẽ thường, trước khi có sự thay đổi xảy ra.",
+      "examples": [
+       {
+        "zh": "这件事情本来应该听他的",
+        "pinyin": "Zhè jiàn shìqing běnlái yīnggāi tīng tā de",
+        "vi": "Việc này vốn dĩ nên nghe lời anh ấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-013",
+      "title": "另外/lìngwài/",
+      "explanation": "Đại từ (chỉ người/vật ngoài phạm vi đã đề cập) Phó từ (chỉ ngoài phạm vi đã đề cập) Liên từ (ngoài ra).",
+      "examples": [
+       {
+        "zh": "这本书不好看，我们看另外的吧。",
+        "pinyin": "Zhè běn shū bù hǎokàn, wǒmen kàn lìngwài de ba",
+        "vi": "Cuốn sách này không hay, chúng ta xem cuốn khác đi."
+       },
+       {
+        "zh": "工资之外，公司会另外发一笔奖金。",
+        "pinyin": "Gōngzī zhī wài, gōngsī huì lìngwài fā yī bǐ jiǎngjīn",
+        "vi": "Ngoài lương ra, công ty sẽ phát thêm một khoản tiền thưởng."
+       },
+       {
+        "zh": "这家餐厅菜很好吃，另外，环境也很不错。",
+        "pinyin": "Zhè jiā cāntīng cài hěn hǎo chī, lìngwài, huánjìng yě hěn bùcuò",
+        "vi": "Nhà hàng này đồ ăn rất ngon, thêm vào đó, không gian cũng rất tuyệt."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-014",
+      "title": "首先…其次… /shǒuxiān… qícì…/",
+      "explanation": "Dùng trong văn viết, biểu thị trình tự (trước hết, sau đó).",
+      "examples": [
+       {
+        "zh": "不管以后做什么工作，你首先应该有一个好身体",
+        "pinyin": "Bùguǎn yǐhòu zuò shénme gōngzuò, nǐ shǒuxiān yīnggāi yǒu yī gè hǎo shēntǐ",
+        "vi": "Dù sau này làm công việc gì, bạn trước hết nên có một sức khỏe tốt."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-015",
+      "title": "不管/bùguǎn/",
+      "explanation": "Liên từ, biểu thị trong bất kỳ tình huống nào (không quan tâm đến), thường dùng với “还/或是” hoặc các đại từ nghi vấn.",
+      "examples": [
+       {
+        "zh": "山东不管做什么事都非常认真.",
+        "pinyin": "Tóngxué bùguǎn zuò shénme shì dōu fēicháng rènzhēn",
+        "vi": "Tiểu Vương bất kể làm việc gì cũng rất nghiêm túc."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-016",
+      "title": "以为/yǐwéi/",
+      "explanation": "Dùng để diễn tả người nói nghĩ hoặc tin rằng một sự việc là đúng, nhưng thực tế lại không đúng như vậy.",
+      "examples": [
+       {
+        "zh": "我以为今天的会议室里一个人都没有",
+        "pinyin": "Wǒ yǐwéi jīntiān de huìyì shì lǐ yī gè rén dōu méi yǒu",
+        "vi": "Tôi tưởng rằng trong phòng họp hôm nay không có một người nào."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-017",
+      "title": "原来/yuánlái/",
+      "explanation": "thể hiện sự phát hiện, nhận ra sự thật (với ngữ khí ngạc nhiên) hoặc chỉ trạng thái ban đầu, nguyên gốc của sự vật. Có thể dùng như phó từ hoặc hình dung từ (tính từ).",
+      "examples": [
+       {
+        "zh": "原来是你！我还以为是小王呢。",
+        "pinyin": "Yuánlái shì nǐ! Wǒ hái yǐwéi shì Xiǎo Wáng ne",
+        "vi": "Thì ra là bạn! Tôi cứ tưởng là Tiểu Vương."
+       },
+       {
+        "zh": "我们还是按原来的计划进行吧。",
+        "pinyin": "Wǒmen háishì àn yuánlái de jìhuà jìnxíng ba",
+        "vi": "Chúng ta vẫn cứ theo kế hoạch ban đầu mà tiến hành đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-018",
+      "title": "并/bìng/",
+      "explanation": "Phó từ, dùng trước phủ định (不/没 (有)/无), có tác dụng nhấn mạnh ngữ khí phủ định,.",
+      "examples": [
+       {
+        "zh": "我以为做生意很简单，后来才发现其实并不容易",
+        "pinyin": "Wǒ yǐwéi zuò shēngyi hěn jiǎndān, hòulái cái fāxiàn qíshí bìng bù róngyì",
+        "vi": "Tôi tưởng kinh doanh rất đơn giản, sau này mới phát hiện ra thực ra hoàn toàn không dễ dàng."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-019",
+      "title": "按照/ànzhào/",
+      "explanation": "Giới từ: theo, căn cứ vào.",
+      "examples": [
+       {
+        "zh": "按照经验，这个问题应该很快解决，请大家放心",
+        "pinyin": "Ànzhào jīngyàn, zhège wèntí yīnggāi hěn kuài jiějué, qǐng dàjiā fàngxīn",
+        "vi": "Theo kinh nghiệm, vấn đề này nên sớm được giải quyết, mọi người yên tâm."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-020",
+      "title": "甚至/shènzhì/",
+      "explanation": "Phó từ, nhấn mạnh trường hợp cực đoan hoặc là cuối cùng (thậm chí).",
+      "examples": [
+       {
+        "zh": "这个房子离公司也不远，你可以坐公共汽车甚至可以骑自行车上班",
+        "pinyin": "Zhège fángzi lí gōngsī yě bù yuǎn, nǐ kěyǐ zuò gōnggòng qìchē shènzhì kěyǐ qí zìxíngchē shàngbān",
+        "vi": "Căn nhà này cách công ty không xa, bạn có thể đi xe buýt thậm chí có thể đạp xe đi làm."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-021",
+      "title": "肯定/kěndìng/",
+      "explanation": "Phó từ: biểu thị mức độ chắc chắn cao, khẳng định rằng một việc nhất định sẽ xảy ra hoặc là đúng. Hình dung từ: thể hiện sự khẳng định, đồng ý hoặc xác nhận đối với một ý kiến hay sự việc.",
+      "examples": [
+       {
+        "zh": "你放心吧，我肯定按时到。",
+        "pinyin": "Nǐ fàngxīn ba, wǒ kěndìng ànshí dào",
+        "vi": "Bạn yên tâm đi, tôi nhất định sẽ đến đúng giờ."
+       },
+       {
+        "zh": "请给我一个肯定的答复，是“去”还是“不去",
+        "pinyin": "Qǐng gěi wǒ yī gè kěndìng de dáfù, shì “qù” háishì “bù qù”",
+        "vi": "Hãy cho tôi một câu trả lời dứt khoát/rõ ràng, là \"đi\" hay \"không đi\"?"
+       }
+      ]
+     },
+     {
+      "id": "HSK4-022",
+      "title": "再说/zàishuō/",
+      "explanation": "Động từ: Gác lại Liên từ (biểu thị bổ sung thêm sự việc).",
+      "examples": [
+       {
+        "zh": "这个问题再说吧，我们先讨论紧急的。",
+        "pinyin": "Zhège wèntí xiān zàishuō ba, wǒmen xiān tǎo lùn jǐn jí de",
+        "vi": "Vấn đề này gác lại đã, chúng ta hãy thảo luận việc khẩn cấp trước."
+       },
+       {
+        "zh": "现在下着大雨，再说你又没带伞，就别出去了。",
+        "pinyin": "Xiànzài xià zhe dàyǔ, zàishuō nǐ yòu méi dài sǎn, jiù bié chū qù le",
+        "vi": "Bây giờ trời đang mưa to, hơn nữa bạn lại không mang ô, đừng đi ra ngoài nữa."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-023",
+      "title": "实际/实际上 /shíjì/shíjìshang/",
+      "explanation": "Danh từ (thực tế) Hình dung từ (chân thật) Phó từ (trên thực tế),.",
+      "examples": [
+       {
+        "zh": "理论要结合实际。",
+        "pinyin": "Lǐlùn yào jiéhé shíjì",
+        "vi": "Lý thuyết phải kết hợp với thực tế."
+       },
+       {
+        "zh": "请告诉我你的实际年龄。",
+        "pinyin": "Qǐng gàosu wǒ nǐ de shíjì niánlíng",
+        "vi": "Hãy cho tôi biết tuổi thật của bạn."
+       },
+       {
+        "zh": "他说自己很忙，实际上他只是在玩游戏。",
+        "pinyin": "Tā shuō zìjǐ hěn máng, shíjìshang tā zhǐshì zài wán yóuxì",
+        "vi": "Anh ấy nói mình rất bận, nhưng thực ra/thực tế anh ấy chỉ đang chơi game."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-024",
+      "title": "对…来说/duì… láishuō/",
+      "explanation": "Giới từ, biểu thị thái độ đối với một đối tượng nào đó.",
+      "examples": [
+       {
+        "zh": "对一个女人来说，漂亮、聪明都很重要，但其实更重要的是快乐.",
+        "pinyin": "Duì yī gè nǚrén láishuō, piàoliang, cōngmíng dōu hěn zhòngyào, dàn qíshí gèng zhòngyào de shì kuàilè",
+        "vi": "Đối với một người phụ nữ mà nói, xinh đẹp, thông minh đều quan trọng, nhưng thực ra quan trọng hơn là niềm vui."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-025",
+      "title": "尤其/yóuqí/",
+      "explanation": "Phó từ dùng để nhấn mạnh, biểu thị mức độ hoặc tính chất của một sự việc/sự vật cao hơn, đặc biệt hơn những cái khác trong cùng một phạm trù.",
+      "examples": [
+       {
+        "zh": "你女儿真可爱，长得真像你，尤其是眼睛",
+        "pinyin": "Nǐ nǚ'ér zhēn kě'ài, zhǎng de zhēn xiàng nǐ, yóuqí shì yǎnjīng",
+        "vi": "Con gái bạn thật đáng yêu, lớn lên rất giống bạn, đặc biệt là đôi mắt."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-026",
+      "title": "竟然/jìngrán/",
+      "explanation": "phó từ cảm thán, dùng để biểu thị sự việc xảy ra trái với dự đoán, lẽ thường hoặc ngoài ý muốn,",
+      "examples": [
+       {
+        "zh": "他三年没练钢琴，竟然弹得还这么好。",
+        "pinyin": "Tā sān nián méi liàn gāngqín, jìngrán tán de hái zhème hǎo",
+        "vi": "Anh ấy ba năm không luyện piano, không ngờ vẫn chơi hay đến thế."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-027",
+      "title": "倍(bèi)",
+      "explanation": "lượng từ, dùng để biểu thị số lần (bội số) khi so sánh về số lượng, mức độ hoặc kích thước",
+      "examples": [
+       {
+        "zh": "我的工资比五年前高了五倍。",
+        "pinyin": "Wǒ de gōngzī bǐ wǔ nián qián gāo le wǔ bèi",
+        "vi": "Lương của tôi cao gấp năm lần (so với) năm năm trước."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-028",
+      "title": "值得/zhíde/",
+      "explanation": "động từ, biểu thị việc gì đó có giá trị, xứng đáng, đáng (để bỏ công sức, thời gian, tiền bạc...).",
+      "examples": [
+       {
+        "zh": "这本书很值得一读。",
+        "pinyin": "Zhè běn shū hěn zhíde yì dú",
+        "vi": "Cuốn sách này rất đáng đọc."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-029",
+      "title": "其中/qízhōng/",
+      "explanation": "danh từ (đôi khi được phân loại là cụm từ chỉ định), có nghĩa là trong số đó, trong đó, bên trong đó.",
+      "examples": [
+       {
+        "zh": "我们班有二十名学生，其中十名是女生。",
+        "pinyin": "Wǒmen bān yǒu èrshí míng xuéshēng, qízhōng shí míng shì nǚshēng",
+        "vi": "Lớp chúng tôi có 20 học sinh, trong đó có 10 bạn là nữ."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-030",
+      "title": "(在)…下((zài)… xià)",
+      "explanation": "Cấu trúc giới từ/danh từ, biểu thị điều kiện, tình huống cho một sự việc xảy ra.",
+      "examples": [
+       {
+        "zh": "在老师和同学们的帮助下，他的汉语提高得非常快",
+        "pinyin": "Zài lǎoshī hé tóngxuémen de bāngzhù xià, tā de Hànyǔ tígāo de fēicháng kuài",
+        "vi": "Dưới sự giúp đỡ của thầy cô và các bạn, tiếng Hán của anh ấy tiến bộ rất nhanh"
+       }
+      ]
+     },
+     {
+      "id": "HSK4-031",
+      "title": "估计/gūjì/",
+      "explanation": "Động từ (biểu thị đoán, phán đoán) Danh từ (biểu thị sự ước tính, phỏng chừng).",
+      "examples": [
+       {
+        "zh": "你估计这个项目多久能完成？",
+        "pinyin": "Nǐ gūjì zhège xiàngmù duōjiǔ néng wánchéng",
+        "vi": "Bạn ước tính dự án này bao lâu thì hoàn thành?"
+       },
+       {
+        "zh": "根据市场估计，这款产品的需求量很大。",
+        "pinyin": "Gēnjù shìchǎng gūjì, zhè kuǎn chǎnpǐn de xūqiú liàng hěn dà",
+        "vi": "Theo ước tính của thị trường, nhu cầu cho sản phẩm này rất lớn."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-032",
+      "title": "来不及/láibují/",
+      "explanation": "bổ ngữ khả năng có nghĩa không kịp, không còn đủ thời gian để làm việc gì đó.",
+      "examples": [
+       {
+        "zh": "事情发生得太突然，我来不及通知你。",
+        "pinyin": "Shìqing fāshēng de tài tūrán, wǒ láibují tōngzhī nǐ",
+        "vi": "Sự việc xảy ra quá đột ngột, tôi không kịp báo cho bạn."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-033",
+      "title": "离合词重叠 /líhécí chóngdié/",
+      "explanation": "Cấu trúc lặp lại của động từ ly hợp (thường là dạng AAB), biểu thị thời gian ngắn, thử nghiệm, hoặc thư giãn.",
+      "examples": [
+       {
+        "zh": "学习累了，我们出去散散步吧。",
+        "pinyin": "Xuéxí lèi le, wǒmen chūqù sàn san bù ba",
+        "vi": "Học mệt rồi, chúng ta ra ngoài đi dạo một chút đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-034",
+      "title": "要是/yàoshi/",
+      "explanation": "Liên từ dùng để giả định một điều kiện. Cấu trúc cơ bản: “要是” + [tình huống giả định]，就+ [kết quả/hành động sẽ xảy ra].",
+      "examples": [
+       {
+        "zh": "要是明天下雨，我们就不去公园了。",
+        "pinyin": "Yàoshi míngtiān xià yǔ, wǒmen jiù bù qù gōngyuán le",
+        "vi": "Nếu ngày mai trời mưa, thì chúng tôi sẽ không đi công viên nữa."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-035",
+      "title": "既…又/也/还… (jì… yòu/yě/hái…)",
+      "explanation": "Liệt kê hai (hoặc nhiều) đặc điểm, tính chất hoặc trạng thái cùng tồn tại về một sự vật, sự việc. Cấu trúc: 既+ [Tính chất 1] +又/也/还+ [Tính chất 2]",
+      "examples": [
+       {
+        "zh": "她既聪明又漂亮。",
+        "pinyin": "Tā jì cōngmíng yòu piàoliang",
+        "vi": "Cô ấy vừa thông minh vừa xinh đẹp."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-036",
+      "title": "使/shǐ/",
+      "explanation": "Động từ cầu khiến, làm cho / khiến cho một ai/cái gì thay đổi trạng thái hoặc thực hiện một hành động. Cấu trúc phổ biến: A +使+ B + [hành động/thay đổi]",
+      "examples": [
+       {
+        "zh": "这个消息使大家很高兴。",
+        "pinyin": "Zhège xiāoxi shǐ dàjiā hěn gāoxìng",
+        "vi": "Tin tức này khiến mọi người rất vui."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-037",
+      "title": "只要…就… /zhǐyào… jiù…/",
+      "explanation": "Là cặp liên từ biểu thị điều kiện cần, chỉ cần thỏa mãn một điều kiện duy nhất/tối thiểu đó thì kết quả chắc chắn xảy ra. Công thức cơ bản: 只要+ [Điều kiện cần],就+ [Kết quả/Động tác sẽ xảy ra]",
+      "examples": [
+       {
+        "zh": "你只要想去，我就带你去。",
+        "pinyin": "Nǐ zhǐyào xiǎng qù, wǒ jiù dài nǐ qù",
+        "vi": "Chỉ cần bạn muốn đi, thì tôi sẽ đưa bạn đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-038",
+      "title": "可不是/kě bú shì/",
+      "explanation": "Phó từ, biểu thị tán thành hoặc phụ họa ý kiến của người khác.",
+      "examples": [
+       {
+        "zh": "这个电影可不是很好看吗？我都看了三遍了。",
+        "pinyin": "Zhège diànyǐng kě bú shì hěn hǎokàn ma? Wǒ dōu kànle sān biàn le",
+        "vi": "Chẳng phải là bộ phim này rất hay sao? Tôi xem đến ba lần rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-039",
+      "title": "因此/yīncǐ/",
+      "explanation": "Liên từ, biểu thị nguyên nhân, vì vậy.",
+      "examples": [
+       {
+        "zh": "做好小事是完成大事的第一步，因此，件件小事都应该被看成是一次学习的机会.",
+        "pinyin": "Zuò hǎo xiǎo shì shì wánchéng dà shì de dì yī bù, yīncǐ, jiànjiàn xiǎo shì dōu yīnggāi bèi kànchéng shì yī cì xuéxí de jīhuì",
+        "vi": "Làm tốt việc nhỏ là bước đầu tiên để hoàn thành việc lớn, vì thế, mỗi việc nhỏ nên được xem là cơ hội học tập."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-040",
+      "title": "往往/wǎngwǎng/",
+      "explanation": "Phó từ, biểu thị kinh nghiệm trong quá khứ, thường xảy ra trong một điều kiện nhất định.",
+      "examples": [
+       {
+        "zh": "他往往工作到深夜。",
+        "pinyin": "Tā wǎngwǎng gōngzuò dào shēnyè",
+        "vi": "Anh ấy thường làm việc đến tận khuya."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-041",
+      "title": "难道/nándào/",
+      "explanation": "Phó từ, dùng trong câu hỏi, biểu thị ngữ khí nghi vấn nhấn mạnh (chẳng lẽ).",
+      "examples": [
+       {
+        "zh": "难道你花了好几个小时才做完这个题.",
+        "pinyin": "Nándào nǐ huā le jǐ ge xiǎoshí cái zuò wán zhège tí",
+        "vi": "Chẳng lẽ bạn đã mất mấy tiếng đồng hồ mới làm xong câu này."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-042",
+      "title": "通过/tōngguò/",
+      "explanation": "Giới từ: chỉ cách thức hoặc phương tiện để đạt được mục đích (thông qua, bằng cách). Động từ: chỉ hành động đi qua một nơi hay một không gian.",
+      "examples": [
+       {
+        "zh": "通过努力，任何困难都会解决.",
+        "pinyin": "Tōngguò nǔlì, rènhé kùnnan dōu huì jiějué",
+        "vi": "Thông qua nỗ lực, bất kỳ khó khăn nào cũng sẽ được giải quyết."
+       },
+       {
+        "zh": "这条街只能通过.",
+        "pinyin": "Zhè tiáo jiē zhǐ néng tōngguò",
+        "vi": "Con phố này chỉ có thể đi qua."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-043",
+      "title": "可是/kěshì/",
+      "explanation": "Liên từ, dùng ở đầu vế câu sau, biểu thị chuyển ý, tương phản (nhưng mà).",
+      "examples": [
+       {
+        "zh": "我本来想当律师，可是后来我发现自己对新闻更感兴趣.",
+        "pinyin": "Wǒ běnlái xiǎng dāng lǜshī, kěshì hòulái wǒ fāxiàn zìjǐ duì xīnwén gèng gǎnxìngqù",
+        "vi": "Tôi vốn định làm luật sư, nhưng sau này tôi phát hiện bản thân lại hứng thú hơn với báo chí."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-044",
+      "title": "结果/jiéguǒ/",
+      "explanation": "Danh từ: Kết quả, hậu quả, thành quả cuối cùng. Liên từ: Cuối cùng, rốt cuộc, kết cục là. Dùng để nối hai phân câu, vế sau là kết quả/ tình huống cuối cùng xảy ra (thường có chút bất ngờ hoặc khác với dự tính ban đầu).",
+      "examples": [
+       {
+        "zh": "比赛的结果将在晚上八点公布。",
+        "pinyin": "Bǐsài de jiéguǒ jiāng zài wǎnshang bā diǎn gōngbù.",
+        "vi": "Kết quả của trận đấu sẽ được công bố lúc 8 giờ tối."
+       },
+       {
+        "zh": "我们找了半天钥匙，结果发现它就在口袋里。",
+        "pinyin": "Wǒmen zhǎo le bàntiān yàoshi, jiéguǒ fāxiàn tā jiù zài kǒudài lǐ.",
+        "vi": "Chúng tôi tìm chìa khóa mãi, rốt cuộc phát hiện nó nằm ngay trong túi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-045",
+      "title": "确实/quèshí/",
+      "explanation": "Phó từ, biểu thị khách quan và khẳng định (quả thực, thật sự).",
+      "examples": [
+       {
+        "zh": "确实，这个方案更节省成本。",
+        "pinyin": "Quèshí, zhège fāng'àn gèng jiéshěng chéngběn",
+        "vi": "Quả thực, phương án này tiết kiệm chi phí hơn."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-046",
+      "title": "在…看来/zài… kànlái/",
+      "explanation": "Thành ngữ chêm xen, biểu thị quan điểm, cách nhìn cá nhân.",
+      "examples": [
+       {
+        "zh": "在很多人看来，听流行音乐是年轻人的爱好.",
+        "pinyin": "Zài hěn duō rén kànlái, tīng liúxíng yīnyuè shì niánqīng rén de àihǎo",
+        "vi": "Theo quan điểm của nhiều người, nghe nhạc pop là sở thích của người trẻ."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-047",
+      "title": "由于/yóuyú/",
+      "explanation": "Liên từ/Giới từ, biểu thị nguyên nhân, bởi vì,.",
+      "examples": [
+       {
+        "zh": "由于各种原因，我们不得不改变原来的计划.",
+        "pinyin": "Yóuyú gèzhǒng yuányīn, wǒmen bù dé bù gǎibiàn yuánlái de jìhuà",
+        "vi": "Do nhiều nguyên nhân khác nhau, chúng tôi buộc phải thay đổi kế hoạch ban đầu."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-048",
+      "title": "连…也/都… /lián… yě/dōu…/",
+      "explanation": "Liên từ, dùng để nhấn mạnh một trường hợp (ngay cả... cũng/còn...).",
+      "examples": [
+       {
+        "zh": "如果你连自己都不喜欢，又怎么能让别人喜欢你呢?",
+        "pinyin": "Rúguǒ nǐ lián zìjǐ dōu bù xǐhuān, yòu zěnme néng ràng biérén xǐhuān nǐ ne",
+        "vi": "Nếu bạn ngay cả bản thân mình còn không thích, làm sao có thể khiến người khác thích bạn?"
+       }
+      ]
+     },
+     {
+      "id": "HSK4-049",
+      "title": "否则/fǒuzé/",
+      "explanation": "Liên từ, nghĩa là \"nếu không (thì)\", chỉ ra kết quả tiêu cực nếu vế trước không xảy ra,.",
+      "examples": [
+       {
+        "zh": "看来要考好，要认真复习...否则会做的题也没时间做了.",
+        "pinyin": "Kàn lái yào kǎo hǎo, yào rènzhēn fùxí... fǒuzé huì zuò de tí yě méi shíjiān zuò le",
+        "vi": "Xem ra muốn thi tốt, phải ôn tập nghiêm túc... nếu không thì đề đã làm được cũng không kịp thời gian."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-050",
+      "title": "无论/wúlùn/",
+      "explanation": "Liên từ, biểu thị bất kể điều kiện nào, kết quả cũng không thay đổi, thường dùng với cấu trúc “无论……都/也…”.",
+      "examples": [
+       {
+        "zh": "无论你去不去，都请通知我一声。",
+        "pinyin": "Wúlùn nǐ qù bu qù, dōu qǐng tōngzhī wǒ yīshēng",
+        "vi": "Bất kể bạn có đi hay không, cũng hãy thông báo cho tôi một tiếng."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-051",
+      "title": "然而/rán'ér/",
+      "explanation": "Liên từ, dùng ở đầu vế câu sau, biểu thị chuyển ý (nhưng, song), thường dùng trong văn viết,.",
+      "examples": [
+       {
+        "zh": "他虽然失败了很多次，然而一直没有放弃.",
+        "pinyin": "Tā suīrán shībài le hěnduō cì, rán'ér yīzhí méi yǒu fàngqì",
+        "vi": "Mặc dù anh ấy thất bại nhiều lần, nhưng vẫn không từ bỏ."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-052",
+      "title": "同时/tóngshí/",
+      "explanation": "Liên từ/Danh từ, biểu thị hai hành động xảy ra đồng thời hoặc có quan hệ liên kết.",
+      "examples": [
+       {
+        "zh": "我们要发展经济，同时也必须保护环境。",
+        "pinyin": "Wǒmen yào fāzhǎn jīngjì, tóngshí yě bìxū bǎohù huánjìng",
+        "vi": "Chúng ta cần phát triển kinh tế, đồng thời cũng phải bảo vệ môi trường."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-053",
+      "title": "并且/bìngqiě/",
+      "explanation": "Liên từ, dùng để nối các động từ hoặc tính từ song song, biểu thị hai hoặc nhiều tính chất cùng tồn tại (hơn nữa, đồng thời).",
+      "examples": [
+       {
+        "zh": "这房子家具全...并且价格也便宜，真的恨值得考虑.",
+        "pinyin": "Zhè fángzi jiājù quán... bìngqiě jiàgé yě piányi, zhēn de hěn zhíde kǎolǜ",
+        "vi": "Căn nhà này đầy đủ nội thất... hơn nữa giá cả cũng rẻ, thực sự đáng để cân nhắc."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-054",
+      "title": "再…也…/zài… yě…/",
+      "explanation": "Cấu trúc biểu thị giả định, \"再\" đứng trước động từ/tính từ, ý nghĩa \"dù thế nào đi nữa\".",
+      "examples": [
+       {
+        "zh": "事情已经发生了，你再后悔也无法改变，别伤心了.",
+        "pinyin": "Shìqing yǐjīng fāshēng le, nǐ zài hòuhuǐ yě wúfǎ gǎibiàn, bié shāngxīn le",
+        "vi": "Chuyện đã xảy ra rồi, bạn có hối hận nữa cũng không thể thay đổi, đừng buồn nữa."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-055",
+      "title": "对于/duìyú/",
+      "explanation": "Giới từ, biểu thị đối tượng của thái độ hoặc tình huống nào đó,.",
+      "examples": [
+       {
+        "zh": "对于这件事，我跟大家的看法不同.",
+        "pinyin": "Duìyú zhè jiàn shì, wǒ gēn dàjiā de kànfǎ bù tóng",
+        "vi": "Đối với việc này, quan điểm của tôi khác với mọi người"
+       }
+      ]
+     },
+     {
+      "id": "HSK4-056",
+      "title": "名量词重叠 /liàngcí chóngdié",
+      "explanation": "/ Cấu trúc lặp lại lượng từ (thường là dạng “AA”), biểu thị ý nghĩa “mỗi”.",
+      "examples": [
+       {
+        "zh": "人人都会使用语言，但是怎么用语言把话说好却是一门艺术.",
+        "pinyin": "Rénrén dōu huì shǐyòng yǔyán, dànshì zěnme yòng yǔyán bǎ huà shuō hǎo què shì yī mén yìshù",
+        "vi": "Mỗi người đều biết dùng ngôn ngữ, nhưng làm thế nào để nói hay lại là một nghệ thuật."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-057",
+      "title": "相反/xiāngfǎn/",
+      "explanation": "Tính từ: Miêu tả trạng thái đối lập giữa hai sự vật/tính chất. Liên từ: Dùng để nối và giới thiệu một ý/phân câu trái ngược với ý trước đó, thường dịch là \"ngược lại\", \"trái lại\".",
+      "examples": [
+       {
+        "zh": "这场危机不但没有削弱团队，相反，让大家更加团结了。",
+        "pinyin": "Zhè chǎng wēijī bùdàn méiyǒu xuēruò tuánduì, xiāngfǎn, ràng dàjiā gèngjiā tuánjié le",
+        "vi": "Cuộc khủng hoảng này không những không làm suy yếu đội ngũ, mà ngược lại, còn khiến mọi người thêm đoàn kết."
+       },
+       {
+        "zh": "我们的观点完全相反。",
+        "pinyin": "Wǒmen de guāndiǎn wánquán xiāngfǎn",
+        "vi": "Quan điểm của chúng tôi hoàn toàn trái ngược."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-058",
+      "title": "大概/dàgài/",
+      "explanation": "Phó từ, biểu thị ước đoán số lượng hoặc đánh giá, mức độ chính xác không cao.",
+      "examples": [
+       {
+        "zh": "从这儿到机场，大概需要一个小时。",
+        "pinyin": "Cóng zhèr dào jīchǎng, dàgài xūyào yī gè xiǎoshí",
+        "vi": "Khoảng một tiếng đồng hồ là từ đây đến sân bay."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-059",
+      "title": "偶尔/ǒu'ěr/",
+      "explanation": "Phó từ, biểu thị tần suất xảy ra rất ít, thỉnh thoảng,.",
+      "examples": [
+       {
+        "zh": "他平时很忙，只是偶尔来看看父母。",
+        "pinyin": "Tā píngshí hěn máng, zhǐshì ǒu'ěr lái kànkan fùmǔ",
+        "vi": "Anh ấy bình thường rất bận, chỉ thỉnh thoảng mới về thăm bố mẹ."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-060",
+      "title": "由/yóu/",
+      "explanation": "Giới từ, dùng để chỉ người chịu trách nhiệm về một việc nào đó,.",
+      "examples": [
+       {
+        "zh": "按照规定，这件事应该由王夫夫负责.",
+        "pinyin": "Ànzhào guīdìng, zhè jiàn shì yīnggāi yóu Wáng fūfū fùzé",
+        "vi": "Theo quy định, việc này nên do ông Vương phụ trách"
+       }
+      ]
+     },
+     {
+      "id": "HSK4-061",
+      "title": "随着/suízhe/",
+      "explanation": "Giới từ, biểu thị điều kiện để một sự việc khác xảy ra (cùng với, theo)",
+      "examples": [
+       {
+        "zh": "随着社会的发展，京剧也在改变.",
+        "pinyin": "Suízhe shèhuì de fāzhǎn, Jīngjù yě zài gǎibiàn",
+        "vi": "Cùng với sự phát triển của xã hội, Kinh kịch cũng đang thay đổi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-062",
+      "title": "够/gòu/",
+      "explanation": "Động từ: Đủ, đạt đến mức cần thiết về số lượng, tiêu chuẩn hoặc thời gian. Phó từ: Đủ, đến một mức độ nhất định (thường biểu thị mức độ cao, có thể đã vượt quá mong đợi)",
+      "examples": [
+       {
+        "zh": "这些钱够我们旅行吗？",
+        "pinyin": "Zhèxiē qián gòu wǒmen lǚxíng ma",
+        "vi": "Số tiền này có đủ cho chúng tôi đi du lịch không?"
+       },
+       {
+        "zh": "你今天看起来够漂亮的！",
+        "pinyin": "Nǐ jīntiān kàn qǐlái gòu piàoliang de",
+        "vi": "Hôm nay trông bạn thật là xinh đẹp!"
+       }
+      ]
+     },
+     {
+      "id": "HSK4-063",
+      "title": "以/yǐ/",
+      "explanation": "Giới từ: Dựa vào, dùng, lấy... làm... (Biểu thị công cụ, phương thức, căn cứ) Cấu trúc:以+ Danh từ (+为/而...)",
+      "examples": [
+       {
+        "zh": "我们应以事实为根据，不要轻信谣言。",
+        "pinyin": "Wǒmen yīng yǐ shìshí wéi gēnjù, bú yào qīngxìn yáoyán",
+        "vi": "Chúng ta nên lấy sự thật làm căn cứ, đừng dễ tin lời đồn."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-064",
+      "title": "既然/jìrán/",
+      "explanation": "Liên từ, dùng ở vế câu trước, ý nghĩa \"vì sự thật đã là như vậy rồi\". Vế câu sau thường dùng “就”, “也”, “还”.",
+      "examples": [
+       {
+        "zh": "既然大家都同意这个方案，我们就马上开始吧。",
+        "pinyin": "Jìrán dàjiā dōu tóngyì zhège fāng'àn, wǒmen jiù mǎshàng kāishǐ ba",
+        "vi": "Vì mọi người đều đồng ý với phương án này rồi, chúng ta hãy bắt đầu ngay đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-065",
+      "title": "于是/yúshì/",
+      "explanation": "Liên từ, dùng ở vế câu sau của câu phức, biểu thị sự việc tiếp theo xảy ra sau sự việc đã nêu ở vế trước,.",
+      "examples": [
+       {
+        "zh": "听爷爷奶奶说，我妹妹出生那天，下了场大雪，于是我爸妈就给她取名叫夏雪.",
+        "pinyin": "Tīng yéyé nǎinai shuō, wǒ mèimei chūshēng nà tiān, xià le chǎng dà xuě, yúshì wǒ bà mā jiù gěi tā qǔ míng jiào Xiàxuě",
+        "vi": "Nghe ông bà nói... thế là bố mẹ tôi đặt tên em ấy là Hạ Tuyết."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-066",
+      "title": "想起来 /xiǎngqǐlái/",
+      "explanation": "Động từ + bổ ngữ xu hướng, biểu thị sự ghi nhớ một điều gì đó từ trước đó.",
+      "examples": [
+       {
+        "zh": "听到这个声音，我一下子想不起来是谁了.",
+        "pinyin": "Tīng dào zhège shēngyīn, wǒ yī xiàzi xiǎng bù qǐlái shì shuí le",
+        "vi": "Nghe giọng này, tôi nhất thời không nhớ ra là ai."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-067",
+      "title": "千万/qiānwàn/",
+      "explanation": "Một phó từ nhấn mạnh sự khuyên bảo hoặc cảnh báo, thường dịch là \"nhất định phải/đừng\"",
+      "examples": [
+       {
+        "zh": "过马路时千万要小心，不要闯红灯。",
+        "pinyin": "Guò mǎlù shí qiānwàn yào xiǎoxīn, bú yào chuǎng hóngdēng",
+        "vi": "Khi sang đường nhất định phải cẩn thận, đừng vượt đèn đỏ."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-068",
+      "title": "恐怕(kǒngpà)",
+      "explanation": "Động từ: E rằng, lo sợ rằng. Phó từ: Dùng để biểu thị một phán đoán, ước lượng với thái độ dè dặt, không chắc chắn, thường kèm theo lo lắng hoặc tiên đoán về kết quả không mong muốn.",
+      "examples": [
+       {
+        "zh": "我恐怕此事會帶來不良後果。",
+        "pinyin": "Wǒ kǒngpà cǐ shì huì dàilái bùliáng hòuguǒ",
+        "vi": "Tôi e rằng việc này sẽ mang lại hậu quả không tốt."
+       },
+       {
+        "zh": "看這天氣，恐怕要下大雨了。",
+        "pinyin": "Kàn zhè tiānqì, kǒngpà yào xià dàyǔ le",
+        "vi": "Nhìn thời tiết thế này, có lẽ sắp có mưa to rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-069",
+      "title": "到底/dàodǐ/",
+      "explanation": "Phó từ, dùng trong câu hỏi nghi vấn/có đại từ nghi vấn, nhấn mạnh ngữ khí truy vấn (rốt cuộc, cuối cùng).",
+      "examples": [
+       {
+        "zh": "你到底想说什么？",
+        "pinyin": "Nǐ dàodǐ xiǎng shuō shénme",
+        "vi": "Bạn rốt cuộc muốn nói gì?"
+       }
+      ]
+     },
+     {
+      "id": "HSK4-070",
+      "title": "拿…来说/ná… láishuō/",
+      "explanation": "Cấu trúc dùng để đưa ra sự vật/tình huống làm ví dụ.",
+      "examples": [
+       {
+        "zh": "学习语言需要耐心。拿学汉语来说，每天坚持练习才能进步。",
+        "pinyin": "Xuéxí yǔyán xūyào nàixīn. Ná xué hànyǔ láishuō, měitiān jiānchí liànxí cáinéng jìnbù",
+        "vi": "Học ngôn ngữ cần sự kiên nhẫn. Lấy việc học tiếng Trung mà nói, phải kiên trì luyện tập hàng ngày mới tiến bộ được."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-071",
+      "title": "敢/gǎn/",
+      "explanation": "Động từ năng nguyện, biểu thị có dũng khí làm một việc gì đó,.",
+      "examples": [
+       {
+        "zh": "我们应该把那些敢说真话的人当镜子.",
+        "pinyin": "Wǒmen yīnggāi bǎ nà xiē gǎn shuō zhēnhuà de rén dāng jìngzi",
+        "vi": "Chúng ta nên coi những người dám nói sự thật như một tấm gương."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-072",
+      "title": "倒/dào/",
+      "explanation": "Phó từ, biểu thị trái ngược hoặc ngoài ý muốn.",
+      "examples": [
+       {
+        "zh": "你说他笨？我倒觉得他很聪明。",
+        "pinyin": "Nǐ shuō tā bèn? Wǒ dào juéde tā hěn cōngmíng",
+        "vi": "Bạn nói anh ấy ngốc? Tôi lại thấy anh ấy rất thông minh đấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-073",
+      "title": "趟/tàng/",
+      "explanation": "Lượng từ, biểu thị số lần đi và về.",
+      "examples": [
+       {
+        "zh": "上个月我去了趟北京动物园.",
+        "pinyin": "Shàng gè yuè wǒ qù le yī tàng Běijīng dòngwùyuán",
+        "vi": "Tháng trước tôi đã đi một chuyến đến Vườn thú Bắc Kinh."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-074",
+      "title": "为了……而…… /wèile… ér…/",
+      "explanation": "Cấu trúc liên từ, vế câu trước chỉ mục đích, vế câu sau chỉ hành vi.",
+      "examples": [
+       {
+        "zh": "我们不应该为了钱而工作.",
+        "pinyin": "Wǒmen bù yīnggāi wèile qián ér gōngzuò",
+        "vi": "Chúng ta không nên vì tiền mà làm việc."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-075",
+      "title": "仍然/réngráng/",
+      "explanation": "Phó từ, biểu thị ý trái ngược, trái với dự kiến hoặc ngoài ý muốn.",
+      "examples": [
+       {
+        "zh": "这件衣服好看倒好看，就是太贵了。",
+        "pinyin": "Zhè jiàn yīfu hǎokàn dào hǎokàn, jiùshì tài guì le",
+        "vi": "Bộ quần áo này đẹp thì đẹp thật, chỉ có điều quá đắt."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-076",
+      "title": "是否/shìfǒu/",
+      "explanation": "Phó từ, Biểu thị tình trạng, trạng thái hoặc hành động tiếp tục duy trì, không thay đổi so với trước.",
+      "examples": [
+       {
+        "zh": "虽然遇到了困难，但他仍然非常乐观。",
+        "pinyin": "Suīrán yù dào le kùnnán, dàn tā réngrán fēicháng lèguān",
+        "vi": "Tuy gặp khó khăn, nhưng anh ấy vẫn rất lạc quan."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-077",
+      "title": "受不了 /shòubuliǎo/",
+      "explanation": "Bổ ngữ khả năng, biểu thị không thể chịu đựng được (áp lực, nỗi đau, tình huống).",
+      "examples": [
+       {
+        "zh": "不过天天对着电脑，眼睛实在受不了.",
+        "pinyin": "Búguò tiāntiān duì zhe diànnǎo, yǎnjīng shízài shòu bù liǎo",
+        "vi": "Nhưng ngày nào cũng đối diện với máy tính, mắt thực sự không chịu nổi nữa."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-078",
+      "title": "接着/jiēzhe/",
+      "explanation": "Phó từ: Biểu thị một hành động hoặc sự việc xảy ra ngay sau một hành động/sự việc khác, hoặc được nối tiếp một cách logic.",
+      "examples": [
+       {
+        "zh": "他吃完晚饭，接着又开始工作了。",
+        "pinyin": "Tā chī wán wǎnfàn, jiēzhe yòu kāishǐ gōngzuò le",
+        "vi": "Anh ấy ăn tối xong, tiếp theo lại bắt đầu làm việc."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-079",
+      "title": "除此以外/chúcǐ yǐwài/",
+      "explanation": "Phó từ, tương đương với \"ngoài cái này ra\" (chỉ nội dung đã nói ở vế trước), thường dùng trong văn viết.",
+      "examples": [
+       {
+        "zh": "他和我弟弟一天出生...除此以外几乎再找不到其他共同点.",
+        "pinyin": "Tā hé wǒ dìdi yī tiān chūshēng... chú cǐ yǐwài jīhū zài zhǎo bù dào qítā gòngtóng diǎn",
+        "vi": "Tôi và em trai sinh cùng ngày... ngoài điều đó ra thì hầu như không tìm thấy điểm chung nào khác."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-080",
+      "title": "把…叫做… /bǎ… jiàozuò…/",
+      "explanation": "Cấu trúc dùng để gọi tên một vật thể hoặc hiện tượng.",
+      "examples": [
+       {
+        "zh": "在中国，我们把父亲的爸爸叫做“爷爷”。",
+        "pinyin": "Zài zhōngguó, wǒmen bǎ fùqīn de bàba jiàozuò “yéye”",
+        "vi": "Ở Trung Quốc, chúng tôi gọi bố của bố là \"ông nội\"."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-081",
+      "title": "总的来说 /zǒngde láishuō/",
+      "explanation": "Dùng làm thành phần chêm xen, dùng để tóm tắt hoặc đánh giá (nói chung).",
+      "examples": [
+       {
+        "zh": "我对这个方案的看法，总的来说，是支持的，不过还有一些细节需要完善。",
+        "pinyin": "Wǒ duì zhège fāng'àn de kànfǎ, zǒngde láishuō, shì zhīchí de, búguò hái yǒu yīxiē xìjié xūyào wánshàn",
+        "vi": "Ý kiến của tôi về phương án này, nhìn chung, là ủng hộ, tuy nhiên vẫn còn một số chi tiết cần hoàn thiện."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-082",
+      "title": "在于/zàiyú/",
+      "explanation": "Động từ, dùng trong văn viết, dùng để chỉ bản chất, là trọng tâm, là mấu chốt.",
+      "examples": [
+       {
+        "zh": "选择职业的关键在于兴趣.",
+        "pinyin": "Xuǎnzé zhíyè de guānjiàn zàiyú xìngqù",
+        "vi": "Điều cốt lõi khi chọn nghề nằm ở sở thích"
+       }
+      ]
+     },
+     {
+      "id": "HSK4-083",
+      "title": "Cấu trúc: Động từ 1 +着+ Động từ 1 +着+ (，就/却/ 忽然…) + Hành động/Trạng thái mới",
+      "explanation": "Cấu trúc này mô tả một hành động đang kéo dài thì đột nhiên hoặc tự nhiên dẫn đến một kết quả, thay đổi hoặc một hành động khác.",
+      "examples": [
+       {
+        "zh": "她看着看着书，就睡着了。",
+        "pinyin": "Tā kànzhe kànzhe shū, jiù shuì zháo le.",
+        "vi": "Cô ấy đang xem sách, thì ngủ gật mất rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-084",
+      "title": "一…就… /yī… jiù…/",
+      "explanation": "Cấu trúc biểu thị hai sự việc xảy ra liên tiếp hoặc biểu thị điều kiện/kết quả.",
+      "examples": [
+       {
+        "zh": "女儿一回来就告诉她这个好消息.",
+        "pinyin": "Nǚ'ér yī huílái jiù gàosu tā zhège hǎo xiāoxi",
+        "vi": "Con gái vừa về thì lập tức nói cho cô ấy tin vui này."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-085",
+      "title": "究竟/jiūjìng/",
+      "explanation": "Phó từ, dùng trong câu hỏi nghi vấn/có đại từ nghi vấn, nhấn mạnh ngữ khí truy vấn (rốt cuộc), thường dùng trong văn viết.",
+      "examples": [
+       {
+        "zh": "究竟哪个季节去丽江旅游比较好.",
+        "pinyin": "Jiūjìng nǎ ge jìjié qù Lìjiāng lǚyóu bǐjiào hǎo",
+        "vi": "Rốt cuộc đi du lịch Lệ Giang vào mùa nào là tốt nhất?"
+       }
+      ]
+     },
+     {
+      "id": "HSK4-086",
+      "title": "起来/qǐlái/",
+      "explanation": "Động từ/Bổ ngữ xu hướng, biểu thị hành động bắt đầu/tiếp tục, hoặc biểu thị đánh giá cá nhân.",
+      "examples": [
+       {
+        "zh": "你先把桌子上的东西收拾起来.",
+        "pinyin": "Nǐ xiān bǎ zhuōzi shàng de dōngxi shōushi qǐlái",
+        "vi": "Bạn dọn dẹp đồ trên bàn trước đi."
+       },
+       {
+        "zh": "这件事说起来容易，做起来难。",
+        "pinyin": "Zhè jiàn shì shuō qǐlái róngyì, zuò qǐlái nán",
+        "vi": "Việc này nói ra thì dễ, làm thì mới khó."
+       }
+      ]
+     },
+     {
+      "id": "HSK4-087",
+      "title": "Cấu trúc:动词+ 起(dòngcí + qǐ)",
+      "explanation": "Cấu trúc này nhấn mạnh sự khởi điểm của hành động hướng vào một đối tượng cụ thể. Tân ngữ thường là nội dung của cuộc nói chuyện, câu hỏi, hoặc đối tượng của ký ức, cảm xúc.",
+      "examples": [
+       {
+        "zh": "他偶然说起了学生时代的往事。",
+        "pinyin": "Tā ǒurán shuō qǐ le xuéshēng shídài de wǎngshì",
+        "vi": "Anh ấy tình cờ nhắc đến chuyện cũ thời học sinh."
+       }
+      ]
+     }
+    ],
+    "exam_focus": []
+   },
+   {
+    "level": 5,
+    "name": "HSK 5",
+    "grammar_count": 109,
+    "grammar": [
+     {
+      "id": "HSK5-001",
+      "title": "如何/Rúhé",
+      "word_class": "Đại từ",
+      "explanation": "Dùng để hỏi phương thức/cách thức giải quyết vấn đề, thường dùng ở cuối câu để trưng cầu ý kiến hoặc hỏi thăm tình hình.",
+      "examples": [
+       {
+        "zh": "我们明天举行会议，讨论这个问题该如何解决。",
+        "pinyin": "Wǒmen míngtiān jǔxíng huìyì, tǎolùn zhè ge wèntí gāi rúhé jiějué.",
+        "vi": "Chúng ta ngày mai tổ chức cuộc họp, thảo luận vấn đề này nên giải quyết thế nào 80后”们月收入情况如何？/ Bālíng hòu men yuè shōurù qíngkuàng rúhé? / Tình hình thu nhập hàng tháng của thế hệ “8x” như thế nào?"
+       }
+      ]
+     },
+     {
+      "id": "HSK5-002",
+      "title": "靠/Kào/",
+      "word_class": "Động từ/Danh từ",
+      "explanation": "Là động từ, nghĩa là dựa vào, tựa vào để chống đỡ trọng lượng; nhờ, dựa vào ai đó mới đạt được lợi ích; gần kề, kế liền.",
+      "examples": [
+       {
+        "zh": "王老师喜欢靠这桌子讲课。",
+        "pinyin": "Wáng lǎoshī xǐhuān kào zhè zhuōzi jiǎngkè.",
+        "vi": "Thầy Vương thích dựa vào bàn để giảng bài."
+       },
+       {
+        "zh": "在家靠父母，出门靠朋友。",
+        "pinyin": "Zài jiā kào fùmǔ, chūmén kào péngyǒu",
+        "vi": "Ở nhà dựa vào cha mẹ, ra ngoài dựa vào bạn bè."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-003",
+      "title": "居然 /Jūrán/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị sự không ngờ đến, bất ngờ, ngạc nhiên (\"lại có thể\", \"lại\").",
+      "examples": [
+       {
+        "zh": "这么简单的题，你居然也不会做？上课时都干什么去了？",
+        "pinyin": "Zhème jiǎndān de tí, nǐ jūrán yě bú huì zuò? Shàngkè shí dōu gàn shénme qùle",
+        "vi": "Bài tập đơn giản thế này mà cậu lại cũng không biết làm? Lúc lên lớp đã làm gì vậy?"
+       }
+      ]
+     },
+     {
+      "id": "HSK5-004",
+      "title": "以来 /Yǐlái/",
+      "word_class": "Danh từ",
+      "explanation": "Biểu thị một khoảng thời gian từ một thời điểm nào đó trong quá khứ đến thời điểm hiện tại.",
+      "examples": [
+       {
+        "zh": "改革开放以来，中国发生了巨大的变化。",
+        "pinyin": "Gǎigé kāifàng yǐlái, Zhōngguó fāshēngle jùdà de biànhuà",
+        "vi": "Từ khi cải cách mở cửa đến nay, Trung Quốc đã có những thay đổi to lớn."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-005",
+      "title": "临/Lín/",
+      "word_class": "Động từ/Giới từ",
+      "explanation": "Là động từ, có nghĩa là dựa sát, kề, kế. Là giới từ (\"临.....（时/前）\"), biểu thị sắp đến thời gian phát sinh của một hành động.",
+      "examples": [
+       {
+        "zh": "临江新修了一条路，晚饭后很多人都去那儿散步。",
+        "pinyin": "Lín jiāng xīn xiūle yī tiáo lù, wǎnfàn hòu hěn duō rén dōu qù nà'er sànbù",
+        "vi": "Gần bờ sông mới xây một con đường, sau bữa tối rất nhiều người đi dạo ở đó."
+       },
+       {
+        "zh": "临走那天，父亲从老家赶来送我们。",
+        "pinyin": "Lín zǒu nèitiān, fùqin cóng lǎojiā gǎn lái sòng wǒmen",
+        "vi": "Ngày sắp đi, bố tôi từ quê nhà đến tiễn chúng tôi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-006",
+      "title": "立刻/Lìkè/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị sự ngay lập tức, nhấn mạnh một hành động nối tiếp hành động phát sinh ngay trước đó.",
+      "examples": [
+       {
+        "zh": "实验数据一出来，研究员们立刻展开了激烈的讨论。",
+        "pinyin": "Shíyàn shùjù yī chūlái, yánjiūyuán men lìkè zhǎnkāi le jīliè de tǎolùn",
+        "vi": "Ngay khi dữ liệu thí nghiệm vừa được công bố, các nhà nghiên cứu lập tức triển khai một cuộc thảo luận sôi nổi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-007",
+      "title": "各自/Gèzì/",
+      "word_class": "Đại từ",
+      "explanation": "Chỉ bản thân một người hoặc chỉ một trong những phương diện của bản thân, thường cùng với đối tượng được nhắc đến làm chủ ngữ, định ngữ.",
+      "examples": [
+       {
+        "zh": "学生们都有各自的理想。",
+        "pinyin": "Xuéshēngmen dōu yǒu gèzì de lǐxiǎng",
+        "vi": "Các học sinh đều có những lý tưởng riêng."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-008",
+      "title": "勿/Wù/",
+      "word_class": "Phó từ",
+      "explanation": "Ngôn ngữ viết, biểu thị sự cấm đoán, không cho phép hoặc can ngăn (\"chớ, đừng\"), tương đương với “不要”.",
+      "examples": [
+       {
+        "zh": "非工作人员，请勿入内。",
+        "pinyin": "Fēi gōngzuò rényuán, qǐng wù rù nèi",
+        "vi": "Người không phận sự, xin đừng vào trong."
+       },
+       {
+        "zh": "网上购票者须注意网站的安全性，切勿上当受骗。",
+        "pinyin": "Wǎngshàng gòupiào zhě xū zhùyì wǎngzhàn de ānquán xìng, qiè wù shàngdàng shòupiàn",
+        "vi": "Người mua vé trực tuyến cần chú ý tính an toàn của trang web, chớ để bị lừa gạt."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-009",
+      "title": "包括 /Bāokuò/",
+      "word_class": "Động từ",
+      "explanation": "Biểu thị bao hàm các bộ phận. Nhấn mạnh một vài bộ phận, có tác dụng nêu ví dụ, bổ sung, giải thích.",
+      "examples": [
+       {
+        "zh": "汉语技能教学包括听、说、读、写四个方面",
+        "pinyin": "Hànyǔ jìnéng jiàoxué bāokuò tīng, shuō, dú, xiě sì gè fāngmiàn",
+        "vi": "Giảng dạy kỹ năng tiếng Hán bao gồm bốn khía cạnh: nghe, nói, đọc, viết."
+       },
+       {
+        "zh": "我们班所有人，包括最不爱运动的刘方也都参加了这次运动会。",
+        "pinyin": "Wǒmen bān suǒyǒu rén, bāokuò zuì bù ài yùndòng de Liú Fāng yě dōu cānjiāle zhè cì yùndònghuì.",
+        "vi": "Tất cả mọi người trong lớp chúng tôi, bao gồm cả Lưu Phương, người ít yêu thích thể thao nhất, cũng đã tham gia hội thao lần này."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-010",
+      "title": "时刻 /Shíkè/",
+      "word_class": "Danh từ/Phó từ",
+      "explanation": "Danh từ: Biểu thị ở một vài thời điểm hoặc một đoạn thời gian. Phó từ: Biểu thị ý nghĩa mỗi thời mỗi khắc, thường xuyên (có thể lặp lại là “时时刻刻”).",
+      "examples": [
+       {
+        "zh": "在最后时刻，他为本队踢进了赢得比赛的关键一球。",
+        "pinyin": "Zài zuìhòu shíkè, tā wèi běn duì tī jìnle yíngdé bǐsài de guānjiàn yī qiú",
+        "vi": "Vào thời khắc cuối cùng, anh ấy đã sút vào một quả bóng quan trọng giúp đội mình thắng trận."
+       },
+       {
+        "zh": "只要你愿意，公司的大门时刻都为你开着。",
+        "pinyin": "Zhǐyào nǐ yuànyì, gōngsī de dàmén shíkè dōu wèi nǐ kāizhe",
+        "vi": "Chỉ cần bạn đồng ý, cánh cửa công ty luôn luôn mở vì bạn."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-011",
+      "title": "至今 /Zhìjīn/",
+      "word_class": "Phó từ",
+      "explanation": "Chỉ thời gian, dùng để nhấn mạnh một trạng thái, sự việc hoặc tình huống kéo dài liên tục từ một thời điểm trong quá khứ cho đến thời điểm hiện tại (thời điểm nói)",
+      "examples": [
+       {
+        "zh": "那件事的真相至今仍是一个谜。",
+        "pinyin": "Nà jiàn shì de zhēnxiàng zhìjīn réng shì yī gè mí",
+        "vi": "Sự thật về vụ việc đó đến nay vẫn là một bí ẩn."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-012",
+      "title": "顶/Dǐng/",
+      "word_class": "Danh từ/Động từ/Lượng từ",
+      "explanation": "Danh từ: Chỉ bộ phận cao nhất của con người hoặc vật thể. Động từ: Biểu thị động tác của đầu, hoặc đón lấy, chống lại (áp lực).\nLượng từ: Dùng cho mũ, ô hơi lớn, hoặc đồ vật có hình cái ô.",
+      "examples": [
+       {
+        "label": "Danh từ:",
+        "zh": "我们终于爬上了山顶，看到了美丽的日出。",
+        "pinyin": "Wǒmen zhōngyú pá shàng le shāndǐng, kàn dào le měilì de rìchū",
+        "vi": "Cuối cùng chúng tôi cũng leo lên được đỉnh núi, ngắm nhìn bình minh tuyệt đẹp."
+       },
+       {
+        "label": "Động từ:",
+        "zh": "这根柱子顶着房梁。",
+        "pinyin": "Zhè gēn zhùzi dǐng zhe fángliáng",
+        "vi": "Cây cột này chống đỡ xà nhà."
+       },
+       {
+        "label": "Lượng từ:",
+        "zh": "他戴着一顶红色的棒球帽。",
+        "pinyin": "Tā dài zhe yī dǐng hóngsè de bàngqiú mào",
+        "vi": "Anh ấy đội một cái mũ bóng chày màu đỏ."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-013",
+      "title": "······得+不行/De bùxíng/",
+      "word_class": "Kết cấu",
+      "explanation": "Biểu thị trình độ, mức độ cao, còn có thể dùng “······+得+ 很/不得了”.",
+      "examples": [
+       {
+        "zh": "我今天忙了一整天，现在累得不行。",
+        "pinyin": "Wǒ jīntiān máng le yī zhěng tiān, xiànzài lèi de bùxíng",
+        "vi": "Hôm nay tôi bận cả ngày, giờ mệt không chịu nổi"
+       }
+      ]
+     },
+     {
+      "id": "HSK5-014",
+      "title": "反而 /Fǎn'ér/",
+      "word_class": "Phó từ",
+      "explanation": "Đứng giữa hai câu, biểu thị sự tương phản với dự kiến ban đầu (\"ngược lại\").",
+      "examples": [
+       {
+        "zh": "他平时话不多，但在辩论赛上反而成了最活跃的人。",
+        "pinyin": "Tā píngshí huà bù duō, dàn zài biànlùn sài shàng fǎn'ér chéng le zuì huóyuè de rén",
+        "vi": "Bình thường anh ấy ít nói, nhưng trong cuộc thi tranh luận lại trở thành người hoạt bát nhất."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-015",
+      "title": "从而 /Cóng'ér/",
+      "word_class": "Liên từ",
+      "explanation": "Đứng giữa hai câu, câu trước biểu thị nguyên nhân/phương pháp, câu sau biểu thị kết quả/mục đích (\"từ đó\").",
+      "examples": [
+       {
+        "zh": "比赛前做好思想准备可以减少运动员的压力，从而取得比赛的成功。",
+        "pinyin": "Bǐsài qián zuò hǎo sīxiǎng zhǔnbèi kěyǐ jiǎnshǎo yùndòngyuán de yālì, cóng'ér qǔdé bǐsài de chénggōng.",
+        "vi": "Chuẩn bị tư tưởng tốt trước trận đấu có thể giảm áp lực cho vận động viên, từ đó đạt được thành công trong trận đấu."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-016",
+      "title": "于/Yú/",
+      "word_class": "Giới từ",
+      "explanation": "Tương đương với “在、从、 对、向、比” (ở, từ, đối với, hướng về, so với).",
+      "examples": [
+       {
+        "zh": "这家公司成立于1997年。",
+        "pinyin": "Zhè jiā gōngsī chénglì yú yījiǔjiǔqī nián",
+        "vi": "Công ty này được thành lập từ năm 1997."
+       },
+       {
+        "zh": "这种药主要用于感冒的治疗。",
+        "pinyin": "Zhè zhǒng yào zhǔyào yòng yú gǎnmào de zhìliáo",
+        "vi": "Loại thuốc này chủ yếu dùng trong việc điều trị cảm cúm"
+       }
+      ]
+     },
+     {
+      "id": "HSK5-017",
+      "title": "为/Wéi/",
+      "word_class": "Động từ",
+      "explanation": "Có nghĩa là “成、成为” (thành, trở thành) Có nghĩa là “作为、算作” (làm, coi như).",
+      "examples": [
+       {
+        "zh": "压力也可以变为动力。",
+        "pinyin": "Yālì yě kěyǐ biàn wéi dònglì.",
+        "vi": "Áp lực cũng có thể trở thành động lực"
+       },
+       {
+        "zh": "找工作时，很多人会以收入多少为第一标准。",
+        "pinyin": "Zhǎo gōngzuò shí, hěn duō rén huì yǐ shōurù duōshǎo wéi dì yī biāozhǔn",
+        "vi": "Khi tìm việc, nhiều người lấy mức thu nhập làm tiêu chuẩn đầu tiên."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-018",
+      "title": "起来 /Qǐlái/",
+      "word_class": "Động từ xu hướng",
+      "explanation": "Dùng sau động từ: Biểu thị từ phân tán đến tập trung lại Biểu thị từ lộ rõ đến ẩn nấp, ẩn náu.",
+      "examples": [
+       {
+        "zh": "他把散落一地的玩具都捡起来放回了箱子里。",
+        "pinyin": "Tā bǎ sànluò yī dì de wánjù dōu jiǎn qǐlái fàng huí le xiāngzi lǐ",
+        "vi": "Cậu bé nhặt tất cả đồ chơi rơi vãi dưới đất lên và cất lại vào trong hộp."
+       },
+       {
+        "zh": "他把散落一地的玩具都捡起来放回了箱子里。",
+        "pinyin": "Tā bǎ sànluò yī dì de wánjù dōu jiǎn qǐlái fàng huí le xiāngzi lǐ",
+        "vi": "Cậu bé nhặt tất cả đồ chơi rơi vãi dưới đất lên và cất lại vào trong hộp."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-019",
+      "title": "替/Tì/",
+      "word_class": "Động từ/Giới từ",
+      "explanation": "Là động từ: có nghĩa là \"thay thế\". Là giới từ: biểu thị “给、为” (cho ai, vì ai).",
+      "examples": [
+       {
+        "zh": "刘老师今天有点儿事来不了，你能替他吗？",
+        "pinyin": "Liú lǎoshī jīntiān yǒudiǎn er shì lái bù liǎo, nǐ néng tì tì tā ma",
+        "vi": "Thầy Lưu hôm nay có chút việc không đến được, cậu có thể thay thầy ấy được không?"
+       },
+       {
+        "zh": "李阳要去留学了，我们都替他高兴。",
+        "pinyin": "Lǐ Yáng yào qù liúxué le, wǒmen dōu tì tā gāoxìng",
+        "vi": "Lý Dương sắp đi du học rồi, chúng tôi đều mừng cho cậu ấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-020",
+      "title": "说不定 /Shuōbudìn g/",
+      "word_class": "Động từ/Phó từ",
+      "explanation": "Là động từ: có nghĩa là \"không thể nói rõ ràng, khẳng định\" Là phó từ: biểu thị ước tính, có khả năng lớn (\"biết đâu\").",
+      "examples": [
+       {
+        "zh": "这事儿经理已经同意了，只是出发的时间还说不定。",
+        "pinyin": "Zhè shì'er jīnglǐ yǐjīng tóngyìle, zhǐshì chūfā de shíjiān hái shuōbudìng",
+        "vi": "Việc này giám đốc đã đồng ý rồi, chỉ là thời gian xuất phát thì vẫn chưa thể nói rõ."
+       },
+       {
+        "zh": "别随随便便就说放弃，说不定下次会成功了。",
+        "pinyin": "Bié suí suí biàn biàn jiù shuō fàngqì, shuōbudìng xià cì huì chénggōngle",
+        "vi": "Đừng tùy tiện nói từ bỏ, biết đâu lần sau sẽ thành công."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-021",
+      "title": "似的 /Shìde/",
+      "word_class": "Trợ từ",
+      "explanation": "Trợ từ, đặt sau danh từ, biểu thị sự so sánh với một số sự vật, tình huống (thường dùng trong văn viết). Dùng trong cấu trúc “·····得+什么似的” mang ngữ khí khoa trương.",
+      "examples": [
+       {
+        "zh": "大雨过后，湖面平静得镜子似的，倒映着整个天空。",
+        "pinyin": "Dà yǔ guò hòu, húmiàn píngjìng de jìngzi shìde, dàoyìng zhe zhěnggè tiānkōng",
+        "vi": "Sau cơn mưa lớn, mặt hồ phẳng lặng như tấm gương vậy, in bóng cả bầu trời."
+       },
+       {
+        "zh": "听说偶像要来，她激动得什么似的，一整晚都没睡好。",
+        "pinyin": "Tīng shuō ǒuxiàng yào lái, tā jīdòng de shénme shìde, yī zhěng wǎn dōu méi shuì hǎo",
+        "vi": "Nghe tin thần tượng sắp đến, cô ấy hào hứng đến mức không tả xiết, cả đêm không sao ngủ được."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-022",
+      "title": "纷纷 /Fēnfēn/",
+      "word_class": "Tính từ/Phó từ",
+      "explanation": "Tính từ: Mô tả (ngôn luận, vật rơi, rụng xuống) nhiều mà hỗn loạn. Phó từ: Biểu thị (nhiều người hoặc sự vật) liên tục tiếp diễn (\"dồn dập, tới tấp, sôi nổi\").",
+      "examples": [
+       {
+        "zh": "秋风刮起，落叶纷纷。",
+        "pinyin": "Qiūfēng guā qǐ, luòyè fēnfēn",
+        "vi": "Gió thu thổi lên, lá rụng xôn xao"
+       },
+       {
+        "zh": "要下雨了，路上的人纷纷往家里跑。",
+        "pinyin": "Yào xià yǔ le, lùshàng de rén fēnfēn wǎng jiā lǐ pǎo",
+        "vi": "Sắp mưa rồi, người đi đường dồn dập chạy về nhà."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-023",
+      "title": "瞎/Xiā/",
+      "word_class": "Động từ/Phó từ",
+      "explanation": "Động từ: Nghĩa là \"mắt không nhìn thấy\" (mù). Phó từ: Biểu thị không có lí do, không có căn cứ hoặc khi làm một việc không có hiệu quả (\"nói bừa, làm bừa\").",
+      "examples": [
+       {
+        "zh": "你一定知道马的那只眼睛是瞎的。",
+        "pinyin": "Nǐ yīdìng zhīdào mǎ de nà zhǐ yǎnjīng shì xiā de.",
+        "vi": "Bạn nhất định biết con mắt nào của con ngựa đó bị mù."
+       },
+       {
+        "zh": "别听他瞎说！不用害怕，我们不会这么倒霉的。",
+        "pinyin": "Bié tīng tā xiāshuō! Bú yòng hàipà, wǒmen bú huì zhème dǎoméi de",
+        "vi": "Đừng nghe anh ta nói bừa! Không cần sợ hãi, chúng ta sẽ không xui xẻo như thế đâu."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-024",
+      "title": "分别 /Fēnbié/",
+      "word_class": "Động từ/Phó từ/Danh từ",
+      "explanation": "Động từ: nghĩa là ly biệt, chia tay, xa cách. Phó từ: biểu thị riêng biệt, mỗi cái một. Danh từ: nghĩa là phân biệt, bất đồng, khác nhau.",
+      "examples": [
+       {
+        "zh": "从毕业到现在我们已经分别20年了，一直都没有联系。",
+        "pinyin": "Cóng bìyè dào xiànzài wǒmen yǐjīng fēnbié èrshí nián le, yīzhí dōu méiyǒu liánxì",
+        "vi": "Từ khi tốt nghiệp đến nay chúng tôi đã chia tay 20 năm rồi, vẫn luôn không liên lạc."
+       },
+       {
+        "zh": "老师分别找我们谈了话，了解了每个人的想法。",
+        "pinyin": "Lǎoshī fēnbié zhǎo wǒmen tán le huà, liǎojiě le měi gè rén de xiǎngfǎ",
+        "vi": "Giáo viên đã lần lượt gặp riêng chúng tôi nói chuyện, để hiểu suy nghĩ của từng người."
+       },
+       {
+        "zh": "对消费者来说，这两个品牌的产品质量几乎没有什么分别。",
+        "pinyin": "Duì xiāofèizhě lái shuō, zhè liǎng gè pǐnpái de chǎnpǐn zhìliàng jīhū méiyǒu shénme fēnbié",
+        "vi": "Đối với người tiêu dùng, chất lượng sản phẩm của hai thương hiệu này hầu như không có sự khác biệt nào."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-025",
+      "title": "根/Gēn/",
+      "word_class": "Danh từ/Lượng từ",
+      "explanation": "Danh từ: Chỉ bộ phận của thực vật sinh trưởng dưới lòng đất, hoặc nền móng, cơ sở, gốc rễ của sự vật. Lượng từ: Thường dùng cho vật dài và nhỏ.",
+      "examples": [
+       {
+        "zh": "1这件事还是得从根上解决，只理解表面问题是不行的。",
+        "pinyin": "Zhè jiàn shì háishì děi cóng gēn shang jiějué, zhǐ lǐjiě biǎomiàn wèntí shì bùxíng de",
+        "vi": "Việc này vẫn phải giải quyết từ gốc rễ, chỉ hiểu vấn đề bề mặt là không được."
+       },
+       {
+        "zh": "摸到尾巴的盲人说大相像一根绳子。",
+        "pinyin": "Mō dào wěibā de mángrén shuō dàxiàng xiàng yī gēn shéngzi.",
+        "vi": "Người mù sờ thấy cái đuôi nói con voi giống như một sợi dây."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-026",
+      "title": "便/Biàn/",
+      "word_class": "Phó từ",
+      "explanation": "Nghĩa là就(“thì, là, đã”), thường dùng trong văn viết.",
+      "examples": [
+       {
+        "zh": "仅仅是换一种心情，换一个角度，便可以从困境中走出来。",
+        "pinyin": "Jǐnjǐn shì huàn yī zhǒng xīnqíng, huàn yīgè jiǎodù, biàn kěyǐ cóng kùnjìng zhōng zǒu chūlái",
+        "vi": "Chỉ cần thay đổi một chút tâm trạng, thay đổi một góc độ, là có thể bước ra khỏi hoàn cảnh khó khăn."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-027",
+      "title": "倒/Dào/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị tương phản, trái ngược với tình huống thông thường. Biểu thị không nghĩ đến. Biểu thị sự nhượng bộ (khẳng định trước, sau đó nói các phương diện khác). Biểu thị không nhẫn nại, bình tĩnh (dùng để hỏi hoặc hối thúc).",
+      "examples": [
+       {
+        "zh": "怎么勇敢反倒成为缺点了？",
+        "pinyin": "Shàonián bù jiě de wèn: “Zěnme yǒnggǎn fǎn dào chéngwéi quēdiǎnle",
+        "vi": "Tại sao dũng cảm ngược lại lại trở thành khuyết điểm?"
+       },
+       {
+        "zh": "小刘租的房子虽然很小，不过收拾得倒还干净。",
+        "pinyin": "Xiǎo Liú zū de fángzi suīrán hěn xiǎo, búguò shōushi dé dào hái gānjìng.",
+        "vi": "Căn nhà Tiểu Lưu thuê tuy rất nhỏ, nhưng dọn dẹp ngược lại vẫn còn sạch sẽ."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-028",
+      "title": "······来 ······去 /Lái... Qù/",
+      "word_class": "Kết cấu",
+      "explanation": "Biểu thị sự lặp đi lặp lại nhiều lần của động tác, hai động từ đứng trước “来” và “去” thường là cùng một từ hoặc là từ gần nghĩa.",
+      "examples": [
+       {
+        "zh": "小狗追着自己的尾巴，在草地上跑来跑去。",
+        "pinyin": "Xiǎo gǒu zhuīzhe zìjǐ de wěibā, zài cǎodì shang pǎo lái pǎo qù",
+        "vi": "Chú chó nhỏ đuổi theo cái đuôi của mình, chạy đi chạy lại trên bãi cỏ."
+       },
+       {
+        "zh": "他们研究来讨论去，还是没找出原因。",
+        "pinyin": "Tāmen yánjiū lái tǎolùn qù, háishì méi zhǎo chū yuányīn.",
+        "vi": "Bọn họ nghiên cứu tới thảo luận lui, vẫn không tìm ra nguyên nhân."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-029",
+      "title": "要不 /Yàobù/",
+      "word_class": "Liên từ",
+      "explanation": "Giống với “要不然”, biểu thị nếu không như thế này, thì kết quả sẽ như dưới đây. Có nghĩa là vẫn còn một sự lựa chọn khác (\"hay là\").",
+      "examples": [
+       {
+        "zh": "还好碰见你了，要不然我今天肯定会迟到了。",
+        "pinyin": "Hái hǎo pèngjiàn nǐ le, yàoburán wǒ jīntiān kěndìng huì chídàole",
+        "vi": "May mà gặp được cậu, nếu không thì hôm nay tôi chắc chắn sẽ bị trễ rồi."
+       },
+       {
+        "zh": "今天太晚了，要不你明天再走吧。",
+        "pinyin": "Jīntiān tài wǎnle, yàobù nǐ míngtiān zài zǒu ba",
+        "vi": "Hôm nay muộn quá rồi, hay là cậu ngày mai hãy đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-030",
+      "title": "算/Suàn)/",
+      "word_class": "Động từ",
+      "explanation": "Có nghĩa là “认作，当做” (xem như, coi như). Đằng sau có thể đi với “了” biểu thị “作罢，不再计较” (bỏ đi, không tính toán nữa).",
+      "examples": [
+       {
+        "zh": "这钱就算我借给你的，将来你有了的时候再还我。",
+        "pinyin": "Zhè qián jiù suàn wǒ jiè gěi nǐ de, jiānglái nǐ yǒule de shíhou zài hái wǒ",
+        "vi": "Số tiền này cứ coi như tôi cho cậu mượn, sau này khi cậu có thì trả lại tôi."
+       },
+       {
+        "zh": "算了吧，你跑得再快，也追不上会飞的鸟啊。",
+        "pinyin": "Suànle ba, nǐ pǎo dé zài kuài, yě zhuī bù shàng huì fēi de niǎo a",
+        "vi": "Thôi đi, cậu chạy nhanh đến mấy cũng không đuổi kịp con chim biết bay đâu."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-031",
+      "title": "作为 /Zuòwéi/",
+      "word_class": "Động từ/Giới từ",
+      "explanation": "Động từ: Có nghĩa là “看做， 认为是·····” (xem là, coi là, cho rằng). Giới từ: Dùng để chỉ ra, dẫn ra thân phận của một người hoặc tính chất của sự vật (\"với tư cách là\").",
+      "examples": [
+       {
+        "zh": "北海公园离家最近，所以我把那儿作为每晚散步的去处。",
+        "pinyin": "Běihǎi Gōngyuán lí jiā zuì jìn, suǒyǐ wǒ bǎ nà'er zuòwéi měi wǎn sànbù de qùchù",
+        "vi": "Công viên Bắc Hải gần nhà nhất, nên tôi coi đó là nơi đi dạo mỗi tối."
+       },
+       {
+        "zh": "作为大作家、大学问家，鲁迅对吃很讲究。",
+        "pinyin": "Zuòwéi dà zuòjiā, dà xuéwènjiā, Lǔ Xùn duì chī hěn jiǎngjiu.",
+        "vi": "Với tư cách là một đại văn hào, học giả lớn, Lỗ Tấn rất kỹ tính trong việc ăn uống."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-032",
+      "title": "曾经 /Céngjīng/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị hành động hoặc tình huống đã từng xảy ra hoặc từng phát sinh.",
+      "examples": [
+       {
+        "zh": "我曾经去过北京两次。",
+        "pinyin": "Wǒ céngjīng qù guò Běijīng liǎng cì",
+        "vi": "Tôi đã từng đi Bắc Kinh hai lần."
+       },
+       {
+        "zh": "他曾经是一名老师，后来转行做了记者。",
+        "pinyin": "Tā céngjīng shì yī míng lǎoshī, hòulái zhuǎnháng zuò le jìzhě",
+        "vi": "Anh ấy từng là một giáo viên, sau đó chuyển ngành làm phóng viên."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-033",
+      "title": "毕竟 /Bìjìng/",
+      "word_class": "Phó từ",
+      "explanation": "Có nghĩa là rốt cuộc, cuối cùng Dùng để chỉ phần quan trọng nhất hoặc chính xác nhất, thường dùng cùng câu biểu thị “cho dù thế nào thì kết quả chính là như thế này”.",
+      "examples": [
+       {
+        "zh": "虽然我们遇到了很多困难，但毕竟完成了任务。",
+        "pinyin": "Suīrán wǒmen yù dàole hěn duō kùnnan, dàn bìjìng wánchéngle rènwù.",
+        "vi": "Mặc dù chúng ta đã gặp rất nhiều khó khăn, nhưng rốt cuộc cũng đã hoàn thành nhiệm vụ."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-034",
+      "title": "逐渐 /Zhújiàn/",
+      "word_class": "Phó từ",
+      "explanation": "Chỉ trình độ, số lượng tăng hoặc giảm một chút (\"dần dần\").",
+      "examples": [
+       {
+        "zh": "天色逐渐暗了下来，夜晚即将来临。",
+        "pinyin": "Tiānsè zhújiàn àn le xiàlái, yèwǎn jíjiāng láilín",
+        "vi": "Màu trời dần dần tối đi, đêm sắp đến."
+       },
+       {
+        "zh": "进入秋季，气温逐渐降低，树叶也开始变黄。",
+        "pinyin": "Jìnrù qiūjì, qìwēn zhújiàn jiàngdī, shùyè yě kāishǐ biàn huáng",
+        "vi": "Bước vào mùa thu, nhiệt độ dần hạ thấp, lá cây cũng bắt đầu chuyển vàng."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-035",
+      "title": "或许 /Huòxǔ/",
+      "word_class": "Phó từ",
+      "explanation": "Có nghĩa là có lẽ, có khả năng (\"có lẽ\").",
+      "examples": [
+       {
+        "zh": "虽然以前她不支持你，但或许这次会有变化。",
+        "pinyin": "Suīrán yǐqián tā bù zhīchí nǐ, dàn huòxǔ zhè cì huì yǒu biànhuà",
+        "vi": "Mặc dù trước đây cô ấy không ủng hộ bạn, nhưng có lẽ lần này sẽ có thay đổi."
+       },
+       {
+        "zh": "或许正是因为这一点一滴的努力，你就会走在别人的前面。",
+        "pinyin": "Huòxǔ zhèng shì yīnwèi zhè yī diǎn yī dī de nǔlì, nǐ jiù huì zǒu zài biérén de qiánmiàn.",
+        "vi": "Có lẽ chính vì chút nỗ lực nhỏ nhoi này, bạn sẽ đi trước người khác."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-036",
+      "title": "来/过来 /Lái/Guòlái /",
+      "word_class": "Động từ xu hướng",
+      "explanation": "Dùng sau động từ (ví dụ: \"醒 \") biểu thị chuyển tiếp từ lúc ngủ đến lúc tỉnh, hoặc quay về trạng thái lúc ban đầu/bình thường. Có thể dùng trong cấu trúc phủ định (动词+得/不+过来).",
+      "examples": [
+       {
+        "zh": "早晨醒来，我发现窗外正下着大雪。",
+        "pinyin": "Zǎochén xǐng lái, wǒ fāxiàn chuāng wài zhèng xiàzhe dà xuě",
+        "vi": "Buổi sáng thức dậy, tôi phát hiện bên ngoài cửa sổ đang tuyết rơi dày."
+       },
+       {
+        "zh": "脑子才清醒过来。",
+        "pinyin": "Nǎozi cái qīngxǐng guòlái.",
+        "vi": "Đầu óc mới tỉnh táo trở lại."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-037",
+      "title": "所/Suǒ/",
+      "word_class": "Trợ từ/Lượng từ",
+      "explanation": "Trợ từ: Đứng trước động từ, dùng để chỉ ra sự vật (thường làm định ngữ, chủ ngữ...). Dùng trong cấu trúc “有/无+ 所+ động từ” Lượng từ: Dùng với chỗ ở, nơi ở, cơ cấu (ví dụ: trường học).",
+      "examples": [
+       {
+        "zh": "这就是我所知道的全部情况。",
+        "pinyin": "Zhè jiùshì wǒ suǒ zhīdào de quánbù qíngkuàng",
+        "vi": "Đây chính là toàn bộ tình hình mà tôi biết."
+       },
+       {
+        "zh": "这所房子",
+        "pinyin": "zhè suǒ fángzi",
+        "vi": "Căn nhà này."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-038",
+      "title": "相当 /Xiāngdān g/",
+      "word_class": "Động từ/Phó từ",
+      "explanation": "Động từ: Biểu thị hai phương diện (số lượng, điều kiện...) tương đương, ngang bằng nhau. Phó từ: Biểu thị trình độ, mức độ tương đối cao (\"khá, tương đối\").",
+      "examples": [
+       {
+        "zh": "这种鸟一天所食的害虫相当于自己的体重。",
+        "pinyin": "Zhè zhǒng niǎo yī tiān suǒ shí de hàichóng xiāngdāng yú zìjǐ de tǐzhòng.",
+        "vi": "Loài chim này ăn số lượng côn trùng gây hại trong một ngày tương đương với trọng lượng cơ thể của nó."
+       },
+       {
+        "zh": "菜的味道好极了，服务也挺周到，我相当满意。",
+        "pinyin": "Cài de wèidào hǎo jíle, fúwù yě tǐng zhōudao, wǒ xiāngdāng mǎnyì",
+        "vi": "Món ăn ngon tuyệt vời, phục vụ cũng rất chu đáo, tôi khá hài lòng."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-039",
+      "title": "数 /Shǔ/Shù/",
+      "word_class": "Động từ/Số từ",
+      "explanation": "Động từ (shǔ): Biểu thị tra, đếm (số lượng). Dùng trong cấu trúc “数······（最）······” hoặc “（最）······的（要/就）数 ······” biểu thị so sánh (nhất). Số từ (shù): Có nghĩa là “几/ 几个” (vài, mấy), thường dùng trong văn viết.",
+      "examples": [
+       {
+        "zh": "先生，这是找您的钱58块6，您数数。",
+        "pinyin": "Xiānsheng, zhè shì zhǎo nín de qián wǔshíbā kuài liù, nín shǔ shǔ.",
+        "vi": "Thưa ngài, đây là tiền thối lại cho ngài 58 tệ 6, ngài đếm thử xem."
+       },
+       {
+        "zh": "要数我们班跑得最快的，那就数李阳了。",
+        "pinyin": "Yào shuō wǒmen bān pǎo de zuì kuài de, nà jiù shǔ Lǐ Yáng le",
+        "vi": "Nếu nói về người chạy nhanh nhất lớp chúng ta, thì phải kể đến Lý Dương."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-040",
+      "title": "以及/Yǐjí/",
+      "word_class": "Liên từ",
+      "explanation": "Dùng để nối cụm từ hoặc từ có quan hệ ngang bằng nhau, liên kết thành phần thường có sự phân biệt trước sau hoặc sự phân biệt chủ yếu và thứ yếu (\"cũng như\").",
+      "examples": [
+       {
+        "zh": "吃饭时不要用筷子敲打碗，盘子以及桌面。",
+        "pinyin": "Chīfàn shí bú yào yòng kuàizi qiāodǎ wǎn, pánzi yǐjí zhuōmiàn.",
+        "vi": "Khi ăn cơm không được dùng đũa gõ vào bát, đĩa cũng như mặt bàn."
+       },
+       {
+        "zh": "学校的领导，教师以及一些学生代表观看了演出。",
+        "pinyin": "Xuéxiào de lǐngdǎo, jiàoshī yǐjí yīxiē xuésheng dàibiǎo guānkànle yǎnchū.",
+        "vi": "Lãnh đạo nhà trường, giáo viên và một số đại diện học sinh đã xem buổi biểu diễn."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-041",
+      "title": "程度 (Chéngdù)",
+      "word_class": "Danh từ",
+      "explanation": "Chỉ trình độ, mức độ hoặc cấp độ mà ở một vài phương diện đã đạt được.",
+      "examples": [
+       {
+        "label": "1",
+        "zh": "问题已经发展到了十分严重的程度。",
+        "pinyin": "Wèntí yǐjīng fāzhǎn dào le shífēn yánzhòng de chéngdù.",
+        "vi": "Vấn đề đã phát triển đến mức độ vô cùng nghiêm trọng."
+       },
+       {
+        "label": "2",
+        "zh": "在很大程度上，一个人的未来取决于他所受的教育。",
+        "pinyin": "Zài hěn dà chéngdù shang, yīgè rén de wèilái qǔjué yú tā suǒ shòu de jiàoyù.",
+        "vi": "Ở mức độ rất lớn, tương lai của một người phụ thuộc vào nền giáo dục mà anh ta nhận được."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-042",
+      "title": "何况 /Hékuàng/",
+      "word_class": "Liên từ",
+      "explanation": "Dùng ngữ khí phản vấn, biểu thị cao hơn một mức hoặc làm cho kết luận ở câu sau càng rõ ràng hơn",
+      "examples": [
+       {
+        "zh": "连运动员都不满意，更何况看比赛的球迷呢。",
+        "pinyin": "Lián yùndòngyuán dōu bù mǎnyì, gèng hékuàng kàn bǐsài de qiúmí ne.",
+        "vi": "Ngay cả vận động viên cũng không hài lòng, huống hồ là người hâm mộ xem trận đấu."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-043",
+      "title": "何必 /Hébì/",
+      "word_class": "Phó từ",
+      "explanation": "Dùng ngữ khí phản vấn để biểu thị không cần thiết, không bắt buộc (\"cần gì phải, hà tất\").",
+      "examples": [
+       {
+        "zh": "你何必亲自送一趟呢？叫个快递不就行了？",
+        "pinyin": "Nǐ hébì qīnzì sòng yī tàng ne? Jiào gè kuàidì bú jiù xíngle",
+        "vi": "Cậu cần gì phải tự mình đi một chuyến? Gọi một người chuyển phát nhanh chẳng phải là được rồi sao?."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-044",
+      "title": "多亏 /Duōkuī/",
+      "word_class": "Động từ",
+      "explanation": "Do có sự giúp đỡ của người khác hoặc bởi vì một vài nhân tố có lợi, mà tránh được rủi ro hoặc đạt được lợi ích nào đó (\"may nhờ, nhờ có\").",
+      "examples": [
+       {
+        "zh": "今天搬家多亏有你在，你可帮我太忙了。",
+        "pinyin": "Jīntiān bānjiā duōkuī yǒu nǐ zài, nǐ kě bāng wǒ tài máng le",
+        "vi": "Hôm nay chuyển nhà may nhờ có cậu ở đây, cậu đã giúp tôi quá nhiều rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-045",
+      "title": "所谓 /Suǒwèi/",
+      "word_class": "Tính từ",
+      "explanation": "Biểu thị thường hay nói, dùng để đề ra từ ngữ cần giải thích (\"cái gọi là\"). Chỉ những điều do một vài người nói, thường biểu thị không đồng ý, không thừa nhận.",
+      "examples": [
+       {
+        "zh": "他所谓的“新闻“，其实我们早就知道了。",
+        "pinyin": "Tā suǒwèi de “xīnwén“, qíshí wǒmen zǎo jiù zhīdàole.",
+        "vi": "Cái gọi là “tin tức” của anh ấy, thực ra chúng tôi đã biết từ lâu rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-046",
+      "title": "则/Zé/",
+      "word_class": "Lượng từ/Liên từ",
+      "explanation": "Lượng từ: Thường dùng với văn bản ngắn thành đoạn hoặc thành bài (mẩu tin, câu chuyện) Liên từ: Thường gặp kết cấu “A·····，（而）B则······” biểu thị sự so sánh giữa câu trước và câu sau. Liên từ: Biểu thị mối quan hệ nhân quả (tương đương với “就” trong văn nói).",
+      "examples": [
+       {
+        "zh": "一则新闻",
+        "pinyin": "yī zé xīnwén",
+        "vi": ": Một mẩu tin (trên báo/đài)."
+       },
+       {
+        "zh": "北方气候干燥，而南方则潮湿多雨。",
+        "pinyin": "Běifāng qìhòu gānzào, ér nánfāng zé cháoshī duō yǔ",
+        "vi": "Khí hậu miền Bắc khô ráo, còn miền Nam thì ẩm ướt mưa nhiều."
+       },
+       {
+        "zh": "物体受热，则体积膨胀。",
+        "pinyin": "Wùtǐ shòu rè, zé tǐjī péngzhàng",
+        "vi": "Vật thể khi nhận nhiệt, thì thể tích sẽ nở ra."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-047",
+      "title": "为······所 ····· /Wéi... Suǒ../",
+      "word_class": "Kết cấu cố định",
+      "explanation": "Kết cấu cố định, thường dùng trong văn viết, trong đó “为” biểu thị ý nghĩa là “被” (bị/được).",
+      "examples": [
+       {
+        "zh": "大自然就可以更好地为人所用。",
+        "pinyin": "Dà zìrán jiù kěyǐ gèng hǎo de wéi rén suǒ yòng",
+        "vi": "Thiên nhiên có thể được con người sử dụng tốt hơn."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-048",
+      "title": "起/Qǐ/",
+      "word_class": "Động từ",
+      "explanation": "Động từ (làm bổ ngữ), biểu thị sự liên tiếp, kết hợp và cố định.",
+      "examples": [
+       {
+        "zh": "最重要的是建立起一套行之有效的制度。",
+        "pinyin": "Zuì zhòngyào de shì jiànlì qǐ yī tào xíngzhīyǒuxiào de zhìdù",
+        "vi": "Điều quan trọng nhất là thiết lập một bộ chế độ có hiệu quả thực thi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-049",
+      "title": "动词+过 (Guò)",
+      "word_class": "Động từ xu hướng",
+      "explanation": "Dùng với cách thức “động từ +得/不+过” làm bổ ngữ, biểu thị ý nghĩa là quá, vượt qua, hơn (thường dùng trong so sánh năng lực, trình độ).",
+      "examples": [
+       {
+        "label": "1",
+        "zh": "跟别人谈论起军事来，没有人说得过他。",
+        "pinyin": "Gēn biérén tánlùn qǐ jūngshì lái, méiyǒu rén shuō de guò tā.",
+        "vi": "Khi bàn luận về quân sự với người khác, không ai nói hơn được anh ấy."
+       },
+       {
+        "label": "2",
+        "zh": "产品在价格上肯定竞争不过他们。",
+        "pinyin": "Chǎnpǐn zài jiàgé shang kěndìng jìngzhēng bú guò tāmen.",
+        "vi": "Sản phẩm chắc chắn không thể cạnh tranh lại họ về giá cả."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-050",
+      "title": "迟早 /Chízǎo/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị một vài động tác hoặc sự việc sớm muộn cũng sẽ xảy ra.",
+      "examples": [
+       {
+        "zh": "随着网络技术的发展，这些问题迟早都会得到解决。",
+        "pinyin": "Suízhe wǎngluò jìshù de fāzhǎn, zhèxiē wèntí chízǎo dōu huì dédào jiějué",
+        "vi": "Cùng với sự phát triển của công nghệ mạng, những vấn đề này sớm muộn gì cũng sẽ được giải quyết."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-051",
+      "title": "再三 /Zàisān/",
+      "word_class": "Phó từ",
+      "explanation": "Có nghĩa là “hết lần này đến lần khác”, thường đi với động từ.",
+      "examples": [
+       {
+        "zh": "他考虑再三，最后还是客气地拒绝了。",
+        "pinyin": "Tā kǎolǜ zàisān, zuìhòu háishì kèqi de jùjuéle",
+        "vi": "Anh ấy suy nghĩ hết lần này đến lần khác, cuối cùng vẫn lịch sự từ chối."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-052",
+      "title": "即/Jí/",
+      "word_class": "Động từ/Phó từ",
+      "explanation": "Động từ: Dùng trong văn viết, nghĩa là “就是” (tức là). Phó từ: Có nghĩa là “就” “便” (thì, ngay).",
+      "examples": [
+       {
+        "zh": "“旦”是象形字，即太阳从地平线上升起。",
+        "pinyin": "“Dàn” shì xiàngxíngzì, jí tàiyáng cóng dìpíngxiàn shang shēng qǐ",
+        "vi": "Chữ “旦” là chữ tượng hình, tức là mặt trời mọc từ đường chân trời."
+       },
+       {
+        "zh": "不懂即问是他最大的优点。",
+        "pinyin": "Bù dǒng jí wèn shì tā zuì dà de yōudiǎn",
+        "vi": "Không hiểu thì hỏi ngay là ưu điểm lớn nhất của anh ấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-053",
+      "title": "个别 /Gèbié/",
+      "word_class": "Tính từ",
+      "explanation": "Có nghĩa là “单个，各个” (từng cái, mỗi cái). Biểu thị cực kỳ ít, hiếm có.",
+      "examples": [
+       {
+        "zh": "大部分同学都按时完成了作业，只有个别同学还需要一点时间。",
+        "pinyin": "Dà bùfèn tóngxué dōu ànshí wánchéng le zuòyè, zhǐyǒu gèbié tóngxué hái xūyào yīdiǎn shíjiān",
+        "vi": "Đa số các bạn học sinh đều hoàn thành bài tập đúng hạn, chỉ có một vài bạn cá biệt cần thêm chút thời gian."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-054",
+      "title": "非/Fēi/",
+      "word_class": "Tiền tố/Động từ/Phó từ",
+      "explanation": "Tiền tố: Đứng trước cụm danh từ, biểu thị là không thuộc về phạm vi này. Động từ: Có nghĩa là “不是” (không phải). Phó từ: Biểu thị chủ quan cố ý, kiên trì làm một việc gì đó (thường dùng trong cấu trúc “非+ động từ +不可”).",
+      "examples": [
+       {
+        "zh": "非机动车",
+        "pinyin": "Fēi jīdòngchē",
+        "vi": "Phi cơ giới /Xe không có động cơ"
+       },
+       {
+        "zh": "此物非彼物，不可混淆。",
+        "pinyin": "Cǐ wù fēi bǐ wù, bùkě hùnxiáo",
+        "vi": "Vật này không phải vật kia, không thể lẫn lộn.他下定决"
+       },
+       {
+        "zh": "心，非要考上那所名牌大学不可。",
+        "pinyin": "Tā xià dìng juéxīn, fēi yào kǎo shàng nà suǒ míngpái dàxué bùkě",
+        "vi": "Anh ấy quyết tâm, nhất định phải thi đỗ vào ngôi trường đại học danh tiếng đó mới thôi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-055",
+      "title": "以/Yǐ/",
+      "word_class": "Giới từ/Liên từ",
+      "explanation": "Giới từ: Có nghĩa là “用、拿、 凭借” (dùng, lấy, dựa vào, nhờ vào). Liên từ: Biểu thị mục đích (\"để\").",
+      "examples": [
+       {
+        "zh": "我们应以客观的态度看待这个问题。",
+        "pinyin": "Wǒmen yīng yǐ kèguān de tàidù kàndài zhège wèntí",
+        "vi": "Chúng ta nên dùng/lấy thái độ khách quan để nhìn nhận vấn đề này."
+       },
+       {
+        "zh": "公司决定扩大生产规模，以满足日益增长的市场需求。",
+        "pinyin": "Gōngsī juédìng kuòdà shēngchǎn guīmó, yǐ mǎnzú rìyì zēngzhǎng de shìchǎng xūqiú",
+        "vi": "Công ty quyết định mở rộng quy mô sản xuất, để đáp ứng nhu cầu thị trường ngày càng tăng."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-056",
+      "title": "平常 /Píngcháng /",
+      "word_class": "Tính từ/Danh từ",
+      "explanation": "Tính từ: Biểu thị phổ thông, bình thường, không có gì đặc biệt Danh từ: Ý nghĩa là “平时” (ngày thường, lúc thường).",
+      "examples": [
+       {
+        "zh": "对小王来说，今天是一个不平常的日子。",
+        "pinyin": "Duì Xiǎo Wáng lái shuō, jīntiān shì yīgè bù píngcháng de rìzi",
+        "vi": "Đối với Tiểu Vương, hôm nay là một ngày không bình thường."
+       },
+       {
+        "zh": "他平常总是来得很早，今天却迟到了。",
+        "pinyin": "Tā píngcháng zǒng shì lái de hěn zǎo, jīntiān què chídàole",
+        "vi": "Anh ấy ngày thường luôn đến rất sớm, nhưng hôm nay lại đến muộn."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-057",
+      "title": "宁可 /Nìngkě/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị sau khi so sánh, chọn lựa được 1 bên tương đối có lợi (\"thà rằng... còn hơn\").",
+      "examples": [
+       {
+        "label": "1",
+        "zh": "作为母亲，她宁可自己累一点儿，也不想委屈了孩子。",
+        "pinyin": "Zuòwéi mǔqīn, tā nìngkě zìjǐ lèi yīdiǎn er, yě bù xiǎng wěiqu le háizi",
+        "vi": "Với tư cách là một người mẹ, cô ấy thà rằng mình mệt một chút, cũng không muốn làm con cái phải chịu thiệt thòi"
+       }
+      ]
+     },
+     {
+      "id": "HSK5-058",
+      "title": "极其/Jíqí/",
+      "word_class": "Phó từ",
+      "explanation": "Có nghĩa là “非常” (rất, cực kỳ), thường dùng trong văn viết, chỉ có thể bổ sung cho tính từ song âm tiết hoặc đa âm tiết.",
+      "examples": [
+       {
+        "zh": "在中国，餐桌上放一把刀是极其少见的现象。",
+        "pinyin": "Zài Zhōngguó, cānzhuō shang fàng yī bǎ dāo shì jíqí shǎojiàn de xiànxiàng",
+        "vi": "Ở Trung Quốc, việc đặt dao trên bàn ăn là một hiện tượng cực kỳ hiếm thấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-059",
+      "title": "其余 /Qíyú/",
+      "word_class": "Đại từ",
+      "explanation": "Biểu thị phần còn lại, bộ phận khác.",
+      "examples": [
+       {
+        "zh": "怎么只有你们两个人？其余的同学呢？",
+        "pinyin": "Zěnme zhǐyǒu nǐmen liǎng gè rén? Qíyú de tóngxué ne?",
+        "vi": "Sao chỉ có hai người các cậu? Những học sinh còn lại đâu?"
+       }
+      ]
+     },
+     {
+      "id": "HSK5-060",
+      "title": "可见 /Kějiàn/",
+      "word_class": "Liên từ",
+      "explanation": "Thường dùng cách thức “······，（由此）可见······”, biểu thị có thể dựa vào tình huống được nói đến trong văn bản mà đưa ra phán đoán, đánh giá.",
+      "examples": [
+       {
+        "label": "1",
+        "zh": "他已经住院好几天了，一直诊断不出是什么问题，可见情况不太好。",
+        "pinyin": "Tā yǐjīng zhùyuàn hǎo jǐ tiānle, yīzhí zhěnduàn bù chū shì shénme wèntí, kějiàn qíngkuàng bú tài hǎo",
+        "vi": "Anh ấy đã nhập viện mấy ngày rồi, vẫn không chẩn đoán ra vấn đề gì, có thể thấy tình hình không được tốt lắm."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-061",
+      "title": "般/Bān/",
+      "word_class": "Trợ từ",
+      "explanation": "Có nghĩa là “一样” “似的” (tựa như, như), thường đứng sau danh từ, tạo thành một cụm từ làm định ngữ hoặc trạng ngữ.",
+      "examples": [
+       {
+        "zh": "望着爸爸远去的背景，我的眼泪雨点般不停地往下掉。",
+        "pinyin": "Wàngzhe bàba yuǎn qù de bèijǐng, wǒ de yǎnlèi yǔdiǎn bān bù tíng de wǎng xià diào",
+        "vi": "Nhìn bóng lưng bố đi xa, nước mắt tôi rơi xuống không ngừng như mưa."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-062",
+      "title": "闻(Wén)",
+      "word_class": "Ngữ tố/Động từ",
+      "explanation": "Ngữ tố: Có nghĩa là \"nghe thấy hoặc tin tức, sự việc được nghe thấy\"/ Động từ: Biểu thị dùng mũi để cảm nhận, nhận biết mùi vị.",
+      "examples": [
+       {
+        "zh": "老话说：百闻不如一见。",
+        "pinyin": "Lǎo huà shuō: Bǎi wén bù rú yī jiàn.",
+        "vi": "Lời cổ nói: Trăm nghe không bằng một thấy."
+       },
+       {
+        "zh": "等能闻到香味时，便可开锅了。",
+        "pinyin": "Wén dào xiāngwèi shí, biàn kě kāi guō le.",
+        "vi": "Khi ngửi thấy mùi thơm, thì có thể mở nồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-063",
+      "title": "趁/Chèn/",
+      "word_class": "Giới từ",
+      "explanation": "Có nghĩa là lợi dụng (thời gian, cơ hội).",
+      "examples": [
+       {
+        "zh": "萝卜饼要趁热吃。",
+        "pinyin": "Luóbo bǐng yào chèn rè chī",
+        "vi": "Bánh củ cải phải ăn lúc còn nóng."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-064",
+      "title": "动词+得/ 不+起 (De/Bù Qǐ)",
+      "word_class": "Kết cấu",
+      "explanation": "Biểu thị về mặt chủ quan có (không có) năng lực và điều kiện thực hiện (hoặc tiếp nhận) động tác nào đó.",
+      "examples": [
+       {
+        "zh": "只有经得起困难和时间考验的朋友才算是真正的朋友。",
+        "pinyin": "Zhǐyǒu jīng de qǐ kùnnan hé shíjiān kǎoyàn de péngyǒu cái suàn shì zhēnzhèng de péngyǒu",
+        "vi": "Chỉ những người bạn vượt qua được thử thách của khó khăn và thời gian mới được coi là bạn bè thực sự."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-065",
+      "title": "支/Zhī/",
+      "word_class": "Động từ/Lượng từ",
+      "explanation": "Động từ: Biểu thị dùng đồ vật chống cho vật thể không bị đổ xuống Lượng từ: Dùng trong tác phẩm âm nhạc, đội ngũ, hoặc đồ vật có hình cán (cây, bản).",
+      "examples": [
+       {
+        "zh": "他的两只手放在桌上，支着脑袋，正在想事情。",
+        "pinyin": "Tā de liǎng zhī shǒu fàng zài zhuō shang, zhīzhe nǎodai, zhèngzài xiǎng shìqíng",
+        "vi": "Hai tay anh ấy đặt trên bàn, chống cằm, đang suy nghĩ việc gì đó."
+       },
+       {
+        "zh": "他弹第二支曲子时引起了牛的注意。",
+        "pinyin": "Tā tán dì èr zhī qǔzi shí yǐnqǐle niú de zhùyì",
+        "vi": "Khi anh ấy chơi bản nhạc thứ hai đã thu hút sự chú ý của con bò."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-066",
+      "title": "凭/Píng/",
+      "word_class": "Động từ/Giới từ",
+      "explanation": "Động từ: Có nghĩa là nhờ vào, dựa vào. Giới từ: Biểu thị căn cứ, dựa vào (thường dùng cách thức “凭+ tân ngữ + động từ”).",
+      "examples": [
+       {
+        "zh": "干工作不能光凭经验，还要有创新。",
+        "pinyin": "Gàn gōngzuò bù néng guāng píng jīngyàn, hái yào yǒu chuàngxīn",
+        "vi": "Làm việc không thể chỉ dựa vào kinh nghiệm, còn phải có sự đổi mới."
+       },
+       {
+        "zh": "请旅客们准备好车票，凭票进站。",
+        "pinyin": "Qǐng lǚkèmen zhǔnbèi hǎo chēpiào, píng piào jìn zhàn",
+        "vi": "Xin hành khách hãy chuẩn bị sẵn vé tàu, dựa vào vé để vào ga."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-067",
+      "title": "硬/Yìng/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị kiên quyết hoặc cố chấp làm một việc gì đó. Biểu thị không đủ năng lực nhưng vẫn tiếp tục tận lực để làm một việc gì đó (\"cố gắng, cố chấp\").",
+      "examples": [
+       {
+        "zh": "医生让他休息，他硬要回去上班。",
+        "pinyin": "Yīshēng ràng tā xiūxi, tā yìng yào huíqù shàngbān",
+        "vi": "Bác sĩ bảo anh ấy nghỉ ngơi, anh ấy cứ đòi về đi làm."
+       },
+       {
+        "zh": "为了治病，他还是硬把它喝下去了。",
+        "pinyin": "Wèile zhì bìng, tā háishì yìng bǎ tā hē xiàqùle.",
+        "vi": "Mặc dù thuốc bắc hơi đắng, nhưng vì chữa bệnh, anh ấy vẫn cố gắng uống hết."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-068",
+      "title": "偶然 /Ǒurán/",
+      "word_class": "Tính từ/Phó từ",
+      "explanation": "Tính từ: Biểu thị sự việc phát sinh ngoài dự đoán hoặc dựa vào quy luật thông thường thì không có khả năng phát sinh (\"ngẫu nhiên, bất ngờ\"). Phó từ: Có nghĩa là “偶尔，有时候” (thỉnh thoảng/ có lúc).",
+      "examples": [
+       {
+        "zh": "这次相遇完全是一个偶然的事件，谁也没有料到。",
+        "pinyin": "Zhè cì xiāngyù wánquán shì yī gè ǒurán de shìjiàn, shéi yě méiyǒu liàodào",
+        "vi": "Lần gặp gỡ này hoàn toàn là một sự kiện ngẫu nhiên, không ai ngờ tới cả."
+       },
+       {
+        "zh": "我昨天在超市偶然遇见了十年没见的老同学。",
+        "pinyin": "Wǒ zuótiān zài chāoshì ǒurán yùjiàn le shí nián méi jiàn de lǎo tóngxué",
+        "vi": "Hôm qua tôi tình cờ gặp một người bạn cũ đã mười năm không gặp ở siêu thị."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-069",
+      "title": "尽快 (Jǐnkuài)",
+      "word_class": "Phó từ",
+      "explanation": "Có nghĩa là nhanh hết mức có thể (\"nhanh chóng\").",
+      "examples": [
+       {
+        "label": "1",
+        "zh": "我要抓紧时间尽快把《说文解字》电脑化。",
+        "pinyin": "Wǒ yào zhuājǐn shíjiān jǐnkuài bǎ《Shuōwén Jiězì》diànnǎo huà.",
+        "vi": "Tôi phải tranh thủ thời gian nhanh chóng máy tính hóa cuốn \"Thuyết văn giải tự\"."
+       },
+       {
+        "label": "2",
+        "zh": "趁这两天天气好，您尽快把过季的衣服洗一洗，收起来。",
+        "pinyin": "Chèn zhè liǎng tiān tiānqì hǎo, nín jǐnkuài bǎ guò jì de yīfu xǐ yī xǐ, shōu qǐlái.",
+        "vi": "Tranh thủ hai hôm thời tiết đẹp này, bạn nhanh chóng giặt giũ và cất quần áo trái mùa đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-070",
+      "title": "一旦 /Yīdàn/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị thời gian không xác định, ngày đó bỗng nhiên tới hoặc giả dụ có ngày đó (\"một khi\").",
+      "examples": [
+       {
+        "zh": "一旦有人闯入这个空间，我们就会感觉不舒服、不自在。",
+        "pinyin": "Yīdàn yǒu rén chuǎng rù zhège kōngjiān, wǒmen jiù huì gǎnjué bù shūfú, bù zìzài",
+        "vi": "Một khi có người đột nhập vào không gian này, chúng ta sẽ cảm thấy không thoải mái, không tự nhiên."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-071",
+      "title": "难免 /Nánmiǎn/",
+      "word_class": "Tính từ",
+      "explanation": "Có nghĩa là khó tránh khỏi, không thể tránh khỏi.",
+      "examples": [
+       {
+        "zh": "朋友间难免会发生矛盾、误会甚至是伤害。",
+        "pinyin": "Péngyǒu jiān nánmiǎn huì fāshēng máodùn, wùhuì shènzhì shì shānghài",
+        "vi": "Giữa bạn bè khó tránh khỏi việc xảy ra mâu thuẫn, hiểu lầm thậm chí là tổn thương."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-072",
+      "title": "自从 /Zìcóng/",
+      "word_class": "Giới từ",
+      "explanation": "Biểu thị bắt đầu từ mốc thời gian nào đó trong quá khứ (\"kể từ khi\").",
+      "examples": [
+       {
+        "zh": "自从有了长大后成为作家这个理想之后，他每天都坚持写作。",
+        "pinyin": "Zìcóng yǒule zhǎng dà hòu chéngwéi zuòjiā zhège lǐxiǎng zhīhòu, tā měitiān dōu jiānchí xiězuò",
+        "vi": "Kể từ khi có lý tưởng lớn lên trở thành nhà văn, anh ấy mỗi ngày đều kiên trì viết lách."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-073",
+      "title": "一致 /Yīzhì/",
+      "word_class": "Tính từ/Phó từ",
+      "explanation": "Tính từ: Biểu thị không có sự chia rẽ, bất đồng. Phó từ: Biểu thị cùng nhau, đồng lòng.",
+      "examples": [
+       {
+        "zh": "文文跟他们的意见不一致。",
+        "pinyin": "Wénwén gēn tāmen de yìjiàn bù yīzhì",
+        "vi": "Ý kiến của Văn Văn không thống nhất với họ."
+       },
+       {
+        "zh": "双方一致表示将进一步发展友好合作关系。",
+        "pinyin": "Shuāngfāng yīzhì biǎoshì jiāng jìnyībù fāzhǎn yǒuhǎo hézuò guānxì",
+        "vi": "Hai bên nhất trí bày tỏ sẽ tiếp tục phát triển mối quan hệ hợp tác hữu nghị."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-074",
+      "title": "某/Mǒu/",
+      "word_class": "Đại từ chỉ thị",
+      "explanation": "Chỉ một người hoặc một vật nhất định (thường dùng sau họ, biểu thị biết tên nhưng không nói ra). Chỉ người hoặc vật không xác định.",
+      "examples": [
+       {
+        "zh": "某些干部的工作作风存在问题。",
+        "pinyin": "Mǒu xiē gànbù de gōngzuò zuòfēng cúnzài wèntí",
+        "vi": "Tác phong làm việc của một số cán bộ nào đó tồn tại vấn đề."
+       },
+       {
+        "zh": "在某种程度上，我同意你的观点。",
+        "pinyin": "Zài mǒu zhǒng chéngdù shàng, wǒ tóngyì nǐ de guāndiǎn",
+        "vi": "Ở một mức độ nào đó, tôi đồng ý với quan điểm của bạn."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-075",
+      "title": "幸亏 /Xìngkuī/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị do một vài nguyên nhân nào đó mà tránh được một số chuyện không hy vọng sẽ phát sinh (\"may mà\").",
+      "examples": [
+       {
+        "zh": "幸亏你提醒了我，我今天就去报名。",
+        "pinyin": "Xìngkuī nǐ tíxǐngle wǒ, wǒ jīntiān jiù qù bàomíng",
+        "vi": "May mà cậu nhắc tôi, hôm nay tôi sẽ đi đăng ký."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-076",
+      "title": "行动 /Xíngdòng/",
+      "word_class": "Động từ/Danh từ",
+      "explanation": "Động từ: Biểu thị đi lại, hoạt động cơ thể. Cũng có thể biểu thị tiến hành hành động nào đó vì mục đích nào đó. Danh từ: Biểu thị hoạt động, hành vi.",
+      "examples": [
+       {
+        "zh": "他运动时受伤了，行动不便。",
+        "pinyin": "Tā yùndòng shí shòushāngle, xíngdòng bú biàn",
+        "vi": "Anh ấy bị thương khi tập thể thao, đi lại bất tiện."
+       },
+       {
+        "zh": "我们应该勇敢面对困难，迅速采取行动。",
+        "pinyin": "Wǒmen yīnggāi yǒnggǎn miànduì kùnnan, xùnsù cǎiqǔ xíngdòng.",
+        "vi": "Chúng ta nên dũng cảm đối mặt với khó khăn, nhanh chóng hành động."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-077",
+      "title": "义务 /Yìwù/",
+      "word_class": "Danh từ/Tính từ",
+      "explanation": "Danh từ: Biểu thị trách nhiệm về mặt pháp luật, đạo đức nên gánh vác, đảm nhiệm (\"nghĩa vụ\"). Tính từ: Biểu thị không nhận thù lao (mang tính nghĩa vụ).",
+      "examples": [
+       {
+        "zh": "中国有关于九年制义务教育的法律。",
+        "pinyin": "Zhōngguó yǒu guānyú jiǔ nián zhì yìwù jiàoyù de fǎlǜ",
+        "vi": "Trung Quốc có luật về giáo dục bắt buộc 9 năm"
+       },
+       {
+        "zh": "参与社会事务和促进社会进步是每个人的权利，也是每个人的义务和责任。",
+        "pinyin": "Cānyù shèhuì shìwù hé cùjìn shèhuì jìnbù shì měi gèrén de quánlì, yě shì měi gèrén de yìwù hé zérèn",
+        "vi": "Tham gia công việc xã hội và thúc đẩy tiến bộ xã hội là quyền lợi của mỗi người, cũng là nghĩa vụ và trách nhiệm của mỗi người."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-078",
+      "title": "朝/Cháo/",
+      "word_class": "Động từ/Giới từ",
+      "explanation": "Động từ: Biểu thị hướng về, đối mặt Giới từ: Biểu thị phương hướng của hành vi, động tác đã chỉ",
+      "examples": [
+       {
+        "zh": "我们学校的正门坐西朝东。",
+        "pinyin": "Wǒmen xuéxiào de zhèng mén zuò xī cháo dōng",
+        "vi": "Cổng chính của trường chúng tôi tọa lạc phía Tây, hướng về phía Đông."
+       },
+       {
+        "zh": "使劲儿朝里面放水。",
+        "pinyin": "Shǐ jìnr cháo lǐmiàn fàng shuǐ",
+        "vi": "Dốc sức đổ nước vào bên trong."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-079",
+      "title": "简直 /Jiǎnzhí/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị gần như là vậy nhưng cũng không hẳn hoàn toàn là như vậy. Mang ngữ khí khoa trương, nhấn mạnh (\"quả là/thật là\").",
+      "examples": [
+       {
+        "zh": "与从前相比，简直像换了个人。",
+        "pinyin": "Yǔ cóngqián xiāng bǐ, jiǎnzhí xiàng huànle gè rén",
+        "vi": "So với trước đây, (cô ấy) quả là như đã thay đổi thành một người khác."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-080",
+      "title": "来/Lái/",
+      "word_class": "Trợ từ",
+      "explanation": "Đứng sau các từ chỉ số “十、 百、千”... hoặc từ chỉ số lượng, biểu thị ước lượng (\"khoảng hơn\"). Dùng sau các từ chỉ số như “一、二、三” tạo thành kết cấu “一来······，二来······” biểu thị liệt kê lí do (\"một là... hai là...\").",
+      "examples": [
+       {
+        "zh": "他雇了20来个当地人为他带路和搬运行李。",
+        "pinyin": "Tā gùle èrshí lái gè dāngdì rén wèi tā dàilù hé bānyùn xíngli.",
+        "vi": "Anh ấy đã thuê khoảng hơn 20 người địa phương dẫn đường và khuân vác hành lý cho anh ấy."
+       },
+       {
+        "zh": "一来是给大家送水果，二来是看看大家过节还有什么难处。",
+        "pinyin": "Yī lái shì gěi dàjiā sòng shuǐguǒ, èr lái shì kàn kàn dàjiā guòjié hái yǒu shénme nán chu",
+        "vi": "Một là để mang trái cây đến cho mọi người, hai là để xem mọi người đón lễ còn khó khăn gì không."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-081",
+      "title": "至于 /Zhìyú/",
+      "word_class": "Động từ/Giới từ",
+      "explanation": "Động từ: Biểu thị đạt đến một loại trình độ nào đó (thường dùng trong câu phản vấn với ý \"đến mức\"). Giới từ: Dùng trong kết cấu “（A）·····，至于（B）······” biểu thị nhắc đến một việc khác nữa (\"còn về\").",
+      "examples": [
+       {
+        "zh": "我只是和你开个玩笑，你至于生那么大的气吗？",
+        "pinyin": "Wǒ zhǐshì hé nǐ kāi gè wánxiào, nǐ zhìyú shēng nàme dà de qì ma",
+        "vi": "Tôi chỉ đùa với cậu thôi, cậu đến mức phải tức giận lớn như vậy sao?"
+       },
+       {
+        "zh": "我只知道他是六班的学生，至于住在哪儿，我就不清楚了。",
+        "pinyin": "Wǒ zhǐ zhīdào tā shì liù bān de xuésheng, zhìyú zhù zài nǎ'er, wǒ jiù bù qīngchǔle",
+        "vi": "Tôi chỉ biết anh ấy là học sinh lớp 6, còn về việc anh ấy sống ở đâu, thì tôi không rõ."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-082",
+      "title": "总算 /Zǒngsuàn/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị nguyện vọng cuối cùng cũng đã được thực hiện sau khi trải qua một khoảng thời gian dài (\"cuối cùng cũng\"). Biểu thị về mặt cơ bản vẫn vượt qua được (\"dù sao cũng\").",
+      "examples": [
+       {
+        "zh": "经过沟通，大导演总算搞明白了。",
+        "pinyin": "Jīngguò gōutōng, dà dǎoyǎn zǒngsuàn gǎo míngbáile",
+        "vi": "Sau khi trao đổi, đạo diễn lớn cuối cùng cũng đã hiểu ra."
+       },
+       {
+        "zh": "虽然我对这家宾馆不太满意，但总算有个睡觉的地方了。",
+        "pinyin": "Suīrán wǒ duì zhè jiā bīngguǎn bú tài mǎnyì, dàn zǒngsuàn yǒu gè shuìjiào de dìfāngle",
+        "vi": "Mặc dù tôi không hài lòng lắm với khách sạn này, nhưng dù sao cũng có chỗ để ngủ rồi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-083",
+      "title": "下来 /Xiàlái/",
+      "word_class": "Bổ ngữ xu hướng",
+      "explanation": "Biểu thị hoàn thành (một hành động, một sự việc)",
+      "examples": [
+       {
+        "zh": "你的论文大概什么时候发表？定下来了吗？",
+        "pinyin": "Nǐ de lùnwén dàgài shénme shíhou fābiǎo? Dìng xiàláile ma?",
+        "vi": "Luận văn của bạn khoảng khi nào công bố? Đã định xong chưa?"
+       }
+      ]
+     },
+     {
+      "id": "HSK5-084",
+      "title": "舍不得 /Shěbudé/",
+      "word_class": "Động từ",
+      "explanation": "Biểu thị không muốn từ bỏ, tiêu phí hoặc sử dụng.",
+      "examples": [
+       {
+        "zh": "把你最喜欢的玩具送给小朋友，你舍得吗 ？",
+        "pinyin": "Bǎ nǐ zuì xǐhuān de wánjù sòng gěi xiǎopéngyǒu, nǐ shědé ma?",
+        "vi": "Tặng món đồ chơi yêu thích nhất của bạn cho em bé, bạn có nỡ không?"
+       }
+      ]
+     },
+     {
+      "id": "HSK5-085",
+      "title": "从此 /Cóngcǐ/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị từ thời điểm này hoặc từ thời điểm nói trở đi (\"từ đó về sau\").",
+      "examples": [
+       {
+        "zh": "因为那场严重的误会，他们大吵了一架，从此两人的关系就疏远了。",
+        "pinyin": "Yīnwèi nà chǎng yánzhòng de wùhuì, tāmen dà chǎo le yī jià, cóngcǐ liǎng rén de guānxì jiù shūyuǎn le",
+        "vi": "Vì sự hiểu lầm nghiêm trọng đó, họ đã cãi nhau to, kể từ đó mối quan hệ của hai người trở nên xa cách."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-086",
+      "title": "假设 /Jiǎshè/",
+      "word_class": "Động từ/Danh từ",
+      "explanation": "Động từ: Biểu thị coi một số tình huống là thật (\"giả sử\"). Danh từ: Biểu thị tình huống giả thiết, tưởng tượng (\"giả thiết\").",
+      "examples": [
+       {
+        "zh": "假设我要从国贸到鼓楼大街，该怎么乘车？",
+        "pinyin": "Jiǎshè wǒ yào cóng Guómào dào Gǔlóu Dàjiē, gāi zěnme chéngchē?",
+        "vi": "Giả sử tôi muốn đi từ Quốc Mậu đến phố Cổ Lâu, nên đi xe như thế nào?"
+       },
+       {
+        "zh": "你当年的假设已经被证明是对的。",
+        "pinyin": "Nǐ dāngnián de jiǎshè yǐjīng bèi zhèngmíng shì duì de",
+        "vi": "Giả thiết năm đó của bạn đã được chứng minh là đúng."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-087",
+      "title": "堆/Duī/",
+      "word_class": "Lượng từ/Động từ/Danh từ",
+      "explanation": "Lượng từ: Dùng cho đám người hoặc đống đồ vật. Động từ: Biểu thị dùng tay hoặc dụng cụ để xếp, chất lên nhau. Danh từ: Biểu thị đồ vật xếp cùng nhau.",
+      "examples": [
+       {
+        "zh": "门口放着好几堆刚送来的货物，还没整理。",
+        "pinyin": "Ménkǒu fàng zhe hǎo jǐ duī gāng sòng lái de huòwù, hái méi zhěnglǐ.",
+        "vi": "Ở cửa đặt mấy đống hàng hóa vừa mới gửi đến, vẫn chưa được sắp xếp."
+       },
+       {
+        "zh": "快把房间里的玩具堆到一起，太乱了。",
+        "pinyin": "Kuài bǎ fángjiān lǐ de wánjù duī dào yīqǐ, tài luàn le",
+        "vi": "Mau chất/xếp đồ chơi trong phòng lại thành một đống đi, bừa bộn quá."
+       },
+       {
+        "zh": "墙角有一堆废弃的纸箱。",
+        "pinyin": "Qiángjiǎo yǒu yī duī fèiqì de zhǐxiāng",
+        "vi": "Ở góc tường có một đống thùng carton bỏ đi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-088",
+      "title": "不如 /Bùrú/",
+      "word_class": "Động từ",
+      "explanation": "Biểu thị không thể sánh bằng.",
+      "examples": [
+       {
+        "zh": "三家的营业额加起来还不如他一家高。",
+        "pinyin": "Sān jiā de yíngyè'é jiā qǐlái hái bù rú tā yī jiā gāo",
+        "vi": "Doanh thu của ba cửa hàng cộng lại còn không cao bằng doanh thu của một mình cửa hàng anh ấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-089",
+      "title": "干脆 /Gāncuì/",
+      "word_class": "Tính từ/Phó từ",
+      "explanation": "Tính từ: Dứt khoát Phó từ: Biểu thị đơn giản, quyết đoán",
+      "examples": [
+       {
+        "zh": "我求他帮忙，他答应得很干脆。",
+        "pinyin": "Wǒ qiú tā bāngmáng, tā dāyìng de hěn gāncuì",
+        "vi": "Tôi nhờ anh ấy giúp đỡ, anh ấy đồng ý rất dứt khoát."
+       },
+       {
+        "zh": "我看我干脆放弃好了。",
+        "pinyin": "Wǒ kàn wǒ gāncuì fàngqì hǎo le.",
+        "vi": "Tôi nghĩ tôi cứ từ bỏ đi thôi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-090",
+      "title": "万一 /Wànyī/",
+      "word_class": "Liên từ/Danh từ",
+      "explanation": "Liên từ: Biểu thị khả năng rất nhỏ, thường dùng với trường hợp không ngờ đến hoặc bất lợi Danh từ: Biểu thị tình huống bất ngờ có khả năng rất nhỏ (thường dùng trong cách thức cố định “就怕万一”).",
+      "examples": [
+       {
+        "zh": "你带上伞吧，万一回来的时候下雨呢。",
+        "pinyin": "Nǐ dài shàng sǎn ba, wànyī huílái de shíhòu xià yǔ ne",
+        "vi": "Cậu mang theo ô đi, nhỡ đâu lúc về trời mưa thì sao."
+       },
+       {
+        "zh": "我们考虑了所有可能性，连最坏的万一也都想到了。",
+        "pinyin": "Wǒmen kǎolǜ le suǒyǒu kěnéngxìng, lián zuì huài de wànyī yě dōu xiǎngdào le",
+        "vi": "Chúng tôi đã cân nhắc mọi khả năng, ngay cả trường hợp xấu nhất cũng đã nghĩ tới."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-091",
+      "title": "无意 /Wúyì/",
+      "word_class": "Động từ",
+      "explanation": "Động từ: Có nghĩa là không muốn, không có ý định..",
+      "examples": [
+       {
+        "zh": "我无意打扰您，不过我可以跟您谈一会儿吗？",
+        "pinyin": "Wǒ wúyì dǎrǎo nín, búguò wǒ kěyǐ gēn nín tán yīhuǐ'er ma?",
+        "vi": "Tôi không có ý định làm phiền ngài, nhưng tôi có thể nói chuyện với ngài một lát được không?."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-092",
+      "title": "有利 /Yǒulì/",
+      "word_class": "Tính từ",
+      "explanation": "Có nghĩa là có lợi, có ích (thường dùng “有利于” để biểu thị có lợi cho người hoặc vật nào đó).",
+      "examples": [
+       {
+        "zh": "高高的个子，漂亮的外表，都是他的有利条件。",
+        "pinyin": "Gāo gāo de gèzi, piàoliang de wàibiǎo, dōu shì tā de yǒulì tiáojiàn.",
+        "vi": "Chiều cao nổi bật, vẻ ngoài xinh đẹp, đều là những điều kiện có lợi của anh ấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-093",
+      "title": "的确 /Díquè/",
+      "word_class": "Phó từ",
+      "explanation": "Ý nghĩa là hoàn toàn chính xác, chân thực (\"quả thực, đích thực\").",
+      "examples": [
+       {
+        "zh": "他的确我所教过的学生中最聪明的。",
+        "pinyin": "Tā díquè wǒ suǒ jiāoguò de xuésheng zhōng zuì cōngming de",
+        "vi": "Anh ấy quả thực là người thông minh nhất trong số những học sinh mà tôi từng dạy."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-094",
+      "title": "嗯(Ńg/Ǹg)",
+      "word_class": "Thán từ",
+      "explanation": "Biểu thị nghi vấn. Biểu thị đáp ứng hoặc chấp thuận.",
+      "examples": [
+       {
+        "zh": "嗯？不是28号，难道是我记错了？",
+        "pinyin": "Ńg? Bú shì èrshíbā hào, nándào shì wǒ jì cuòle?",
+        "vi": "Hả? Không phải ngày 28, chẳng lẽ tôi nhớ nhầm rồi?."
+       },
+       {
+        "zh": "嗯，如果您心情好，我就说件事。",
+        "pinyin": "Ǹg, rúguǒ nín xīnqíng hǎo, wǒ jiù shuō jiàn shì",
+        "vi": "Ừm, nếu ngài đang có tâm trạng tốt, tôi sẽ nói một việc."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-095",
+      "title": "轻易 /Qīngyì/",
+      "word_class": "Tính từ/Phó từ",
+      "explanation": "Tính từ: đơn giản, dễ dàng Phó từ: Biểu thị thái độ khi xử lí công việc không cẩn thận, rất tùy tiện. Thường dùng trong câu phủ định (“轻易不·····” nghĩa là “rất ít làm”).",
+      "examples": [
+       {
+        "zh": "1假，就这样轻易地请好了。",
+        "pinyin": "Jiǎ, jiù zhèyàng qīngyì de qǐng hǎole.",
+        "vi": "Xin nghỉ phép cứ thế dễ dàng được chấp thuận"
+       },
+       {
+        "zh": "他为人好强，轻易不求人。",
+        "pinyin": "Tā wéirén hàoqiáng, qīngyì bù qiú rén",
+        "vi": "Anh ấy là người tự cường, không dễ dàng nhờ vả người khác."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-096",
+      "title": "密切 /Mìqiè/",
+      "word_class": "Tính từ/Động từ",
+      "explanation": "Tính từ: Biểu thị quan hệ gần gũi, mật thiết. Động từ: Có nghĩa làm cho quan hệ trở nên gần gũi mật thiết hơn.",
+      "examples": [
+       {
+        "zh": "多年来，两国一直保持着密切的友好关系。",
+        "pinyin": "Duō nián lái, liǎng guó yīzhí bǎochí zhe mìqiè de yǒuhǎo guānxì",
+        "vi": "Trong nhiều năm qua, hai nước vẫn luôn duy trì mối quan hệ hữu nghị mật thiết."
+       },
+       {
+        "zh": "双方领导人同意密切各领域的合作。",
+        "pinyin": "Shuāngfāng lǐngdǎo rén tóngyì mìqiè gè lǐngyù de hézuò",
+        "vi": "Lãnh đạo hai bên đồng ý tăng cường/thắt chặt hợp tác trên các lĩnh vực."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-097",
+      "title": "尽量 /Jǐnliàng/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị trong một phạm vi nhất định nỗ lực đạt đến mức độ cao nhất (\"cố gắng hết sức\").",
+      "examples": [
+       {
+        "zh": "老年人要尽量少吃油炸食品。",
+        "pinyin": "Lǎonián rén yào jǐnliàng shǎo chī yóu zhá shí pǐn",
+        "vi": "Người già cần cố gắng hạn chế ăn đồ chiên rán."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-098",
+      "title": "逐步 /Zhúbù/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị từng bước từng bước một (thường dùng trong những tình huống do con người làm ra).",
+      "examples": [
+       {
+        "zh": "调整能源消费结构，逐步向可再生能源转变。",
+        "pinyin": "Tiáozhěng néngyuán xiāofèi jiégòu, zhúbù xiàng kě zàishēng néngyuán zhuǎnbiàn.",
+        "vi": "Điều chỉnh cơ cấu tiêu thụ năng lượng, từng bước chuyển đổi sang năng lượng tái tạo."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-099",
+      "title": "照常 /Zhàochán g/",
+      "word_class": "Động từ/Phó từ",
+      "explanation": "Động từ: Có nghĩa là giống như bình thường Phó từ: Biểu thị tình huống tiếp tục không thay đổi (\"như thường lệ\").",
+      "examples": [
+       {
+        "zh": "这里的日常生活，一切照常。",
+        "pinyin": "Zhèlǐ de rìcháng shēnghuó, yīqiè zhàocháng",
+        "vi": "Cuộc sống hàng ngày ở đây, mọi thứ vẫn như thường lệ."
+       },
+       {
+        "zh": "在东方广场的迎新活动照常举行。",
+        "pinyin": "Zài Dōngfāng Guǎngchǎng de yíngxīn huódòng zhàocháng jǔxíng",
+        "vi": "Hoạt động đón năm mới tại quảng trường Đông Phương vẫn được tổ chức như thường lệ."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-100",
+      "title": "难怪 /Nánguài/",
+      "word_class": "Động từ/Phó từ",
+      "explanation": "Động từ: không nên phê bình, oán trách), mang ngữ khí thông cảm, tha thứ. Phó từ: Biểu thị đã rõ nguyên nhân, không còn cảm thấy lạ lùng với tình huống nào đó nữa (\"thảo nào, hèn chi\").",
+      "examples": [
+       {
+        "zh": "这也难怪",
+        "pinyin": "Zhè yě nánguài",
+        "vi": "Điều này cũng không trách được."
+       },
+       {
+        "zh": "你的抽屉真乱，难怪总是找不到东西。",
+        "pinyin": "Nǐ de chōuti zhēn luàn, nánguài zǒng shì zhǎo bù dào dōngxi",
+        "vi": "Ngăn kéo của cậu thật bừa bộn, thảo nào luôn không tìm thấy đồ."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-101",
+      "title": "与其 /Yǔqí/",
+      "word_class": "Liên từ",
+      "explanation": "Dùng khi so sánh 2 tình huống cần phải lựa chọn, “与其” sử dụng về mặt từ bỏ, đằng sau có thể kết hợp dùng\nvới “不如” hoặc “宁可” (\"thà rằng... còn hơn\").",
+      "examples": [
+       {
+        "zh": "与其在这儿干着急，不如我们主动打电话去问问情况。",
+        "pinyin": "Yǔqí zài zhèr gān zháojí, bùrú wǒmen zhǔdòng dǎ diànhuà qù wèn wen qíngkuàng",
+        "vi": "Thà rằng cứ ngồi đây lo sốt vó, chi bằng chúng ta chủ động gọi điện hỏi tình hình."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-102",
+      "title": "过/Guò/",
+      "word_class": "Bổ ngữ xu hướng",
+      "explanation": "Biểu thị người hoặc vật thể thông qua động tác để thay đổi phương hướng hoặc di chuyển vị trí.",
+      "examples": [
+       {
+        "zh": "他转过身，一句话也不说。",
+        "pinyin": "Tā zhuǎn guò shēn, yī jù huà yě bù shuō",
+        "vi": "Anh ấy quay người lại, không nói một lời nào."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-103",
+      "title": "开/Kāi/",
+      "word_class": "Bổ ngữ xu hướng",
+      "explanation": "Biểu thị mở ra, giãn ra.",
+      "examples": [
+       {
+        "zh": "请你让开一下，我要过去。",
+        "pinyin": "Qǐng nǐ ràng kāi yīxià, wǒ yào guòqù",
+        "vi": "Làm ơn tránh/tránh ra một chút, tôi cần đi qua."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-104",
+      "title": "赶快 /Gǎnkuài/",
+      "word_class": "Phó từ",
+      "explanation": "Ý nghĩa là bắt kịp thời gian, gia tăng tốc độ).",
+      "examples": [
+       {
+        "zh": "我下个月要搬家，得赶快找房子。",
+        "pinyin": "Wǒ xià gè yuè yào bānjiā, děi gǎnkuài zhǎo fángzi",
+        "vi": "Tháng sau tôi phải chuyển nhà, phải nhanh chóng tìm nhà."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-105",
+      "title": "片/Piàn/",
+      "word_class": "Danh từ/Lượng từ",
+      "explanation": "Danh từ: Đồ vật có bề mặt phẳng, mỏng, thường không quá lớn Lượng từ: Dùng để chỉ những đồ vật thành phiến, cũng có thể dùng với âm thanh, cảnh sắc.",
+      "examples": [
+       {
+        "zh": "瓶子里装着满满的石头、玻璃碎片和沙子。",
+        "pinyin": "Píngzi lǐ zhuāngzhe mǎnmǎn de shítou, bōli suìpiàn hé shāzi",
+        "vi": "Trong chai đựng đầy đá, mảnh thủy tinh và cát."
+       },
+       {
+        "zh": "同学们听了，发出一片热烈的欢呼声。",
+        "pinyin": "Tóngxuémen tīngle, fā chū yī piàn rèliè de huānhū shēng",
+        "vi": "Các bạn học sinh nghe xong, phát ra một tràng tiếng reo hò nhiệt liệt."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-106",
+      "title": "根本 /Gēnběn/",
+      "word_class": "Danh từ/Tính từ/Phó từ",
+      "explanation": "Danh từ: Bộ phận quan trọng nhất của sự vật. Tính từ: Ý nghĩa là “chủ yếu, quan trọng nhất” Phó từ: Biểu thị từ đầu đến cuối, trước sau như một",
+      "examples": [
+       {
+        "zh": "想学好汉语，单词是根本。",
+        "pinyin": "Xiǎng xué hǎo Hànyǔ, dāncí shì gēnběn",
+        "vi": "Muốn học tốt tiếng Hán, từ vựng là gốc rễ/nền tảng."
+       },
+       {
+        "zh": "我们的根本目的是帮助大家学好中文。",
+        "pinyin": "Wǒmen de gēnběn mùdì shì bāngzhù dàjiā xué hǎo Zhōngwén",
+        "vi": "Mục đích cốt lõi/chính của chúng tôi là giúp mọi người học tốt tiếng Trung."
+       },
+       {
+        "zh": "他根本没听你说话。",
+        "pinyin": "Tā gēnběn méi tīng nǐ shuōhuà",
+        "vi": "Anh ta hoàn toàn không nghe bạn nói."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-107",
+      "title": "除非 /Chúfēi/",
+      "word_class": "Liên từ/Giới từ",
+      "explanation": "Liên từ: Biểu thị điều kiện duy nhất, giống với “只有”, đằng sau thường đi với “才、 否则、不然” (\"trừ phi\")..Giới từ: ngoại trừ",
+      "examples": [
+       {
+        "zh": "除非明天下大雨，否则比赛照常进行。",
+        "pinyin": "Chúfēi míngtiān xià dàyǔ, fǒuzé bǐsài zhàocháng jìnxíng",
+        "vi": "Trừ phi ngày mai trời mưa to, nếu không thì trận đấu vẫn diễn ra như thường lệ."
+       },
+       {
+        "zh": "这种机器，除非李阳，没人修得好。",
+        "pinyin": "Zhè zhǒng jīqì, chúfēi Lǐ Yáng, méi rén xiū de hǎo",
+        "vi": "Loại máy này, trừ Lý Dương ra, không ai sửa được."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-108",
+      "title": "直/Zhí/",
+      "word_class": "Phó từ",
+      "explanation": "Dùng để diễn tả hành động diễn ra liên tục, không bị gián đoạn, thường đứng trước động từ đơn âm tiết.\nNhấn mạnh một hành động kéo dài, lặp đi lặp lại hoặc làm hoài không nghỉ.",
+      "examples": [
+       {
+        "zh": "这趟车可以直达北京，非常方便。",
+        "pinyin": "Zhè tàng chē kěyǐ zhídá Běijīng, fēicháng fāngbiàn",
+        "vi": "Chuyến xe này có thể đi thẳng đến Bắc Kinh, rất tiện lợi."
+       }
+      ]
+     },
+     {
+      "id": "HSK5-109",
+      "title": "反正 /Fǎnzhèng/",
+      "word_class": "Phó từ",
+      "explanation": "Biểu thị tình huống tuy không giống nhưng kết quả lại như nhau (\"dù sao thì\").\nBiểu thị ngữ khí kiên quyết khẳng định.",
+      "examples": [
+       {
+        "zh": "不管你们谁去，反正我不会去。",
+        "pinyin": "Bùguǎn nǐmen shuí qù, fǎnzhèng wǒ bú huì qù",
+        "vi": "Bất kể ai trong các cậu đi, dù sao thì tôi cũng sẽ không đi."
+       },
+       {
+        "zh": "你别再说了，反正我是会考虑的。",
+        "pinyin": "Nǐ bié zài shuōle, fǎnzhèng wǒ shì huì kǎolǜ de.",
+        "vi": "Cậu đừng nói nữa, dù sao thì tôi cũng sẽ xem xét."
+       }
+      ]
+     }
+    ],
+    "exam_focus": []
+   },
+   {
+    "level": 6,
+    "name": "HSK 6",
+    "grammar_count": 70,
+    "grammar": [
+     {
+      "id": "HSK6-001",
+      "title": "巴不得/bā bù dé/",
+      "explanation": "Động từ biểu thị ý rất mong muốn hoặc cực kỳ hy vọng điều gì đó xảy ra, thường dùng trong khẩu ngữ.",
+      "examples": [
+       {
+        "zh": "在这种竞争激烈的环境中，他巴不得能找到一份安稳的工作，养家糊口.",
+        "pinyin": "Zài zhè zhǒng jìng zhēng jī liè de huán jìng zhōng, tā bā bù dé néng zhǎo dào yī fèn ān wěn de gōng zuò, yǎng jiā hú kǒu",
+        "vi": "Trong môi trường cạnh tranh khốc liệt này, anh ấy chỉ mong tìm được một công việc ổn định để nuôi sống gia đình."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-002",
+      "title": "别提多……了 /bié tí duō...le/",
+      "explanation": "Cụm từ biểu thị mức độ rất cao của tính chất nào đó, thường mang sắc thái cường điệu hoặc phóng đại.",
+      "examples": [
+       {
+        "zh": "看到公司在国际市场上的影响力日益扩大，我们别提多高兴了.",
+        "pinyin": "Kàn dào gōng sī zài guó jì shì chǎng shàng de yǐng xiǎng lì rì yì kuò dà, wǒ men bié tí duō gāo xìng le",
+        "vi": "Thấy sức ảnh hưởng của công ty trên thị trường quốc tế ngày càng mở rộng, chúng tôi vui không thể tả."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-003",
+      "title": "顿/dùn/",
+      "explanation": "Phó từ biểu thị hành động xảy ra trong thời gian ngắn hoặc số lần lặp lại của hành động.",
+      "examples": [
+       {
+        "zh": "由于他在研发方面做出了突出贡献，公司决定给他的年终奖翻了顿.",
+        "pinyin": "Yóu yú tā zài yán fā fāng miàn zuò chū le tū chū gòng xiàn, gōng sī jué dìng gěi tā de nián zhōng jiǎng fān le dùn",
+        "vi": "Do anh ấy có đóng góp nổi bật, công ty quyết định tăng gấp đôi tiền thưởng cuối năm cho anh ấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-004",
+      "title": "过于/guò yú/",
+      "explanation": "Phó từ biểu thị vượt quá một mức độ nhất định hoặc quá mức, thường dùng để bổ nghĩa cho tính từ hoặc động từ/cụm động từ.",
+      "examples": [
+       {
+        "zh": "投资决策过于草率，最终给公司带来了不可挽回的损失.",
+        "pinyin": "Tóu zī jué cè guò yú cǎo shuài, zuì zhōng gěi gōng sī dài lái le bù kě wǎn huí de sǔn shī",
+        "vi": "Quyết định đầu tư quá hấp tấp, cuối cùng đã mang lại thiệt hại không thể cứu vãn cho công ty."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-005",
+      "title": "着呢/zhe ne/",
+      "explanation": "Trợ từ ngữ khí, biểu thị mức độ sâu, mang sắc thái khoa trương/cường điệu.",
+      "examples": [
+       {
+        "zh": "别看这项技术看似简单，其实背后的理论知识复杂着呢.",
+        "pinyin": "Bié kàn zhè xiàng jì shù kàn sì jiǎn dān, qí shí bèi hòu de lǐ lùn zhī shí fù zá zhe ne",
+        "vi": "Đừng thấy kỹ thuật này tưởng chừng đơn giản, thực ra kiến thức lý luận đằng sau phức tạp lắm đấy."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-006",
+      "title": "说A就A /shuō A jiù A/",
+      "explanation": "Cấu trúc dùng trong khẩu ngữ, biểu thị hành động xảy ra hoặc tiến triển rất nhanh khi có sự việc phát sinh. \"A\" là động từ hoặc cụm động từ/tính từ ngắn.",
+      "examples": [
+       {
+        "zh": "市场竞争激烈，很多新兴企业说倒闭就倒闭，让人防不胜防.",
+        "pinyin": "Shì chǎng jìng zhēng jī liè, hěn duō xīn xīng qǐ yè shuō dǎo bì jiù dǎo bì, ràng rén fáng bù shèng fáng",
+        "vi": "Cạnh tranh thị trường khốc liệt, nhiều doanh nghiệp mới nói phá sản là phá sản, khiến người ta không kịp trở tay."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-007",
+      "title": "形容词/动词+ 得+要命/xíng róng cí/dòng cí + de + yào mìng/",
+      "explanation": "Cấu trúc bổ ngữ mức độ, biểu thị mức độ đạt đến cực điểm hoặc rất cao.",
+      "examples": [
+       {
+        "zh": "公司的改革方案遭到了许多老员工的反对，让他们头疼得要命.",
+        "pinyin": "Gōng sī de gǎi gé fāng àn zāo dào le xǔ duō lǎo yuán gōng de fǎn duì, ràng tā men tóu téng de yào mìng",
+        "vi": "Kế hoạch cải cách của công ty bị nhiều nhân viên cũ phản đối, khiến họ đau đầu kinh khủng."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-008",
+      "title": "乘机/chéng jī/",
+      "explanation": "Động từ/Phó từ, nghĩa là tận dụng cơ hội để làm một việc gì đó.",
+      "examples": [
+       {
+        "zh": "他乘机向听众普及了相关的金融知识，赢得了大家的赞许.",
+        "pinyin": "Tā chéng jī xiàng tīng zhòng pǔ jí le xiāng guān de jīn róng zhī shí, yíng dé le dà jiā de zàn xǔ",
+        "vi": "Anh ấy nhân cơ hội phổ biến kiến thức tài chính liên quan cho khán giả, giành được sự tán dương của mọi người."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-009",
+      "title": "不料/bù liào/",
+      "explanation": "Liên từ, biểu thị bất ngờ, không ngờ đến, thường đi kèm với các phó từ như却,竟,果然,倒,还.",
+      "examples": [
+       {
+        "zh": "我们为这次项目做了充分的准备，不料市场需求突然发生了巨大的变化.",
+        "pinyin": "Wǒ men wèi zhè cì xiàng mù zuò le chōng fèn de zhǔn bèi, bù liào shì chǎng xū qiú tū rán fā shēng le jù dà de biàn huà",
+        "vi": "Chúng tôi đã chuẩn bị đầy đủ cho dự án này, không ngờ nhu cầu thị trường lại đột ngột thay đổi lớn."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-010",
+      "title": "未免/wèi miǎn/",
+      "explanation": "Phó từ, biểu thị không tránh khỏi việc đạt đến một mức độ nào đó (thường là tiêu cực), nói rằng điều gì đó là không phù hợp hoặc quá mức.",
+      "examples": [
+       {
+        "zh": "他的言辞未免有些偏激，很容易引起听众的反感.",
+        "pinyin": "Tā de yán cí wèi miǎn yǒu xiē piān jī, hěn róng yì yǐn qǐ tīng zhòng de fǎn gǎn",
+        "vi": "Lời lẽ của anh ấy quả thực hơi cực đoan, rất dễ gây ác cảm cho người nghe."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-011",
+      "title": "而已/ér yǐ/",
+      "explanation": "Trợ từ, dùng ở cuối câu hoặc sau cụm từ, biểu thị chỉ vậy mà thôi, không gì hơn.",
+      "examples": [
+       {
+        "zh": "我们之所以能取得今天的成就，靠的不过是日复一日的坚持而已.",
+        "pinyin": "Wǒ men zhī suǒ yǐ néng qǔ dé jīn tiān de chéng jiù, kào de bú guò shi rì fù yī rì de jiān chí ér yǐ",
+        "vi": "Sở dĩ chúng ta đạt được thành tựu hôm nay, chẳng qua chỉ là nhờ sự kiên trì ngày qua ngày mà thôi."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-012",
+      "title": "固然/gù rán/",
+      "explanation": "Liên từ, biểu thị thừa nhận một sự thật hoặc một khía cạnh, câu sau thường dùng但是,可是, 不过để chuyển ý hoặc đưa ra ý kiến phản đối.",
+      "examples": [
+       {
+        "zh": "创新固然重要，但是我们必须在遵守法律法规的前提下进行.",
+        "pinyin": "Chuàng xīn gù rán zhòng yào, dàn shi wǒ men bì xū zài zūn shǒu fǎ lǜ fǎ guī de qián tí xià jìn xíng",
+        "vi": "Đổi mới tất nhiên quan trọng, nhưng chúng ta phải tiến hành trên cơ sở tuân thủ pháp luật."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-013",
+      "title": "并非/bìng fēi/",
+      "explanation": "Phó từ/Động từ, biểu thị phủ định hoàn toàn, nghĩa là \"không phải\", thường dùng trong văn viết.",
+      "examples": [
+       {
+        "zh": "他的成功并非一蹴而就，而是经过了无数次失败和挫折.",
+        "pinyin": "Tā de chéng gōng bìng fēi yī cù ér jiù, ér shi jīng guò le wú shù cì shī bài hé cuò zhé",
+        "vi": "Thành công của anh ấy không hề đạt được một sớm một chiều, mà là qua vô số lần thất bại và vấp ngã."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-014",
+      "title": "唯独/wéi dú/",
+      "explanation": "Phó từ, biểu thị chỉ một người/vật/sự việc là ngoại lệ, thường dùng để nhấn mạnh sự so sánh hoặc đối lập.",
+      "examples": [
+       {
+        "zh": "参加会议的成员都对提案表示赞同，唯独他提出了反对意见.",
+        "pinyin": "Cān jiā huì yì de chéng yuán dōu duì tí àn biǎo shì zàn tóng, wéi dú tā tí chū le fǎn duì yì jiàn",
+        "vi": "Các thành viên tham dự cuộc họp đều đồng ý với đề xuất, chỉ riêng anh ấy đưa ra ý kiến phản đối."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-015",
+      "title": "明明/míng míng/",
+      "explanation": "Phó từ, biểu thị rõ ràng là như vậy nhưng thực tế lại khác, thường dùng để nhấn mạnh sự nghi vấn, không hài lòng, hoặc kinh ngạc.",
+      "examples": [
+       {
+        "zh": "这项工程明明预算充足，怎么会出现资金短缺的问题呢.",
+        "pinyin": "Zhè xiàng gōng chéng míng míng yù suàn chōng zú, zěn me huì chū xiàn zī jīn duǎn quē de wèn tí ne",
+        "vi": "Dự án này rõ ràng có ngân sách đầy đủ, tại sao lại xuất hiện vấn đề thiếu vốn?"
+       }
+      ]
+     },
+     {
+      "id": "HSK6-016",
+      "title": "大不了/dà bù liǎo/",
+      "explanation": "Phó từ, dùng trong khẩu ngữ, biểu thị điều tồi tệ nhất có thể xảy ra, thường mang sắc thái không quan trọng, hoặc thể hiện sự dứt khoát.",
+      "examples": [
+       {
+        "zh": "如果谈判无法达成一致，大不了我们放弃合作，寻找新的伙伴.",
+        "pinyin": "Rú guǒ tán pàn wú fǎ dá chéng yī zhì, dà bù liǎo wǒ men fàng qì hé zuò, xún zhǎo xīn de huǒ bàn",
+        "vi": "Nếu đàm phán không đạt được thỏa thuận, cùng lắm chúng ta từ bỏ hợp tác, tìm kiếm đối tác mới."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-017",
+      "title": "对……而言 /duì...ér yán/",
+      "explanation": "Cấu trúc, biểu thị đối với ai đó/phương diện nào đó mà nói, dùng để xác định phạm vi hoặc góc độ nhận định.",
+      "examples": [
+       {
+        "zh": "对一个有着远大抱负的年轻人而言，稳定和安逸并非人生的终极目标.",
+        "pinyin": "Duì yī gè yǒu zhe yuǎn dà bào fù de nián qīng rén ér yán, wěn dìng hé ān yì bìng fēi rén shēng de zhōng jí mù biāo",
+        "vi": "Đối với một người trẻ có hoài bão lớn, ổn định và an nhàn không phải là mục tiêu cuối cùng của cuộc đời."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-018",
+      "title": "有关/yǒu guān/",
+      "explanation": "Động từ/Tính từ/Giới từ, biểu thị có liên quan.",
+      "examples": [
+       {
+        "zh": "我们正在收集所有有关这次事故的详细资料和证人证词.",
+        "pinyin": "Wǒ men zhèng zài shōu jí suǒ yǒu yǒu guān zhè cì shì gù de xiáng xì zī liào hé zhèng rén zhèng cí",
+        "vi": "Chúng tôi đang thu thập tất cả tài liệu chi tiết và lời khai nhân chứng liên quan đến vụ tai nạn này."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-019",
+      "title": "不瞒你说/bù mán nǐ shuō/",
+      "explanation": "Cụm từ dùng để mở đầu câu nói, biểu thị sự thật, chân thành (thường là một lời khuyên hoặc ý kiến chủ quan).",
+      "examples": [
+       {
+        "zh": "不瞒你说，我对他处理这件事的方式并不完全认同，认为过于冲动.",
+        "pinyin": "Bù mán nǐ shuō, wǒ duì tā chǔ lǐ zhè jiàn shì de fāng shì bìng bù wán quán rèn tóng, rèn wéi guò yú chōng dòng",
+        "vi": "Thật lòng mà nói, tôi không hoàn toàn đồng tình với cách anh ấy xử lý chuyện này, cho rằng quá bốc đồng."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-020",
+      "title": "于/yú/",
+      "explanation": "Giới từ, biểu thị thời điểm, nơi chốn, hoặc đối tượng/phương diện. Thường dùng trong văn viết.",
+      "examples": [
+       {
+        "zh": "他决定在工作了三年的公司离职，开始人生的新一页.",
+        "pinyin": "Tā jué dìng zài gōng zuò le sān nián de gōng sī lí zhí, kāi shǐ rén shēng de xīn yī yè",
+        "vi": "Anh ấy quyết định nghỉ việc ở công ty đã làm ba năm, bắt đầu một trang mới cho cuộc đời."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-021",
+      "title": "致使/zhì shǐ/",
+      "explanation": "Động từ, biểu thị gây ra một kết quả nào đó (thường là tiêu cực). Câu trước chỉ nguyên nhân, câu sau là kết quả.",
+      "examples": [
+       {
+        "label": "1",
+        "zh": "管理层的重大失误直接致使公司陷入了前所未有的财务危机.",
+        "pinyin": "Guǎn lǐ céng de zhòng dà shī wù zhí jiē zhì shǐ gōng sī xiàn rù le qián suǒ wèi yǒu de cái wù wēi jī",
+        "vi": "Sai lầm lớn của ban quản lý đã trực tiếp gây ra cuộc khủng hoảng tài chính chưa từng có cho công ty."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-022",
+      "title": "日益/rì yì/ 越来越/yuè lái yuè/",
+      "explanation": "Phó từ, 日益biểu thị mức độ tăng lên theo thời gian (ngày càng), dùng để tu sức cho động từ hoặc tính từ/cụm động từ. 越来越cũng biểu thị mức độ tăng dần.",
+      "examples": [
+       {
+        "zh": "随着技术的日益成熟，自动驾驶汽车将很快普及到日常生活中.",
+        "pinyin": "Suí zhe jì shù de rì yì chéng shú, zì dòng jià shǐ qì chē jiāng hěn kuài pǔ jí dào rì cháng shēng huó zhōng",
+        "vi": "Cùng với sự trưởng thành ngày càng cao của công nghệ, ô tô tự lái sẽ sớm phổ biến trong đời sống hàng ngày."
+       },
+       {
+        "zh": "国际贸易形势越来越复杂，企业必须积极调整策略才能应对挑战.",
+        "pinyin": "Guó jì mào yì xíng shì yuè lái yuè fù zá, qǐ yè bì xū jī jí tiáo zhěng cè lüè cái néng yìng duì tiǎo zhàn",
+        "vi": "Tình hình thương mại quốc tế ngày càng phức tạp, doanh nghiệp phải tích cực điều chỉnh chiến lược mới có thể ứng phó với thách thức."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-023",
+      "title": "时而/shí ér/",
+      "explanation": "Phó từ, biểu thị lúc thì... lúc thì..., chỉ sự việc lặp lại không theo quy luật, thường đi kèm với nhau.",
+      "examples": [
+       {
+        "zh": "在高海拔地区，天气变化无常，时而艳阳高照，时而风雪交加.",
+        "pinyin": "Zài gāo hǎi bá dì qū, tiān qì biàn huà wú cháng, shí ér yàn yáng gāo zhào, shí ér fēng xuě jiāo jiā",
+        "vi": "Ở vùng cao, thời tiết thất thường, lúc trời nắng chang chang, lúc lại mưa tuyết xen kẽ."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-024",
+      "title": "不禁/bù jīn/",
+      "explanation": "Phó từ, biểu thị không kìm được, không thể ngăn chặn (hành động hoặc cảm xúc).",
+      "examples": [
+       {
+        "zh": "面对如此精湛绝伦的艺术品，他不禁发出由衷的赞叹.",
+        "pinyin": "Miàn duì rú cǐ jīng zhàn jué lún de yì shù pǐn, tā bù jīn fā chū yóu zhōng de zàn tàn",
+        "vi": "Trước tác phẩm nghệ thuật tuyệt vời đến thế, anh ấy không kìm được mà thốt lên lời tán thưởng chân thành."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-025",
+      "title": "无不/wú bù/",
+      "explanation": "Phó từ, biểu thị không gì là không, tất cả đều (phủ định kép mang ý khẳng định tuyệt đối).",
+      "examples": [
+       {
+        "zh": "博物馆里展出的每一件文物，无不凝聚着古代劳动人民的智慧和心血.",
+        "pinyin": "Bó wù guǎn lǐ zhǎn chū de měi yī jiàn wén wù, wú bù níng jù zhe gǔ dài láo dòng rén mín de zhì huì hé xīn xuè.",
+        "vi": "Mỗi hiện vật được trưng bày trong bảo tàng đều cô đọng trí tuệ và tâm huyết của người lao động thời cổ đại."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-026",
+      "title": "即便/jí biàn/",
+      "explanation": "Liên từ, biểu thị dù cho, cho dù (nhượng bộ giả định), thường đi kèm với 也hoặc还ở mệnh đề sau.",
+      "examples": [
+       {
+        "zh": "即便这项挑战难度极大，我们也要全力以赴，争取最好的结果.",
+        "pinyin": "Jí biàn zhè xiàng tiǎo zhàn nán dù jí dà, wǒ men yě yào quán lì yǐ fù, zhēng qǔ zuì hǎo de jié guǒ",
+        "vi": "Cho dù thử thách này cực kỳ khó khăn, chúng ta vẫn phải dốc toàn lực để đạt được kết quả tốt nhất."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-027",
+      "title": "统统/tǒng tǒng/",
+      "explanation": "Phó từ, biểu thị tất cả, hoàn toàn (không có ngoại lệ nào).",
+      "examples": [
+       {
+        "zh": "经过这次彻底的清查，公司内部的腐败分子被统统清除出局.",
+        "pinyin": "Jīng guò zhè cì chè dǐ de qīng chá, gōng sī nèi bù de fǔ bài fèn zi bèi tǒng tǒng qīng chú chū jú.",
+        "vi": "Sau đợt thanh tra triệt để này, những phần tử tham nhũng trong công ty tất cả đã bị loại bỏ."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-028",
+      "title": "以……为…… /yǐ...wéi.../",
+      "explanation": "Cấu trúc giới từ, biểu thị lấy cái gì đó làm cái gì đó (làm căn cứ, mục tiêu, hoặc tiêu chuẩn).",
+      "examples": [
+       {
+        "zh": "这家企业一直以科技创新为核心竞争力，不断引领行业发展.",
+        "pinyin": "Zhè jiā qǐ yè yī zhí yǐ kē jì chuàng xīn wéi hé xīn jìng zhēng lì, bú duàn yǐn lǐng háng yè fā zhǎn",
+        "vi": "Doanh nghiệp này luôn lấy đổi mới công nghệ làm năng lực cạnh tranh cốt lõi, không ngừng dẫn dắt sự phát triển của ngành."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-029",
+      "title": "不妨/bù fáng/",
+      "explanation": "Phó từ, đưa ra lời khuyên hoặc đề nghị), thường có nghĩa nhẹ nhàng, hàm ý thử một lần.",
+      "examples": [
+       {
+        "zh": "如果你在研究过程中遇到瓶颈，不妨换个角度思考问题，也许会有新的发现.",
+        "pinyin": "Rú guǒ nǐ zài yán jiū guò chéng zhōng yù dào píng jǐng, bù fáng huàn gè jiǎo dù sī kǎo wèn tí, yě xǔ huì yǒu xīn de fā xiàn",
+        "vi": "Nếu bạn gặp bế tắc trong quá trình nghiên cứu, hãy thử thay đổi góc độ suy nghĩ, biết đâu sẽ có phát hiện mới."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-030",
+      "title": "务必/wù bì/",
+      "explanation": "Phó từ, biểu thị nhất định phải, cần phải (nhấn mạnh sự kiên quyết hoặc cần thiết).",
+      "examples": [
+       {
+        "zh": "既然要参加这次高规格的国际会议，代表团成员务必提前做好充分准备.",
+        "pinyin": "Jì rán yào cān jiā zhè cì gāo guī gé de guó jì huì yì, dài biǎo tuán chéng yuán wù bì tí qián zuò hǎo chōng fèn zhǔn bèi",
+        "vi": "Vì phải tham dự hội nghị quốc tế quy mô lớn này, các thành viên phái đoàn tuyệt đối phải chuẩn bị đầy đủ từ trước."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-031",
+      "title": "鉴于/jiàn yú/",
+      "explanation": "Giới từ: dựa trên một tình hình hoặc sự kiện nào đó), thường dùng trong văn viết.",
+      "examples": [
+       {
+        "zh": "鉴于他在公司的突出贡献，董事会决定给予他丰厚的奖励.",
+        "pinyin": "Jiàn yú tā zài gōng sī de tū chū gòng xiàn, dǒng shì huì jué dìng gěi yǔ tā fēng hòu de jiǎng lì",
+        "vi": "Căn cứ vào những đóng góp nổi bật của anh ấy cho công ty, hội đồng quản trị quyết định trao cho anh ấy phần thưởng hậu hĩnh."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-032",
+      "title": "不得已/ bù dé yǐ/ 不得不/bù dé bù/",
+      "explanation": "Cặp phó từ. 不得已biểu thị không còn cách nào khác. 不得不biểu thị không thể không, nhấn mạnh sự bị động buộc phải làm điều gì đó.",
+      "examples": [
+       {
+        "zh": "不得已:由于资金链断裂，公司不得已采取裁员措施，以维持运营.",
+        "pinyin": "Yóu yú zī jīn liàn duàn liè, gōng sī bù dé yǐ cǎi qǔ cái yuán cuò shī, yǐ wéi chí yùn yíng",
+        "vi": "Do đứt gãy chuỗi vốn, công ty buộc lòng phải áp dụng biện pháp cắt giảm nhân sự để duy trì hoạt động."
+       },
+       {
+        "zh": "不得不:为了避免事态扩大，他不得不主动出面，向公众澄清事实.",
+        "pinyin": "Wèi le bì miǎn shì tài kuò dà, tā bù dé bù zhǔ dòng chū miàn, xiàng gōng zhòng chéng qīng shì shí",
+        "vi": "Để tránh tình hình mở rộng, anh ấy không thể không đứng ra chủ động làm rõ sự thật với công chúng."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-033",
+      "title": "以免/yǐ miǎn/",
+      "explanation": "Liên từ, biểu thị để tránh điều gì đó (thường là kết quả không mong muốn), thường dùng ở mệnh đề sau.",
+      "examples": [
+       {
+        "zh": "请在提交文件前再次核对信息，以免因疏漏而影响审批进度.",
+        "pinyin": "Qǐng zài tí jiāo wén jiàn qián zài cì hé duì xìn xī, yǐ miǎn yīn shū lòu ér yǐng xiǎng shěn pī jìn dù",
+        "vi": "Vui lòng kiểm tra lại thông tin trước khi nộp tài liệu, để tránh việc bỏ sót làm ảnh hưởng đến tiến độ phê duyệt."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-034",
+      "title": "嫌/xián/",
+      "explanation": "Động từ, biểu thị không thích, không vừa lòng, chê. Thường đi với嫌+ Danh từ/Tính từ/Hình dung từ.",
+      "examples": [
+       {
+        "zh": "这家企业改革步伐缓慢，被许多年轻的求职者嫌弃，认为缺乏创新活力.",
+        "pinyin": "Zhè jiā qǐ yè gǎi gé bù fá huǎn màn, bèi xǔ duō nián qīng de qiú zhí zhě xián qì, rèn wéi quē fá chuàng xīn huó lì",
+        "vi": "Doanh nghiệp này cải cách chậm, bị nhiều người tìm việc trẻ tuổi chê bai vì thiếu sức sống đổi mới."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-035",
+      "title": "动不动/dòng bú dòng/",
+      "explanation": "Phó từ, biểu thị hành động xảy ra liên tục, thường xuyên mà không có lý do rõ ràng, mang sắc thái phê phán/không hài lòng.",
+      "examples": [
+       {
+        "zh": "这位经理处理问题非常情绪化，动不动就对下属发脾气，令人难以忍受.",
+        "pinyin": "Zhè wèi jīng lǐ chǔ lǐ wèn tí fēi cháng qíng xù huà, dòng bú dòng jiù duì xià shǔ fā pí qì, lìng rén nán yǐ rěn shòu",
+        "vi": "Vị quản lý này xử lý vấn đề rất cảm tính, hễ tí là nổi nóng với cấp dưới, khó mà chịu đựng được."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-036",
+      "title": "甲乙丙丁…… /jiǎ yǐ bǐng dīng.../",
+      "explanation": "Cấu trúc dùng để liệt kê, sắp xếp sự việc theo thứ tự hoặc phân chia nhóm, thường dùng trong văn viết/các bài tập mang tính chất liệt kê.",
+      "examples": [
+       {
+        "zh": "这份调研报告主要包括甲乙丙丁四个部分，详细分析了市场前景.",
+        "pinyin": "Zhè fèn diào yán bào gào zhǔ yào bāo kuò jiǎ yǐ bǐng dīng sì gè bù fèn, xiáng xì fēn xī le shì chǎng qián jǐng",
+        "vi": "Báo cáo khảo sát này chủ yếu bao gồm bốn phần A, B, C, D, phân tích chi tiết triển vọng thị trường."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-037",
+      "title": "加以/jiā yǐ/",
+      "explanation": "Động từ, biểu thị thực hiện hoặc tiến hành một phương pháp/thái độ nào đó với sự vật/sự việc nêu ra ở câu trước. Sau加以 là một động từ hai âm tiết.",
+      "examples": [
+       {
+        "zh": "针对报告中提出的问题，管理层表示将认真研究并加以改进.",
+        "pinyin": "Zhēn duì bào gào zhōng tí chū de wèn tí, guǎn lǐ céng biǎo shì jiāng rèn zhēn yán jiū bìng jiā yǐ gǎi jìn",
+        "vi": "Đối với các vấn đề được nêu trong báo cáo, ban quản lý cho biết sẽ nghiên cứu kỹ lưỡng và tiến hành cải tiến."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-038",
+      "title": "大大、远远(dà dà, yuǎn yuǎn)",
+      "explanation": "Phó từ,大大biểu thị mức độ rất sâu hoặc số lượng lớn.远远biểu thị rất xa hoặc rất nhiều (vượt xa mức dự tính).",
+      "examples": [
+       {
+        "zh": "大大:新政策的实施大大提高了生产效率，为公司节省了大量的成本.",
+        "pinyin": "Xīn zhèng cè de shí shī dà dà tí gāo le shēng chǎn xiào lǜ, wèi gōng sī jié shěng le dà liàng de chéng běn",
+        "vi": "Việc thực hiện chính sách mới đã nâng cao đáng kể hiệu quả sản xuất, tiết kiệm rất nhiều chi phí cho công ty."
+       },
+       {
+        "zh": "远远:事实证明，他的能力远远超出了我们的预期，足以胜任这项艰巨的任务.",
+        "pinyin": "Shì shí zhèng míng, tā de néng lì yuǎn yuǎn chāo chū le wǒ men de yù qī, zú yǐ shèng rèn zhè xiàng jiān jù de rèn wù",
+        "vi": "Sự thật chứng minh năng lực của anh ấy vượt xa kỳ vọng của chúng tôi, đủ sức đảm nhận nhiệm vụ khó khăn này."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-039",
+      "title": "紧缩句/jǐn suō jù/",
+      "explanation": "Biện pháp tu từ, là hình thức rút gọn nội dung của câu, làm cho câu trở nên ngắn gọn và súc tích hơn.",
+      "examples": [
+       {
+        "zh": "我宁愿失去一切，也不愿放弃原则.",
+        "pinyin": "Wǒ níng yuàn shī qù yī qiè, (yě) bú yuàn fàng qì yuán zé",
+        "vi": "Tôi thà mất tất cả, cũng không muốn từ bỏ nguyên tắc."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-040",
+      "title": "特意/tè yì/",
+      "explanation": "Phó từ, biểu thị cố ý, chủ tâm làm một việc gì đó.",
+      "examples": [
+       {
+        "zh": "为了表达对这位专家的敬意，主办方特意为他准备了隆重的欢迎仪式.",
+        "pinyin": "Wèi le biǎo dá duì zhè wèi zhuān jiā de jìng yì, zhǔ bàn fāng tè yì wèi tā zhǔn bèi le lóng zhòng de huān yíng yí shì",
+        "vi": "Để bày tỏ sự tôn kính đối với chuyên gia này, ban tổ chức đã đặc biệt chuẩn bị một buổi lễ chào mừng long trọng cho ông."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-041",
+      "title": "即将/jí jiāng/",
+      "explanation": "Phó từ, biểu thị điều gì đó ắp xảy ra. Thường dùng trong văn viết.",
+      "examples": [
+       {
+        "zh": "经过几个月的紧张筹备，这项大型国际项目即将进入实施阶段.",
+        "pinyin": "Jīng guò jǐ gè yuè de jǐn zhāng chóu bèi, zhè xiàng dà xíng guó jì xiàng mù jí jiāng jìn rù shí shī jiē duàn",
+        "vi": "Sau vài tháng chuẩn bị gấp rút, dự án quốc tế quy mô lớn này sắp sửa bước vào giai đoạn thực hiện."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-042",
+      "title": "能A就A /néng A jiù A/",
+      "explanation": "Cấu trúc dùng trong khẩu ngữ, biểu thị tận lực hoặc hết sức (A là động từ/tính từ).",
+      "examples": [
+       {
+        "zh": "既然领导给了我们充分的授权，我们就应该能解决就解决，不要事事都请示.",
+        "pinyin": "Jì rán lǐng dǎo gěi le wǒ men chōng fèn de shòu quán, wǒ men jiù yīng gāi néng jiě jué jiù jiě jué, bú yào shì shì dōu qǐng shì",
+        "vi": "Vì lãnh đạo đã ủy quyền đầy đủ, chúng ta giải quyết được thì cứ giải quyết, đừng việc gì cũng xin ý kiến."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-043",
+      "title": "别说/bié shuō/",
+      "explanation": "Động từ, biểu thị nhường bộ, thường nhấn mạnh một người hoặc sự vật khác (thường là một điều ít quan trọng hơn) để làm nổi bật điều quan trọng hơn.",
+      "examples": [
+       {
+        "zh": "他这个人向来心胸宽广，别说是受到批评，就算是遇到更大的挫折也不会轻易放弃.",
+        "pinyin": "Tā zhè gè rén xiàng lái xīn xiōng kuān guǎng, bié shuō shi shòu dào pī píng, jiù suàn shi yù dào gèng dà de cuò zhé yě bú huì qīng yì fàng qì",
+        "vi": "Người anh ấy vốn rất rộng lượng, đừng nói là bị chỉ trích, ngay cả khi gặp thất bại lớn hơn cũng sẽ không dễ dàng bỏ cuộc."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-044",
+      "title": "来来回回",
+      "explanation": "Lặp lại động từ, biểu thị hành động lặp đi lặp lại (dạng AABB).",
+      "examples": [
+       {
+        "zh": "她为了研究这个复杂的图案，来来回回地翻阅了大量的古代文献资料.",
+        "pinyin": "Tā wèi le yán jiū zhè gè fù zá de tú àn, lái lái huí huí dì fān yuè le dà liàng de gǔ dài wén xiàn zī liào",
+        "vi": "Để nghiên cứu hoa văn phức tạp này, cô ấy đã lật đi lật lại rất nhiều tài liệu cổ."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-045",
+      "title": "左……右…… /zuǒ...yòu.../",
+      "explanation": "Cấu trúc dùng để nhấn mạnh một hành vi/tình huống lặp lại nhiều lần, A và B thường là động\ntừ hoặc cụm động từ tương tự.",
+      "examples": [
+       {
+        "zh": "整个团队都围绕着这个方案左修改右调整，力求达到最完美的效果.",
+        "pinyin": "Zhěng gè tuán duì dōu wéi rào zhe zhè gè fāng àn zuǒ xiū gǎi yòu tiáo zhěng, lì qiú dá dào zuì wán měi de xiào guǒ",
+        "vi": "Cả đội hết chỉnh sửa lại điều chỉnh xoay quanh đề án này, nhằm đạt được hiệu quả hoàn hảo nhất."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-046",
+      "title": "不成/bù chéng/",
+      "explanation": "Trợ từ, dùng ở cuối câu, biểu thị suy đoán hoặc ngữ khí phản vấn (chẳng lẽ, không được sao). Phía trước câu thường có 难道hoặc莫非.",
+      "examples": [
+       {
+        "zh": "大家都认为这是一个可行的方案，难道只有你觉得有问题不成?",
+        "pinyin": "Dà jiā dōu rèn wéi zhè shi yī gè kě xíng de fāng àn, nán dào zhǐ yǒu nǐ jué de yǒu wèn tí bù chéng",
+        "vi": "Mọi người đều cho rằng đây là một phương án khả thi, chẳng lẽ chỉ có mình bạn thấy có vấn đề sao?"
+       }
+      ]
+     },
+     {
+      "id": "HSK6-047",
+      "title": "Cấu trúc Động từ/Tính từ +了 +个+ Danh từ/Tính từ có chứa个",
+      "explanation": "Biểu thị hành động xảy ra nhanh chóng, đột ngột hoặc số lượng tăng lên.",
+      "examples": [
+       {
+        "zh": "听到这个突如其来的好消息，我心里咯噔了一个，久久不能平静.",
+        "pinyin": "Tīng dào zhè gè tū rú qí lái de hǎo xiāo xi, wǒ xīn lǐ gē dēng le yī gè, jiǔ jiǔ bù néng píng jìng",
+        "vi": "Nghe tin vui bất ngờ này, lòng tôi nảy lên một cái, mãi không thể bình tĩnh lại."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-048",
+      "title": "向来/xiàng lái/",
+      "explanation": "Phó từ, biểu thị từ trước đến nay vẫn luôn như vậy.",
+      "examples": [
+       {
+        "zh": "他向来以严谨细致著称，在科研领域从不马虎.",
+        "pinyin": "Tā xiàng lái yǐ yán jǐn xì zhì zhù chēng, zài kē yán lǐng yù cóng bù mǎ hǔ",
+        "vi": "Anh ấy trước nay nổi tiếng là nghiêm túc và tỉ mỉ, không bao giờ qua loa trong lĩnh vực nghiên cứu khoa học."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-049",
+      "title": "预先/yù xiān/",
+      "explanation": "Phó từ, biểu thị hành động hoặc sự việc xảy ra trước khi sự việc chính thức diễn ra",
+      "examples": [
+       {
+        "zh": "为了确保活动顺利进行，我们预先制定了多套应急预案.",
+        "pinyin": "Wèi le qùn bǎo huó dòng shùn lì jìn xíng, wǒ men yù xiān zhì dìng le duō tào yìng jí yù àn",
+        "vi": "Để đảm bảo hoạt động diễn ra suôn sẻ, chúng tôi đã chuẩn bị trước nhiều bộ kế hoạch khẩn cấp."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-050",
+      "title": "……也好, ……也罢(...yě hǎo,...yě bà)",
+      "explanation": "Cấu trúc liệt kê, biểu thị trong bất kỳ tình huống nào (dù A hay B), kết quả vẫn như vậy. Thường đi với都/总ở vế sau.",
+      "examples": [
+       {
+        "zh": "无论是经济发展也好，环境保护也罢，我们都应该坚持可持续发展的原则.",
+        "pinyin": "Wú lùn shi jīng jì fā zhǎn yě hǎo, huán jìng bǎo hù yě bà, wǒ men dōu yīng gāi jiān chí kě chí xù fā zhǎn de yuán zé",
+        "vi": "Bất kể là phát triển kinh tế hay bảo vệ môi trường, chúng ta đều phải tuân thủ nguyên tắc phát triển bền vững."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-051",
+      "title": "不时/bù shí/",
+      "explanation": "Phó từ, biểu thị sự thỉnh thoảng (không cố định).",
+      "examples": [
+       {
+        "zh": "尽管已经离开了家乡多年，但她不时会想起童年的美好回忆.",
+        "pinyin": "Jǐn guǎn yǐ jīng lí kāi le jiā xiāng duō nián, dàn tā bù shí huì xiǎng qǐ tóng nián de měi hǎo huí yì",
+        "vi": "Mặc dù đã rời xa quê hương nhiều năm, nhưng cô ấy thỉnh thoảng vẫn nhớ lại những ký ức tuổi thơ tươi đẹp."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-052",
+      "title": "多多少少/duō duō shǎo shǎo/",
+      "explanation": "Phó từ/Tính từ lặp lại, biểu thị ít nhiều, ở một mức độ nào đó.",
+      "examples": [
+       {
+        "zh": "经过这次挫折，他对自己的能力多多少少产生了一些怀疑.",
+        "pinyin": "Jīng guò zhè cì cuò zhé, tā duì zì jǐ de néng lì duō duō shǎo shǎo chǎn shēng le yī xiē huái yí",
+        "vi": "Sau thất bại lần này, anh ấy ít nhiều đã nảy sinh nghi ngờ về năng lực của bản thân."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-053",
+      "title": "逐/zhú/",
+      "explanation": "Giới từ/Phó từ, biểu thị sự lần lượt, từng bước.",
+      "examples": [
+       {
+        "zh": "随着全球经济一体化进程加快，各国之间的贸易壁垒正被逐渐打破.",
+        "pinyin": "Suí zhe quán qiú jīng jì yī tǐ huà jìn chéng jiā kuài, gè guó zhī jiān de mào yì bì lěi zhèng bèi zhú jiàn dǎ pò",
+        "vi": "Cùng với quá trình toàn cầu hóa kinh tế tăng tốc, rào cản thương mại giữa các quốc gia đang dần dần bị phá vỡ."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-054",
+      "title": "归根到底/guī gēn dào dǐ/",
+      "explanation": "Nói tóm lại, chung quy lại (đi đến bản chất vấn đề).",
+      "examples": [
+       {
+        "zh": "无论这项技术如何先进，归根到底，它只是人类实现目标的工具.",
+        "pinyin": "Wú lùn zhè xiàng jì shù rú hé xiān jìn, guī gēn dào dǐ, tā zhǐ shi rén lèi shí xiàn mù biāo de gōng jù",
+        "vi": "Bất kể công nghệ này tiên tiến đến đâu, chung quy lại, nó chỉ là công cụ để con người đạt được mục tiêu."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-055",
+      "title": "哪怕/nǎ pà/",
+      "explanation": "Liên từ, biểu thị dù cho, ngay cả (giả định cực đoan), thường đi kèm với也hoặc都ở vế sau.",
+      "examples": [
+       {
+        "zh": "哪怕只剩下微弱的希望，我们也要坚持不懈地努力下去.",
+        "pinyin": "Nǎ pà zhǐ shèng xià wēi ruò de xī wàng, wǒ men yě yào jiān chí bú xiè dì nǔ lì xià qù",
+        "vi": "Ngay cả khi chỉ còn lại tia hy vọng mong manh, chúng ta vẫn phải kiên trì nỗ lực không ngừng."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-056",
+      "title": "反之/fǎn zhī/",
+      "explanation": "Liên từ, biểu thị sự ngược lại. Thường dùng để chuyển ý, đưa ra điều kiện hoặc kết quả đối lập.",
+      "examples": [
+       {
+        "zh": "采取积极的应对策略有助于化解危机；反之，消极逃避只会使局势更加恶化.",
+        "pinyin": "Cǎi qǔ jī jí de yìng duì cè lüè yǒu zhù yú huà jiě wēi jī; fǎn zhī, xiāo jí táo bì zhǐ huì shǐ jú shì gèng jiā è huà",
+        "vi": "Áp dụng chiến lược ứng phó tích cực sẽ giúp hóa giải khủng hoảng; ngược lại, trốn tránh tiêu cực chỉ làm tình hình thêm tồi tệ."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-057",
+      "title": "A的A, B的B (A de A, B de B)",
+      "explanation": "Cấu trúc liệt kê, biểu thị sự liệt kê của một số tình huống hoặc sự vật, thường dùng trong khẩu ngữ.",
+      "examples": [
+       {
+        "zh": "晚会上，人们唱歌的唱歌，跳舞的跳舞，尽情享受欢乐的时光.",
+        "pinyin": "Wǎn huì shàng, rén men chàng gē de chàng gē, tiào wǔ de tiào wǔ, jìn qíng xiǎng shòu huān lè de shí guāng",
+        "vi": "Trong buổi tiệc tối, mọi người người hát thì hát, người nhảy thì nhảy, tận hưởng thời gian vui vẻ."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-058",
+      "title": "一时/yī shí/",
+      "explanation": "Phó từ, biểu thị tạm thời, đột ngột (xảy ra trong thời gian ngắn). Cũng có thể dùng để biểu thị sự lặp lại.",
+      "examples": [
+       {
+        "zh": "面对媒体的追问，发言人一时语塞，不知如何回应.",
+        "pinyin": "Miàn duì méi tǐ de zhuī wèn, fā yán rén yī shí yǔ sè, bù zhī rú hé huí yìng",
+        "vi": "Trước sự truy vấn của truyền thông, người phát ngôn bất chợt nghẹn lời, không biết trả lời thế nào."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-059",
+      "title": "尚且/shàng qiě/",
+      "explanation": "Liên từ, biểu thị vẫn còn, còn (một sự vật/tình huống ở mức độ thấp đã xảy ra), vế sau thường dùng何况/更để nhấn mạnh điều ở mức độ cao hơn.",
+      "examples": [
+       {
+        "zh": "像他这样精明能干的人尚且犯错，何况是我们这些缺乏经验的新手.",
+        "pinyin": "Xiàng tā zhè yàng jīng míng néng gàn de rén shàng qiě fàn cuò, hé kuàng shi wǒ men zhè xiē quē fá jīng yàn de xīn shǒu",
+        "vi": "Người tài giỏi như anh ấy còn mắc sai lầm, huống chi là những người mới thiếu kinh nghiệm như chúng ta."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-060",
+      "title": "当/dāng/",
+      "explanation": "Giới từ, biểu thị đang ở thời điểm hoặc địa điểm nào đó",
+      "examples": [
+       {
+        "label": "1",
+        "zh": "他当时正在国外出差，错过了公司重要的年度会议.",
+        "pinyin": "Tā dāng shí zhèng zài guó wài chū chāi, cuò guò le gōng sī zhòng yào de nián dù huì yì",
+        "vi": "Anh ấy khi đó đang đi công tác nước ngoài, nên đã bỏ lỡ cuộc họp thường niên quan trọng của công ty."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-061",
+      "title": "终究/zhōng jiū/",
+      "explanation": "Phó từ, biểu thị rốt cuộc, cuối cùng (nhấn mạnh kết quả hoặc bản chất).",
+      "examples": [
+       {
+        "zh": "经过多方的努力，这件悬而未决的法律纠纷终究得到了公正的解决.",
+        "pinyin": "Jīng guò duō fāng de nǔ lì, zhè jiàn xuán ér wèi jué de fǎ lǜ jiū fēn zhōng jiū dé dào le gōng zhèng de jiě jué",
+        "vi": "Sau nỗ lực của nhiều bên, tranh chấp pháp lý còn bỏ ngỏ này rốt cuộc đã được giải quyết công bằng."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-062",
+      "title": "愈……愈…… /yù...yù.../",
+      "explanation": "Cấu trúc liên từ, biểu thị càng...càng... (mức độ tăng tiến song song).",
+      "examples": [
+       {
+        "zh": "随着学习的深入，我们愈发愈认识到汉语文化的博大精深.",
+        "pinyin": "Suí zhe xué xí de shēn rù, wǒ men yù fā yù rèn shí dào Hàn yǔ wén huà de bó dà jīng shēn",
+        "vi": "Học càng sâu, chúng ta càng nhận thức được sự uyên thâm của văn hóa Hán ngữ."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-063",
+      "title": "一经/yī jīng/",
+      "explanation": "Phó từ, dùng cho câu trên, biểu thị chỉ cần qua một hành động/bước nào đó, sẽ có kết quả tương ứng xảy ra.",
+      "examples": [
+       {
+        "zh": "这项新政策一经宣布，立即引起了社会各界的广泛关注.",
+        "pinyin": "Zhè xiàng xīn zhèng cè yī jīng xuān bù, lì jí yǐn qǐ le shè huì gè jiè de guǎng fàn guān zhù",
+        "vi": "Chính sách mới này vừa được công bố, lập tức đã thu hút sự quan tâm rộng rãi từ mọi tầng lớp xã hội"
+       }
+      ]
+     },
+     {
+      "id": "HSK6-064",
+      "title": "本着+名词 /běn zhe + míng cí/",
+      "explanation": "Cấu trúc giới từ, biểu thị dựa trên một nguyên tắc, tinh thần, thái độ nào đó.",
+      "examples": [
+       {
+        "zh": "我们始终本着互利共赢的原则，与合作伙伴共同发展.",
+        "pinyin": "Wǒ men shǐ zhōng běn zhe hù lì gòng yíng de yuán zé, yǔ hé zuò huǒ bàn gòng tóng fā zhǎn",
+        "vi": "Chúng tôi luôn dựa trên nguyên tắc cùng có lợi, cùng phát triển với đối tác."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-065",
+      "title": "为……起见 /wèi...qǐ jiàn/",
+      "explanation": "Cấu trúc giới từ, biểu thị vì lợi ích của, vì mục đích nào đó.",
+      "examples": [
+       {
+        "zh": "为保障施工质量起见，工程团队对原材料进行了严格的筛选.",
+        "pinyin": "Wèi bǎo zhàng shī gōng zhì liàng qǐ jiàn, gōng chéng tuán duì duì yuán cái liào jìn xíng le yán gé de shāi xuǎn",
+        "vi": "Vì mục đích đảm bảo chất lượng thi công, đội ngũ kỹ thuật đã tiến hành sàng lọc nghiêm ngặt đối với nguyên vật liệu."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-066",
+      "title": "暂且/zàn qiě/",
+      "explanation": "Phó từ, biểu thị sự tạm thời, tạm gác lại.",
+      "examples": [
+       {
+        "zh": "既然现在无法达成共识，我们暂且搁置争议，以后再议.",
+        "pinyin": "Jì rán xiàn zài wú fǎ dá chéng gòng shí, wǒ men zàn qiě gē zhì zhēng yì, yǐ hòu zài yì",
+        "vi": "Vì hiện tại không thể đạt được sự đồng thuận, chúng ta tạm thời gác lại tranh cãi, bàn sau."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-067",
+      "title": "屡次/lǚ cì/",
+      "explanation": "Phó từ, biểu thị nhiều lần, lặp đi lặp lại (xảy ra một lần, một lần nữa).",
+      "examples": [
+       {
+        "zh": "他屡次违背合同条款，我们不得不考虑终止与他的合作关系.",
+        "pinyin": "Tā lǚ cì wéi bèi hé tóng tiáo kuǎn, wǒ men bù dé bù kǎo lǜ zhōng zhǐ yǔ tā de hé zuò guān xi",
+        "vi": "Anh ta nhiều lần vi phạm các điều khoản hợp đồng, chúng tôi buộc phải xem xét chấm dứt quan hệ hợp tác với anh ta."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-068",
+      "title": "依据/yī jù/",
+      "explanation": "Động từ/Danh từ/Giới từ, biểu thị căn cứ, cơ sở để lập luận hoặc hành động",
+      "examples": [
+       {
+        "zh": "这项决策是依据最新的市场调研数据和专家意见做出的.",
+        "pinyin": "Zhè xiàng jué cè shi yī jù zuì xīn de shì chǎng diào yán shù jù hé zhuān jiā yì jiàn zuò chū de",
+        "vi": "Quyết định này được đưa ra dựa trên dữ liệu khảo sát thị trường và ý kiến chuyên gia mới nhất."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-069",
+      "title": "任意/rèn yì/",
+      "explanation": "Phó từ, biểu thị tùy ý, thoải mái, không có sự ràng buộc hay hạn chế.",
+      "examples": [
+       {
+        "zh": "在民主社会中，公民可以任意表达自己的观点，但需对言论负责.",
+        "pinyin": "Zài mín zhǔ shè huì zhōng, gōng mín kě yǐ rèn yì biǎo dá zì jǐ de guān diǎn, dàn xū duì yán lùn fù zé",
+        "vi": "Trong xã hội dân chủ, công dân có thể tự do bày tỏ quan điểm của mình, nhưng phải chịu trách nhiệm về lời nói."
+       }
+      ]
+     },
+     {
+      "id": "HSK6-070",
+      "title": "尚末/shàng wèi/",
+      "explanation": "Phó từ, biểu thị vẫn chưa.",
+      "examples": [
+       {
+        "zh": "尽管我们已经取得了初步进展，但距离最终成功尚末可知.",
+        "pinyin": "Jǐn guǎn wǒ men yǐ jīng qǔ dé le chū bù jìn zhǎn, dàn lí jù zuì zhōng chéng gōng shàng wèi kě zhī",
+        "vi": "Mặc dù chúng tôi đã đạt được tiến triển ban đầu, nhưng vẫn chưa thể biết được còn cách thành công cuối cùng bao xa."
+       }
+      ]
+     }
+    ],
+    "exam_focus": []
+   }
+  ]
+ }
+];
